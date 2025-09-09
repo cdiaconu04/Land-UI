@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Navbar() {
     return (
-        <nav className="mx-auto fixed top-3 w-full max-w-screen-xl mx-auto z-50 backdrop-blur-sm border border-1 border-gray-300 rounded-lg">
+        <nav className="mx-auto fixed top-3 w-full max-w-screen-xl mx-auto z-50 backdrop-blur-2xl border border-1 border-gray-300 rounded-lg">
 
             <div className="flex items-center justify-between mx-auto px-2 py-1">
                     <div className="flex flex-row justify-center items-center gap-6">
@@ -23,7 +23,7 @@ export default function Navbar() {
                         <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                             <li className="">
                                 <div className="group hover:bg-gray-100 rounded-lg transition duration-200">
-                                    <a href="/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Components </a>
+                                    <a href="/components" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Components </a>
                                 </div>
                             </li>
                             <li className="">

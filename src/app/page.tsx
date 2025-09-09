@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Home() {
   return (
-    <div className="bg-white flex items-center justify-center">
+    <div className="bg-white flex flex-col items-center justify-center">
       <Navbar/>
 
       <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
@@ -31,6 +31,73 @@ export default function Home() {
 
 
 
+      </div>
+
+      {/* Components section */}
+      <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
+        <div className="flex flex-col gap-10 w-full">
+          <h3 className={`${urbanist.className} text-5xl text-gray-800`}> Components </h3>
+
+          <div className="grid grid-cols-4 gap-5 w-full">
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+            
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+            
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
+                <p className="text-black">H</p>
+              </div>
+              <p className={`${urbanist.className} text-gray-950`}>Card</p>
+            </div>
+          </div>
+
+        </div>
+        
       </div>
 
     </div>
