@@ -1,13 +1,15 @@
+"use client";
 import Image from "next/image";
-import { Inter, Roboto, Urbanist } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white flex items-center justify-center">
+      <Navbar/>
+
       <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
 
         <h1 className={`${urbanist.className} text-7xl text-gray-800`}>
