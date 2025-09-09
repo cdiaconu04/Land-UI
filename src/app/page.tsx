@@ -21,6 +21,16 @@ export default function Home() {
             50 styled, modern and ready-to-use, <br/> React components to make your website stand out.
           </p>
         </div>
+
+        <Image 
+          src="/Computer.png" 
+          alt="Computer" 
+          width={450} 
+          height={450} 
+        />
+
+
+
       </div>
 
     </div>
