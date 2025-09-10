@@ -13,7 +13,7 @@ export default function Navbar() {
                     <div className="flex flex-row justify-center items-center gap-6">
                         <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                             <li className="">
-                                <Link href="/" className={`${urbanist.className} text-3xl bg-gradient-to-r from-sky-500 via-sky-500 to-red-500 
+                                <Link href="/" className={`${urbanist.className} text-3xl bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500 
                                     text-transparent bg-clip-text group block px-5 py-2`}> LandUI </Link>
                             </li>
                         </ul>
