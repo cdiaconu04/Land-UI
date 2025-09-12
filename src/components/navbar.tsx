@@ -23,7 +23,7 @@ export default function Navbar() {
                         <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                             <li className="">
                                 <div className="group hover:bg-gray-100 rounded-lg transition duration-200">
-                                    <a href="/components" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Components </a>
+                                    <a href="/docs" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Components </a>
                                 </div>
                             </li>
                             <li className="">

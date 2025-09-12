@@ -131,7 +131,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-5 items-center justify-center p-15 rounded-lg border border-1 border-gray-300">
 
-            <h3 className={`${urbanist.className} text-5xl text-gray-800`}> Start building faster with 
+            <h3 className={`${urbanist.className} text-5xl text-gray-800`}> Start building faster with&nbsp; 
               <span className="bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text leading-relaxed">LandUI</span> 
             </h3>
 
