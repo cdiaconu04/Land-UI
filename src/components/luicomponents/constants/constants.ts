@@ -95,3 +95,11 @@ export const roundMap = {
     2: "rounded-xl",
     3: "rounded-full",
 };
+
+export const boldMap = {
+    0: "font-light",
+    1: "font-normal",
+    2: "font-medium",
+    3: "font-semibold",
+    4: "font-bold",
+}
