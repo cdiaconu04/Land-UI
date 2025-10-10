@@ -92,8 +92,9 @@ export const borderColourMap = {
 export const roundMap = {
     0: "",
     1: "rounded-md",
-    2: "rounded-xl",
-    3: "rounded-full",
+    2: "rounded-lg",
+    3: "rounded-xl",
+    4: "rounded-full",
 };
 
 export const boldMap = {
@@ -102,4 +103,56 @@ export const boldMap = {
     2: "font-medium",
     3: "font-semibold",
     4: "font-bold",
+}
+
+export const sidePadMap = {
+    0: "max-w-screen-2xl",
+    1: "max-w-screen-xl",
+    2: "max-w-screen-lg",
+    3: "max-w-screen-md",
+}
+
+export const borderWeightMap = {
+    0: "",
+    1: "border-1",
+    2: "border-2",
+    3: "border-4",
+}
+
+export type colourProps = {
+    type: "filled" | "gradient";
+    colour?: keyof typeof colourMap;
+    colourFrom?: keyof typeof fromColourMap;
+    colourVia?: keyof typeof viaColourMap;
+    colourTo?: keyof typeof toColourMap;
+}
+
+export type borderProps = {
+    type: keyof typeof borderWeightMap;
+    colour: keyof typeof borderColourMap;
+}
+
+
+export function getBorder(border?: borderProps): string {
+    if (!border || border.type === 0) {
+        return "";
+    } else if (border.type === 1) {
+        return `border border-1 ${borderColourMap[border.colour]}`;
+    } else if (border.type === 2) {
+        return `border border-2 ${borderColourMap[border.colour]}`;
+    } else {
+        return `border border-4 ${borderColourMap[border.colour]}`;
+    }
+}
+
+export function getBgColour(colour: colourProps): string {
+    if (colour.type === "filled") {
+        return colourMap[colour.colour ?? "white"]
+    }
+
+    if (colour.colourVia) {
+        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${viaColourMap[colour.colourVia ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
+    } else {
+        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
+    }
 }

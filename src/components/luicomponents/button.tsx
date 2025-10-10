@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Urbanist } from 'next/font/google';
-import { colourMap, fromColourMap, viaColourMap, toColourMap, textColourMap, roundMap, borderColourMap } from "./constants/constants";
+import { colourProps, colourMap, fromColourMap, viaColourMap, toColourMap, textColourMap, roundMap, borderColourMap, getBgColour } from "./constants/constants";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -10,14 +10,6 @@ const sizeMap = {
     medium: "text-lg",
     large: "text-xl",
 };
-
-type colourProps = {
-    type: "filled" | "gradient";
-    colour?: keyof typeof colourMap;
-    colourFrom?: keyof typeof fromColourMap;
-    colourVia?: keyof typeof viaColourMap;
-    colourTo?: keyof typeof toColourMap;
-}
 
 type ButtonProps = {
     label: string;
@@ -29,18 +21,6 @@ type ButtonProps = {
     hoverShadow?: boolean;
     round?: keyof typeof roundMap;
 };
-
-function getBgColour(colour: colourProps): string {
-    if (colour.type === "filled") {
-        return colourMap[colour.colour ?? "white"]
-    }
-
-    if (colour.colourVia) {
-        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${viaColourMap[colour.colourVia ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
-    } else {
-        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
-    }
-}
 
 export default function Button({ label,
     onClick, 
