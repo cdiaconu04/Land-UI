@@ -35,7 +35,6 @@ export default function Button({ label,
         <button
             onClick={onClick}
             className={`
-                border-2
                 ${getBgColour(colour)}
                 ${textColourMap[textColour]} 
                 ${getBorder(border)}
