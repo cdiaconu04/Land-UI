@@ -18,9 +18,9 @@ type InputProps = {
     border?: borderProps;
 }
 
-export default function Input({ colour = "default", textColour = "default", border = {type: 2, colour: "black"}, placeholder = {placeholder: "Input", colour: "default"}, round = 1 }: InputProps) {
+export default function TextArea({ colour = "default", textColour = "default", border = {type: 2, colour: "black"}, placeholder = {placeholder: "Input", colour: "default"}, round = 1 }: InputProps) {
     return (
-        <input
+        <textarea
             placeholder={placeholder.placeholder}
             className={`
                 ${urbanist.className} 
