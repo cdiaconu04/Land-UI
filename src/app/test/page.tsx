@@ -2,7 +2,6 @@
 import Button from "@/components/luicomponents/button";
 import Input from "@/components/luicomponents/input";
 import Navbar from "@/components/luicomponents/navbar";
-import Badge from "@/components/luicomponents/badge";
 import Link from "next/link";
 import { Urbanist } from 'next/font/google';
 
@@ -59,12 +58,6 @@ export default function Test() {
                 {/* <Button label="Button" hoverShadow={true} onClick={() => doNothing}/>
 
                 <Input /> */}
-
-                <Badge
-                    label="Featured"
-                    textColour="black"
-                    size="md"
-                />
 
                 
             </div>

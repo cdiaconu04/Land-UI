@@ -5,6 +5,8 @@ import Navbar from "@/components/navbar";
 import { ChevronRight } from 'lucide-react';
 
 import Button from "@/components/luicomponents/button";
+import Badge from "@/components/luicomponents/badge";
+import Typography from "@/components/luicomponents/typography";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -69,10 +71,9 @@ export default function Home() {
           <div className="grid grid-cols-4 gap-5 w-full">
             <div className="w-full flex flex-col gap-2">
               <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-23.5">
-                <Button label="Button" 
-                  colour={{type: "gradient", colourFrom: "white", colourTo: "white"}}
-                
-                onClick={() => doNothing}/>
+                <Button onClick={() => doNothing()} colour={{type: "filled"}}>
+                  <Typography type="p" colour="black" bold={1}>Button</Typography>
+                </Button>
               </div>
               <p className={`${urbanist.className} text-gray-950`}>Button</p>
             </div>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Urbanist } from 'next/font/google';
-import { colourProps, getBgColour, textColourMap, borderColourMap } from "./constants/constants";
+import { colourProps, getBgColour, borderColourMap } from "./constants/constants";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -11,29 +11,26 @@ const sizeMap = {
     lg: "text-base px-4 py-1.5",
 };
 
-type BadgeProps = {
-    label: string;
+type BadgeProps = React.PropsWithChildren<{
     colour?: colourProps;
-    textColour?: keyof typeof textColourMap;
     borderColour?: keyof typeof borderColourMap;
     size?: keyof typeof sizeMap;
-}
+}>;
 
-export default function Badge({ label, colour = { type: "filled" }, textColour = "default", borderColour = "default", size = "md" }: BadgeProps) {
+export default function Badge({ colour = { type: "filled" }, borderColour = "default", size = "md", children }: BadgeProps) {
     return (
-        <span
+        <div
             className={`
                 flex-row items-center justify-center
                 border-1
                 ${getBgColour(colour)}
-                ${textColourMap[textColour]}
                 ${borderColourMap[borderColour]}
                 ${urbanist.className}
                 rounded-full
                 ${sizeMap[size]}
             `}
         >
-            {label}
-        </span>
+            {children}
+        </div>
     )
 }

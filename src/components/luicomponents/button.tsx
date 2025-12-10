@@ -11,8 +11,7 @@ const sizeMap = {
     large: "text-xl",
 };
 
-type ButtonProps = {
-    label: string;
+type ButtonProps = React.PropsWithChildren<{
     onClick: () => void;
     colour?: colourProps;
     textColour?: keyof typeof textColourMap;
@@ -20,23 +19,22 @@ type ButtonProps = {
     size?: keyof typeof sizeMap;
     hoverShadow?: keyof typeof shadowMap;
     round?: keyof typeof roundMap;
-};
+}>;
 
-export default function Button({ label,
+export default function Button({
     onClick, 
-    colour = {type: "filled"}, 
-    textColour = "default", 
+    colour = {type: "filled"},
     size = "medium", 
     border, 
     hoverShadow = 0, 
-    round = 1 }: ButtonProps) {
+    round = 1,
+    children }: ButtonProps) {
 
     return (
         <button
             onClick={onClick}
             className={`
                 ${getBgColour(colour)}
-                ${textColourMap[textColour]} 
                 ${getBorder(border)}
                 ${urbanist.className} 
                 ${shadowMap[hoverShadow]}
@@ -45,7 +43,7 @@ export default function Button({ label,
                 px-2 py-1
             `}
         >
-            {label}
+            {children}
         </button>
     )
 };
