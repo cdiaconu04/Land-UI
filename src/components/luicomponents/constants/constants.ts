@@ -119,6 +119,15 @@ export const borderWeightMap = {
     3: "border-4",
 }
 
+export const shadowMap = {
+    0: "",
+    1: "shadow-sm",
+    2: "shadow-md",
+    3: "shadow-lg",
+    4: "shadow-xl",
+    5: "shadow-2xl",
+}
+
 export type colourProps = {
     type: "filled" | "gradient";
     colour?: keyof typeof colourMap;
