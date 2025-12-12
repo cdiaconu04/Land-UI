@@ -2,6 +2,7 @@
 import Button from "@/components/luicomponents/button";
 import Input from "@/components/luicomponents/input";
 import Navbar from "@/components/luicomponents/navbar";
+import Tooltip from "@/components/luicomponents/tooltip";
 import Link from "next/link";
 import { Urbanist } from 'next/font/google';
 
@@ -58,6 +59,10 @@ export default function Test() {
                 {/* <Button label="Button" hoverShadow={true} onClick={() => doNothing}/>
 
                 <Input /> */}
+
+                <Tooltip content={"hh"}>
+                    <p className={`text-black ${urbanist.className}`}>h</p>
+                </Tooltip>
 
                 
             </div>
