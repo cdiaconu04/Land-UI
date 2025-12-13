@@ -11,11 +11,12 @@ const sizeMap = {
     lg: "text-base px-4 py-1.5",
 };
 
-type BadgeProps = React.PropsWithChildren<{
+type BadgeProps = {
     colour?: colourProps;
     borderColour?: keyof typeof borderColourMap;
     size?: keyof typeof sizeMap;
-}>;
+    children?: React.ReactNode;
+};
 
 export default function Badge({ colour = { type: "filled" }, borderColour = "default", size = "md", children }: BadgeProps) {
     return (

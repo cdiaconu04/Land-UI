@@ -2,9 +2,12 @@
 import Button from "@/components/luicomponents/button";
 import Input from "@/components/luicomponents/input";
 import Navbar from "@/components/luicomponents/navbar";
+import Toast from "@/components/luicomponents/toast";
+import Toggle from "@/components/luicomponents/toggle";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Link from "next/link";
 import { Urbanist } from 'next/font/google';
+import { useState } from "react";
 
 function doNothing() {
 
@@ -13,6 +16,9 @@ function doNothing() {
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Test() {
+    const [showToast, setShowToast] = useState(false);
+    const [sliderValue, setSliderValue] = useState(50);
+
     return (
         <div className="bg-white flex flex-col items-center justify-center">
             <Navbar type={"default"} sticky={false} colour={{ type: "filled", colour: "white" }}>
@@ -60,10 +66,16 @@ export default function Test() {
 
                 <Input /> */}
 
+                <Button onClick={() => setShowToast(true)}>Test Toast</Button>
+
+
+                <Toggle onToggle={(isToggled) => console.log('Toggle:', isToggled)}>Test Toggle</Toggle>
+
                 <Tooltip content={"hh"}>
                     <p className={`text-black ${urbanist.className}`}>h</p>
                 </Tooltip>
 
+                <Toast message="This is a test toast!" show={showToast} onHide={() => setShowToast(false)} />
                 
             </div>
         </div>

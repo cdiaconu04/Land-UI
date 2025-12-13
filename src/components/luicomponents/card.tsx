@@ -8,13 +8,14 @@ import {
     shadowMap, 
     roundMap } from "./constants/constants";
 
-type CardProps = React.PropsWithChildren<{
+type CardProps = {
     colour?: colourProps;
     round?: keyof typeof roundMap;
     border?: borderProps;
     shadow?: keyof typeof shadowMap;
     className?: string;
-}>;
+    children?: React.ReactNode;
+};
 
 export default function Card({
     colour = {type: "filled"},

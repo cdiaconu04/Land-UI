@@ -11,7 +11,7 @@ const sizeMap = {
     large: "text-xl",
 };
 
-type ButtonProps = React.PropsWithChildren<{
+type ButtonProps = {
     onClick: () => void;
     colour?: colourProps;
     textColour?: keyof typeof textColourMap;
@@ -19,7 +19,8 @@ type ButtonProps = React.PropsWithChildren<{
     size?: keyof typeof sizeMap;
     hoverShadow?: keyof typeof shadowMap;
     round?: keyof typeof roundMap;
-}>;
+    children?: React.ReactNode;
+};
 
 export default function Button({
     onClick, 
