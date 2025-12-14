@@ -15,7 +15,6 @@ type ToggleProps = {
     onToggle?: (isToggled: boolean) => void;
     untoggledColour?: colourProps;
     toggledColour?: colourProps;
-    textColour?: keyof typeof textColourMap;
     border?: borderProps;
     size?: keyof typeof sizeMap;
     hoverShadow?: keyof typeof shadowMap;
@@ -27,7 +26,6 @@ export default function Toggle({
     onToggle,
     untoggledColour = {type: "filled", colour: "white"},
     toggledColour = {type: "filled", colour: "blue"},
-    textColour = "black",
     size = "medium",
     border,
     hoverShadow = 0,
