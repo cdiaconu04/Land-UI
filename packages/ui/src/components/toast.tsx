@@ -9,7 +9,7 @@ import {
     getBorder,
     getBgColour,
     scaleMap,
-} from "./constants/constants";
+} from "../constants";
 
 const sizeMap = {
     small: "text-md",
