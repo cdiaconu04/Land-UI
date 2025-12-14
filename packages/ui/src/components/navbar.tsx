@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { sidePadMap, borderProps, getBgColour, getBorder, roundMap, colourProps } from "./constants/constants";
+import { sidePadMap, borderProps, getBgColour, getBorder, roundMap, colourProps } from "../constants";
 
 type InputProps = React.PropsWithChildren<{
     type: "default" | "floating";
