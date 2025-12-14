@@ -128,6 +128,15 @@ export const shadowMap = {
     5: "shadow-2xl",
 }
 
+export const scaleMap = {
+    0: "scale-20",
+    1: "scale-40",
+    2: "scale-60",
+    3: "scale-80",
+    4: "scale-90",
+    5: "scale-100"
+}
+
 export type colourProps = {
     type: "filled" | "gradient";
     colour?: keyof typeof colourMap;
