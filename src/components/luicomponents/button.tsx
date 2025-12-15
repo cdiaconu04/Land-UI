@@ -14,7 +14,7 @@ const sizeMap = {
 type ButtonProps = {
     onClick: () => void;
     colour?: colourProps;
-    textColour?: keyof typeof textColourMap;
+    hoverColour?: colourProps;
     border?: borderProps;
     size?: keyof typeof sizeMap;
     hoverShadow?: keyof typeof shadowMap;
@@ -25,6 +25,7 @@ type ButtonProps = {
 export default function Button({
     onClick, 
     colour = {type: "filled"},
+    hoverColour = {type: "filled"},
     size = "medium", 
     border, 
     hoverShadow = 0, 

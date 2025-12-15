@@ -24,7 +24,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Button", 
         slug: "button",
-        demo:   <Button onClick={() => doNothing()} colour={{type: "filled"}}>
+        demo:   <Button onClick={() => doNothing()} colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}>
                     <Typography type="p" colour="black" bold={1}>Button</Typography>
                 </Button>, 
     },
