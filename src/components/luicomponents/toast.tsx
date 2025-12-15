@@ -19,7 +19,6 @@ const sizeMap = {
 
 type ToastProps = {
     scale?: keyof typeof scaleMap;
-    message: string;
     show: boolean;
     onHide?: () => void;
     duration?: number;
@@ -29,11 +28,11 @@ type ToastProps = {
     size?: keyof typeof sizeMap;
     round?: keyof typeof roundMap;
     shadow?: keyof typeof shadowMap;
+    children?: React.ReactNode;
 };
 
 export default function Toast({
     scale = 5,
-    message,
     show,
     onHide,
     shadow = 0,
@@ -43,6 +42,7 @@ export default function Toast({
     size = "medium",
     border,
     round = 1,
+    children
 }: ToastProps) {
     const [visible, setVisible] = useState(false);
 
@@ -84,7 +84,7 @@ export default function Toast({
                 ${sizeMap[size]}
             `}
         >
-            {message}
+            {children}
         </div>
     );
 }

@@ -2,6 +2,8 @@
 import React from "react";
 import { Urbanist } from 'next/font/google';
 import { colourProps, getBgColour, borderColourMap } from "./constants/constants";
+import { getBorder } from "./constants/constants";
+import { borderProps } from "./constants/constants";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -13,19 +15,19 @@ const sizeMap = {
 
 type BadgeProps = {
     colour?: colourProps;
-    borderColour?: keyof typeof borderColourMap;
+    border?: borderProps;
     size?: keyof typeof sizeMap;
     children?: React.ReactNode;
 };
 
-export default function Badge({ colour = { type: "filled" }, borderColour = "default", size = "md", children }: BadgeProps) {
+export default function Badge({ colour = { type: "filled" }, border, size = "md", children }: BadgeProps) {
     return (
         <div
             className={`
                 flex-row items-center justify-center
                 border-1
                 ${getBgColour(colour)}
-                ${borderColourMap[borderColour]}
+                ${getBorder(border)}
                 ${urbanist.className}
                 rounded-full
                 ${sizeMap[size]}

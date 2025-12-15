@@ -1,6 +1,10 @@
+"use client"
+
+import Badge from "@/components/luicomponents/badge";
 import Button from "@/components/luicomponents/button";
+import Toast from "@/components/luicomponents/toast";
 import Typography from "@/components/luicomponents/typography";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 export type DocsComponent = {
   name: string;
@@ -9,6 +13,33 @@ export type DocsComponent = {
 };
 
 function doNothing() {}
+
+function ToastDemo() {
+    const [showToast, setShowToast] = useState(false);
+
+    return (
+        <div>
+            <Button 
+                onClick={() => setShowToast(true)} 
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+            >
+                <Typography type="p" colour="black" bold={1}>
+                    Show Toast
+                </Typography>
+            </Button>
+
+            <Toast
+                show={showToast}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                onHide={() => setShowToast(false)}
+            >
+                <Typography type="p" colour="black" bold={2}>
+                    Show Toast
+                </Typography>
+            </Toast>
+        </div>
+    );
+}
 
 export const components: DocsComponent[] = [
     { 
@@ -19,12 +50,22 @@ export const components: DocsComponent[] = [
     {                                                           
         name: "Badge", 
         slug: "badge",
-        demo: <div/>,
+        demo:   <Badge 
+                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                    size="md"
+                >
+                    <Typography type="p" colour="black" bold={1}>
+                        New
+                    </Typography>
+                </Badge>,
     },
     { 
         name: "Button", 
         slug: "button",
-        demo:   <Button onClick={() => doNothing()} colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}>
+        demo:   <Button 
+                    onClick={() => doNothing()} 
+                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                >
                     <Typography type="p" colour="black" bold={1}>Button</Typography>
                 </Button>, 
     },
@@ -71,7 +112,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Toast", 
         slug: "toast",
-        demo: <div/>, 
+        demo: <ToastDemo/>
     },
     { 
         name: "Toggle", 
