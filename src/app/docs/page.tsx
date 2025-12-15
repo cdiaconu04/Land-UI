@@ -1,13 +1,6 @@
-"use client";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-    const router = useRouter();
-
-    useEffect(() => {
-        router.push("/docs/components");
-    }, [router]);
-
-    return null;
+export default function DocsPage() {
+  redirect("/docs/components");
 }
+

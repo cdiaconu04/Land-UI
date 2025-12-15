@@ -11,7 +11,7 @@ const sizeMap = {
 };
 
 type TooltipProps = React.PropsWithChildren<{
-  font: string,
+  font?: string,
   colour?: colourProps;
   content: string;
   placement?: Placement;
