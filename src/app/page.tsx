@@ -3,10 +3,11 @@ import Image from "next/image";
 import { Urbanist } from 'next/font/google';
 import Navbar from "@/components/navbar";
 import { ChevronRight } from 'lucide-react';
-
+import Link from "next/link";
 import Button from "@/components/luicomponents/button";
 import Badge from "@/components/luicomponents/badge";
 import Typography from "@/components/luicomponents/typography";
+import { components } from "@/data/components";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -60,16 +61,26 @@ export default function Home() {
           <h3 className={`${urbanist.className} text-5xl text-gray-800`}> Components </h3>
 
           {/* border border-1 border-gray-300 py-1 pl-3 pr-1 hover:text-white hover:bg-gray-100*/}
-          <button className={`${urbanist.className} group flex flex-row gap-1 text-xl items-center justify-center 
+          <Link href={`/docs/components/${components[0].slug}`} className={`${urbanist.className} group flex flex-row gap-1 text-xl items-center justify-center 
             text-gray-800 rounded-lg hover:underline hover:cursor-pointer
             
             `}>
             Docs
             <ChevronRight className="group text-gray-800 transition duration-200 group-hover:translate-x-1.5" size={20}/>
-          </button>
+          </Link>
 
           <div className="grid grid-cols-4 gap-5 w-full">
-            <div className="w-full flex flex-col gap-2">
+            {components.map((c) => (
+              <div key={c.slug} className="w-full flex flex-col gap-2">
+                <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-23.5">
+                  {c.demo}
+                </div>
+                <p className={`${urbanist.className} text-gray-950`}>{c.name}</p>
+              </div>
+            ))}
+
+
+            {/* <div className="w-full flex flex-col gap-2">
               <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-23.5">
                 <Button onClick={() => doNothing()} colour={{type: "filled"}}>
                   <Typography type="p" colour="black" bold={1}>Button</Typography>
@@ -125,8 +136,8 @@ export default function Home() {
                 <p className="text-black">H</p>
               </div>
               <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-          </div>
+            </div>*/}
+          </div> 
 
         </div>
 

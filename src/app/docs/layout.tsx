@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import { Urbanist } from 'next/font/google';
 import { components } from "@/data/components";
+import Link from "next/link";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -18,8 +19,16 @@ export default function RootLayout({
                 <div className="flex flex-col gap-2 justify-start items-start">
                     <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}> Components </p>
                     
-                    {components.map((components) => (
-                        <p key={components.slug} className={`${urbanist.className} text-md text-gray-800`}> {components.name} </p>
+                    {components.map((c) => (
+                        <Link
+                          key={c.slug}
+                          href={`/docs/components/${c.slug}`}
+                          className={`${urbanist.className} text-md text-gray-800`}
+                        > 
+                          {c.name}
+                        </Link>
+
+                        // <p key={c.slug} className={`${urbanist.className} text-md text-gray-800`}> {c.name} </p>
                       ))
                     }
                 </div>
