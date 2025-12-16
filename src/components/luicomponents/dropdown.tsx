@@ -101,7 +101,7 @@ export default function Dropdown({
     }
 
     if (open) document.addEventListener("keydown", onKeyDown);
-    
+
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
@@ -111,9 +111,6 @@ export default function Dropdown({
 
     <div ref={rootRef} className={`relative inline-block ${className}`}>
       <button
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls={`${id}-listbox`}
         disabled={disabled}
         onClick={() => !disabled && setOpen((v) => !v)}
         className={`
@@ -132,15 +129,13 @@ export default function Dropdown({
           {selected ? selected.label : placeholder}
         </div>
 
-        <span aria-hidden className={`text-xs ${open ? "rotate-180" : ""}`}>
+        <span className={`text-xs ${open ? "rotate-180" : ""}`}>
           ▼
         </span>
       </button>
 
       {open && !disabled && (
         <div
-          id={`${id}-listbox`}
-          role="listbox"
           className={`
             absolute z-50 mt-2 w-full overflow-hidden
             ${getBgColour(menuColour)}

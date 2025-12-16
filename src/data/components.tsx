@@ -11,11 +11,14 @@ import Toast from "@/components/luicomponents/toast";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
 
+import { AvatarDemo } from "./demos/avatarDemo";
 import { DropDownDemo } from "./demos/dropDownDemo";
 import { RadioGroupDemo } from "./demos/radioGroupDemo";
 import { ToastDemo } from "./demos/toastDemo";
+import { ToggleDemo } from "./demos/toggleDemo";
 
 import { type ReactNode } from "react";
+import Avatar from "@/components/luicomponents/avatar";
 
 export type DocsComponent = {
   name: string;
@@ -32,7 +35,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Avatar", 
         slug: "avatar",
-        demo: <div/>,
+        demo: <AvatarDemo/>,
     },
     {                                                           
         name: "Badge", 
@@ -126,7 +129,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Toggle", 
         slug: "toggle",
-        demo: <div/>, 
+        demo: <ToggleDemo/>, 
     },
     { 
         name: "Tooltip", 
