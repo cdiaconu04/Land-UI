@@ -14,8 +14,6 @@ export type DocsComponent = {
   demo: ReactNode;
 };
 
-function doNothing() {}
-
 function ToastDemo() {
     const [showToast, setShowToast] = useState(false);
 
@@ -65,7 +63,7 @@ export const components: DocsComponent[] = [
         name: "Button", 
         slug: "button",
         demo:   <Button 
-                    onClick={() => doNothing()} 
+                    onClick={() => {}} 
                     colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 >
                     <Typography type="p" colour="black" bold={1}>Button</Typography>
@@ -92,11 +90,6 @@ export const components: DocsComponent[] = [
         demo: <div/>, 
     },
     { 
-        name: "Footer", 
-        slug: "footer",
-        demo: <div/>, 
-    },
-    { 
         name: "Input", 
         slug: "input",
         demo:   <Input
@@ -113,9 +106,9 @@ export const components: DocsComponent[] = [
         demo: <div/>, 
     },
     { 
-        name: "Slider", 
-        slug: "slider",
-        demo: <div/>, 
+        name: "Text Area", 
+        slug: "textarea",
+        demo: <div/>
     },
     { 
         name: "Toast", 
