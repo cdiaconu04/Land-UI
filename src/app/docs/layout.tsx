@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/components/navbar";
 import { Urbanist } from 'next/font/google';
 import { components } from "@/data/components";
@@ -20,17 +21,14 @@ export default function RootLayout({
                     <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}> Components </p>
                     
                     {components.map((c) => (
-                        <Link
-                          key={c.slug}
-                          href={`/docs/components/${c.slug}`}
-                          className={`${urbanist.className} text-md text-gray-800`}
-                        > 
-                          {c.name}
-                        </Link>
-
-                        // <p key={c.slug} className={`${urbanist.className} text-md text-gray-800`}> {c.name} </p>
-                      ))
-                    }
+                      <Link
+                        key={c.slug}
+                        href={`/docs/components/${c.slug}`}
+                        className={`${urbanist.className} text-md text-gray-800`}
+                      > 
+                        {c.name}
+                      </Link>
+                    ))}
                 </div>
 
                 <div className="col-span-3">
