@@ -2,6 +2,7 @@
 
 import Badge from "@/components/luicomponents/badge";
 import Button from "@/components/luicomponents/button";
+import Dropdown from "@/components/luicomponents/dropdown";
 import Input from "@/components/luicomponents/input";
 import { RadioGroup } from "@/components/luicomponents/radioGroup";
 import { RadioItem } from "@/components/luicomponents/radioItem";
@@ -9,106 +10,18 @@ import TextArea from "@/components/luicomponents/textArea";
 import Toast from "@/components/luicomponents/toast";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
-import { useState, type ReactNode } from "react";
+
+import { DropDownDemo } from "./demos/dropDownDemo";
+import { RadioGroupDemo } from "./demos/radioGroupDemo";
+import { ToastDemo } from "./demos/toastDemo";
+
+import { type ReactNode } from "react";
 
 export type DocsComponent = {
   name: string;
   slug: string;
   demo: ReactNode;
 };
-
-function ToastDemo() {
-    const [showToast, setShowToast] = useState(false);
-
-    return (
-        <div>
-            <Button 
-                onClick={() => setShowToast(true)} 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-            >
-                <Typography type="p" colour="black" bold={1}>
-                    Click me
-                </Typography>
-            </Button>
-
-            <Toast
-                show={showToast}
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                onHide={() => setShowToast(false)}
-            >
-                <Typography type="p" colour="black" bold={2}>
-                    Here's a toast!
-                </Typography>
-            </Toast>
-        </div>
-    );
-}
-
-export default function RadioGroupDemo() {
-    const [plan, setPlan] = useState("free");
-
-    return (
-        <RadioGroup
-            name="plan"
-            value={plan}
-            onChange={setPlan}
-            direction="col"
-        >
-            <RadioItem
-                value="free"
-                colour={{ type: "filled", colour: "white" }}
-                selectedColour={{
-                    type: "gradient",
-                    colourFrom: "lightSky",
-                    colourVia: "lightSky",
-                    colourTo: "lightEmerald",
-                }}
-                round={2}
-                indicatorColour={{ type: "filled", colour: "black" }}
-            >
-                <Typography type="p" colour="black" bold={1} size={2}>
-                    Free
-                </Typography>
-            </RadioItem>
-
-            <RadioItem
-                value="plus"
-                colour={{ type: "filled", colour: "white" }}
-                selectedColour={{
-                    type: "gradient",
-                    colourFrom: "lightSky",
-                    colourVia: "lightSky",
-                    colourTo: "lightEmerald",
-                }}
-                round={2}
-
-                indicatorColour={{ type: "filled", colour: "black" }}
-                indicatorSize="md"
-            >
-                <Typography type="p" colour="black" bold={1} size={2}>
-                    Plus
-                </Typography>
-            </RadioItem>
-
-            <RadioItem
-                value="enterprise"
-                colour={{ type: "filled", colour: "white" }}
-                selectedColour={{
-                    type: "gradient",
-                    colourFrom: "lightSky",
-                    colourVia: "lightSky",
-                    colourTo: "lightEmerald",
-                }}
-                round={2}
-                indicatorColour={{ type: "filled", colour: "black" }}
-            >
-                <Typography type="p" colour="black" bold={1} size={2}>
-                    Enterprise
-                </Typography>
-            </RadioItem>
-        </RadioGroup>
-    )
-}
 
 export const components: DocsComponent[] = [
     { 
@@ -166,7 +79,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Dropdown", 
         slug: "dropdown",
-        demo: <div/>, 
+        demo: <DropDownDemo/>, 
     },
     { 
         name: "Input", 
