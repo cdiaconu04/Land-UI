@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Urbanist } from 'next/font/google';
-import { colourProps, getBgColour, roundMap, scaleMap } from "./constants/constants";
+import { colourProps, getBgColour, roundMap, scaleMap, textColourMap } from "./constants/constants";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -16,6 +16,7 @@ const sizeMap = {
 type TooltipProps = React.PropsWithChildren<{
   font?: string,
   colour?: colourProps;
+  textColour?: keyof typeof textColourMap;
   content: string;
   placement?: Placement;
   size?: "sm" | "md" | "lg";
@@ -26,6 +27,7 @@ type TooltipProps = React.PropsWithChildren<{
 export default function Tooltip({ 
   font = "",
   colour = {type: "filled", colour: "black"}, 
+  textColour = "white",
   content, 
   placement = "top", 
   size = "md",
@@ -49,7 +51,7 @@ export default function Tooltip({
         role="tooltip"
         className={`absolute z-50 ${posClass[placement]} opacity-0 ${scaleMap[scale]} transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100`}
       >
-        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} text-white rounded-full ${sizeMap[size]} ${urbanist.className}`}> 
+        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]} ${urbanist.className}`}> 
           {content}
         </div>
 

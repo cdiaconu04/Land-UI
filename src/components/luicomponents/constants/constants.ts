@@ -311,6 +311,21 @@ export const scaleMap = {
     5: "scale-100"
 }
 
+export const textSizeMap = {
+    0: "text-xs",
+    1: "text-sm",
+    2: "text-md",
+    3: "text-lg",
+    4: "text-xl",
+    5: "text-2xl",
+    6: "text-3xl",
+    7: "text-4xl",
+    8: "text-5xl",
+    9: "text-6xl",
+    10: "text-7xl",
+    11: "text-8xl"
+}
+
 export type colourProps = {
     type: "filled" | "gradient";
     colour?: keyof typeof colourMap;

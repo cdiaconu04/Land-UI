@@ -2,7 +2,9 @@
 
 import Badge from "@/components/luicomponents/badge";
 import Button from "@/components/luicomponents/button";
+import Input from "@/components/luicomponents/input";
 import Toast from "@/components/luicomponents/toast";
+import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
 import { useState, type ReactNode } from "react";
 
@@ -97,7 +99,13 @@ export const components: DocsComponent[] = [
     { 
         name: "Input", 
         slug: "input",
-        demo: <div/>, 
+        demo:   <Input
+                    colour="white"
+                    textColour="black"
+                    placeholder={{ placeholder: "Email Address", colour: "default" }}
+                    border={{ type: 1, colour: "sky" }}
+                    round={2}
+                />, 
     },
     { 
         name: "Navbar", 
@@ -112,7 +120,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Toast", 
         slug: "toast",
-        demo: <ToastDemo/>
+        demo:   <ToastDemo/>
     },
     { 
         name: "Toggle", 
@@ -122,11 +130,36 @@ export const components: DocsComponent[] = [
     { 
         name: "Tooltip", 
         slug: "tooltip",
-        demo: <div/>, 
+        demo: 
+            <Tooltip
+                content="Tooltip"
+                placement="bottom"
+                size="md"
+                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                textColour="black"
+                round={4}
+                scale={5}
+            >
+                <Button
+                    onClick={() => doNothing()}
+                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                >
+                    <Typography type="p" colour="black" bold={1}>
+                        Hover me
+                    </Typography>
+                </Button>
+            </Tooltip>, 
     },
     { 
         name: "Typography", 
         slug: "typography",
-        demo: <Typography type="p" colour="black" bold={1}>Typography.</Typography>, 
+        demo:   <Typography 
+                    type="p" 
+                    colour="black" 
+                    size={4}
+                    bold={2}
+                >
+                    Typography.
+                </Typography>, 
     },
 ];
