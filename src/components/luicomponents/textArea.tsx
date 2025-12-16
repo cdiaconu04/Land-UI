@@ -18,7 +18,13 @@ type InputProps = {
     border?: borderProps;
 }
 
-export default function TextArea({ colour = "default", textColour = "default", border = {type: 2, colour: "black"}, placeholder = {placeholder: "Input", colour: "default"}, round = 1 }: InputProps) {
+export default function TextArea({ 
+    colour = "default", 
+    textColour = "default", 
+    border = {type: 2, colour: "black"}, 
+    placeholder = {placeholder: "Input", colour: "default"},
+    round = 1 
+}: InputProps) {
     return (
         <textarea
             placeholder={placeholder.placeholder}
@@ -31,6 +37,7 @@ export default function TextArea({ colour = "default", textColour = "default", b
                 ${roundMap[round]}
                 ${colourMap[colour]}
                 p-2
+                outline-none
             `}
         />
     )

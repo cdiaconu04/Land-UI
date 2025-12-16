@@ -22,8 +22,8 @@ export default function Input({
     colour = "white", 
     textColour = "default", 
     border = {type: 2, colour: "black"},
-    placeholder = {placeholder: "Input", 
-    colour: "default"}, round = 1 
+    placeholder = {placeholder: "Input", colour: "default"}, 
+    round = 1 
 }: InputProps) {
     return (
         <input

@@ -326,6 +326,12 @@ export const textSizeMap = {
     11: "text-8xl"
 }
 
+export const indicatorSizeMap = {
+    sm: { outer: "h-2.5 w-2.5", inner: "h-1.75 w-1.75" },
+    md: { outer: "h-3.5 w-3.5", inner: "h-2 w-2" },
+    lg: { outer: "h-4.5 w-4.5", inner: "h-2.5 w-2.5" },
+};
+
 export type colourProps = {
     type: "filled" | "gradient";
     colour?: keyof typeof colourMap;

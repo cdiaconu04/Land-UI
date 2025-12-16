@@ -72,71 +72,13 @@ export default function Home() {
           <div className="grid grid-cols-4 gap-5 w-full">
             {components.map((c) => (
               <div key={c.slug} className="w-full flex flex-col gap-2">
-                <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-23.5">
+                <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
                   {c.demo}
                 </div>
                 <p className={`${urbanist.className} text-gray-950`}>{c.name}</p>
               </div>
             ))}
 
-
-            {/* <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-23.5">
-                <Button onClick={() => doNothing()} colour={{type: "filled"}}>
-                  <Typography type="p" colour="black" bold={1}>Button</Typography>
-                </Button>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Button</p>
-            </div>
-            
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-            
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>
-
-            <div className="w-full flex flex-col gap-2">
-              <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-25">
-                <p className="text-black">H</p>
-              </div>
-              <p className={`${urbanist.className} text-gray-950`}>Card</p>
-            </div>*/}
           </div> 
 
         </div>

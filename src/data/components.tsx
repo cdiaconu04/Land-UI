@@ -3,6 +3,9 @@
 import Badge from "@/components/luicomponents/badge";
 import Button from "@/components/luicomponents/button";
 import Input from "@/components/luicomponents/input";
+import { RadioGroup } from "@/components/luicomponents/radioGroup";
+import { RadioItem } from "@/components/luicomponents/radioItem";
+import TextArea from "@/components/luicomponents/textArea";
 import Toast from "@/components/luicomponents/toast";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
@@ -24,7 +27,7 @@ function ToastDemo() {
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
             >
                 <Typography type="p" colour="black" bold={1}>
-                    Show Toast
+                    Click me
                 </Typography>
             </Button>
 
@@ -34,17 +37,88 @@ function ToastDemo() {
                 onHide={() => setShowToast(false)}
             >
                 <Typography type="p" colour="black" bold={2}>
-                    Show Toast
+                    Here's a toast!
                 </Typography>
             </Toast>
         </div>
     );
 }
 
+export default function RadioGroupDemo() {
+    const [plan, setPlan] = useState("free");
+
+    return (
+        <RadioGroup
+            name="plan"
+            value={plan}
+            onChange={setPlan}
+            direction="col"
+        >
+            <RadioItem
+                value="free"
+                colour={{ type: "filled", colour: "white" }}
+                selectedColour={{
+                    type: "gradient",
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky",
+                    colourTo: "lightEmerald",
+                }}
+                round={2}
+                indicatorColour={{ type: "filled", colour: "black" }}
+            >
+                <Typography type="p" colour="black" bold={1} size={2}>
+                    Free
+                </Typography>
+            </RadioItem>
+
+            <RadioItem
+                value="plus"
+                colour={{ type: "filled", colour: "white" }}
+                selectedColour={{
+                    type: "gradient",
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky",
+                    colourTo: "lightEmerald",
+                }}
+                round={2}
+
+                indicatorColour={{ type: "filled", colour: "black" }}
+                indicatorSize="md"
+            >
+                <Typography type="p" colour="black" bold={1} size={2}>
+                    Plus
+                </Typography>
+            </RadioItem>
+
+            <RadioItem
+                value="enterprise"
+                colour={{ type: "filled", colour: "white" }}
+                selectedColour={{
+                    type: "gradient",
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky",
+                    colourTo: "lightEmerald",
+                }}
+                round={2}
+                indicatorColour={{ type: "filled", colour: "black" }}
+            >
+                <Typography type="p" colour="black" bold={1} size={2}>
+                    Enterprise
+                </Typography>
+            </RadioItem>
+        </RadioGroup>
+    )
+}
+
 export const components: DocsComponent[] = [
     { 
         name: "Accordion", 
         slug: "accordion",
+        demo: <div/>,
+    },
+    { 
+        name: "Avatar", 
+        slug: "avatar",
         demo: <div/>,
     },
     {                                                           
@@ -80,13 +154,18 @@ export const components: DocsComponent[] = [
         demo: <div/>, 
     },
     { 
+        name: "Dialog", 
+        slug: "dialog",
+        demo: <div/>,
+    },
+    { 
         name: "Drawer", 
         slug: "drawer",
         demo: <div/>, 
     },
     { 
-        name: "Dropdown Menu", 
-        slug: "dropdown-menu",
+        name: "Dropdown", 
+        slug: "dropdown",
         demo: <div/>, 
     },
     { 
@@ -106,9 +185,25 @@ export const components: DocsComponent[] = [
         demo: <div/>, 
     },
     { 
+        name: "Number Select", 
+        slug: "number-select",
+        demo: <div/>,
+    },
+    { 
+        name: "Radio Group", 
+        slug: "radio-group",
+        demo: <RadioGroupDemo/>, 
+    },
+    { 
         name: "Text Area", 
         slug: "textarea",
-        demo: <div/>
+        demo:   <TextArea
+                    colour="white"
+                    textColour="black"
+                    placeholder={{ placeholder: "What do you think?", colour: "default" }}
+                    border={{ type: 1, colour: "sky" }}
+                    round={2}
+                />, 
     },
     { 
         name: "Toast", 
@@ -134,7 +229,7 @@ export const components: DocsComponent[] = [
                 scale={5}
             >
                 <Button
-                    onClick={() => doNothing()}
+                    onClick={() => {}}
                     colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 >
                     <Typography type="p" colour="black" bold={1}>
