@@ -69,10 +69,10 @@ export default function Home() {
             <ChevronRight className="group text-gray-800 transition duration-200 group-hover:translate-x-1.5" size={20}/>
           </Link>
 
-          <div className="grid grid-cols-4 gap-5 w-full">
+          <div className="grid grid-cols-4 gap-5 w-full h-full items-stretch auto-rows-fr">
             {components.map((c) => (
               <div key={c.slug} className="w-full flex flex-col gap-2">
-                <div className="flex justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
                   {c.demo}
                 </div>
                 <p className={`${urbanist.className} text-gray-950`}>{c.name}</p>

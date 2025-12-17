@@ -13,6 +13,7 @@ import Typography from "@/components/luicomponents/typography";
 
 import { AvatarDemo } from "./demos/avatarDemo";
 import { DropDownDemo } from "./demos/dropDownDemo";
+import { NumberInputDemo } from "./demos/numberInputDemo";
 import { RadioGroupDemo } from "./demos/radioGroupDemo";
 import { ToastDemo } from "./demos/toastDemo";
 import { ToggleDemo } from "./demos/toggleDemo";
@@ -101,9 +102,9 @@ export const components: DocsComponent[] = [
         demo: <div/>, 
     },
     { 
-        name: "Number Select", 
-        slug: "number-select",
-        demo: <div/>,
+        name: "Number Input", 
+        slug: "number-input",
+        demo: <NumberInputDemo/>,
     },
     { 
         name: "Radio Group", 
