@@ -20,6 +20,7 @@ import { ToggleDemo } from "./demos/toggleDemo";
 
 import { type ReactNode } from "react";
 import Avatar from "@/components/luicomponents/avatar";
+import { CheckboxDemo } from "./demos/checkboxDemo";
 import { InputDemo } from "./demos/inputDemo";
 import { TextAreaDemo } from "./demos/textAreaDemo";
 import { ToolTipDemo } from "./demos/tooltipDemo";
@@ -72,7 +73,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Checkbox", 
         slug: "checkbox",
-        demo: <div/>, 
+        demo: <CheckboxDemo/>, 
     },
     { 
         name: "Dialog", 
