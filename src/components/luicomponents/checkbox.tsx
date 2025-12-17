@@ -8,13 +8,8 @@ import {
     getBorder,
     roundMap,
     textColourMap,
+    checkboxSizeMap,
 } from "./constants/constants";
-
-const sizeMap = {
-    sm: { box: "w-4 h-4", icon: "text-[10px]", label: "text-sm", gap: "gap-2" },
-    md: { box: "w-5 h-5", icon: "text-xs", label: "text-sm", gap: "gap-2.5" },
-    lg: { box: "w-6 h-6", icon: "text-sm", label: "text-base", gap: "gap-3" },
-};
 
 type CheckboxProps = {
     checked: boolean;
@@ -31,7 +26,7 @@ type CheckboxProps = {
     labelTextColour?: keyof typeof textColourMap;
     checkTextColour?: keyof typeof textColourMap;
 
-    size?: keyof typeof sizeMap;
+    size?: keyof typeof checkboxSizeMap;
 
     className?: string;
     font?: string;
@@ -65,7 +60,7 @@ export default function Checkbox({
     <label
         className={`
             inline-flex items-center select-none
-            ${sizeMap[size].gap}
+            ${checkboxSizeMap[size].gap}
             ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
             ${className}
         `}
@@ -83,7 +78,7 @@ export default function Checkbox({
             aria-hidden
             className={`
                 flex items-center justify-center
-                ${sizeMap[size].box}
+                ${checkboxSizeMap[size].box}
                 ${boxBg}
                 ${getBorder(border)}
                 ${roundMap[round]}
@@ -93,14 +88,14 @@ export default function Checkbox({
             `}
         >
             {checked && (
-                <span className={`${sizeMap[size].icon} font-bold ${textColourMap[checkTextColour]}`}>
+                <span className={`${checkboxSizeMap[size].icon} font-bold ${textColourMap[checkTextColour]}`}>
                     ✓
                 </span>
             )}
         </div>
 
         {label && (
-            <span className={`${sizeMap[size].label} ${textColourMap[labelTextColour]} ${font} text-xl`}>
+            <span className={`${checkboxSizeMap[size].label} ${textColourMap[labelTextColour]} ${font} text-xl`}>
                 {label}
             </span>
         )}

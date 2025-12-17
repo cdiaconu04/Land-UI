@@ -326,6 +326,12 @@ export const textSizeMap = {
     11: "text-8xl"
 }
 
+export const checkboxSizeMap = {
+    sm: { box: "w-4 h-4", icon: "text-[10px]", label: "text-sm", gap: "gap-2" },
+    md: { box: "w-5 h-5", icon: "text-xs", label: "text-sm", gap: "gap-2.5" },
+    lg: { box: "w-6 h-6", icon: "text-sm", label: "text-base", gap: "gap-3" },
+};
+
 export const indicatorSizeMap = {
     sm: { outer: "h-2.5 w-2.5", inner: "h-1.75 w-1.75" },
     md: { outer: "h-3.5 w-3.5", inner: "h-2 w-2" },
