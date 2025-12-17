@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
-import { Urbanist } from 'next/font/google';
 import { colourMap, placeholderColourMap, roundMap, borderProps, getBorder, textColourMap } from "./constants/constants";
 
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 type placeholderProps = {
     placeholder: string;
@@ -16,6 +14,7 @@ type InputProps = {
     placeholder?: placeholderProps;
     round?: keyof typeof roundMap;
     border?: borderProps;
+    font?: string;
 }
 
 export default function TextArea({ 
@@ -23,13 +22,14 @@ export default function TextArea({
     textColour = "default", 
     border = {type: 2, colour: "black"}, 
     placeholder = {placeholder: "Input", colour: "default"},
-    round = 1 
+    round = 1,
+    font
 }: InputProps) {
     return (
         <textarea
             placeholder={placeholder.placeholder}
             className={`
-                ${urbanist.className} 
+                ${font} 
                 ${textColourMap[textColour]}
                 ${placeholderColourMap[placeholder.colour]}
                 border-2

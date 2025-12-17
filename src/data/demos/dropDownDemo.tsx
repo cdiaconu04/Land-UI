@@ -1,5 +1,8 @@
 import Dropdown from "@/components/luicomponents/dropdown";
 import { useState } from "react";
+import { Urbanist } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function DropDownDemo() {
     const [val, setVal] = useState("free");
@@ -16,6 +19,7 @@ export function DropDownDemo() {
             optionTextColour="black"
             optionSelectedTextColour="black"
             itemSelectedColour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+            font={urbanist.className}
         />
     )
 }

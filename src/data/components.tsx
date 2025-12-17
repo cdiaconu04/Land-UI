@@ -20,6 +20,10 @@ import { ToggleDemo } from "./demos/toggleDemo";
 
 import { type ReactNode } from "react";
 import Avatar from "@/components/luicomponents/avatar";
+import { InputDemo } from "./demos/inputDemo";
+import { TextAreaDemo } from "./demos/textAreaDemo";
+import { ToolTipDemo } from "./demos/tooltipDemo";
+import { TypographyDemo } from "./demos/typographyDemo";
 
 export type DocsComponent = {
   name: string;
@@ -88,13 +92,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Input", 
         slug: "input",
-        demo:   <Input
-                    colour="white"
-                    textColour="black"
-                    placeholder={{ placeholder: "Email Address", colour: "default" }}
-                    border={{ type: 1, colour: "sky" }}
-                    round={2}
-                />, 
+        demo:   <InputDemo/>, 
     },
     { 
         name: "Navbar", 
@@ -114,13 +112,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Text Area", 
         slug: "textarea",
-        demo:   <TextArea
-                    colour="white"
-                    textColour="black"
-                    placeholder={{ placeholder: "What do you think?", colour: "default" }}
-                    border={{ type: 1, colour: "sky" }}
-                    round={2}
-                />, 
+        demo: <TextAreaDemo/>, 
     },
     { 
         name: "Toast", 
@@ -135,36 +127,11 @@ export const components: DocsComponent[] = [
     { 
         name: "Tooltip", 
         slug: "tooltip",
-        demo: 
-            <Tooltip
-                content="Tooltip"
-                placement="bottom"
-                size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
-                textColour="black"
-                round={4}
-                scale={5}
-            >
-                <Button
-                    onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
-                >
-                    <Typography type="p" colour="black" bold={1}>
-                        Hover me
-                    </Typography>
-                </Button>
-            </Tooltip>, 
+        demo: <ToolTipDemo/>, 
     },
     { 
         name: "Typography", 
         slug: "typography",
-        demo:   <Typography 
-                    type="p" 
-                    colour="black" 
-                    size={4}
-                    bold={2}
-                >
-                    Typography.
-                </Typography>, 
+        demo:  <TypographyDemo/>, 
     },
 ];

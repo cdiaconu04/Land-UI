@@ -16,6 +16,7 @@ type InputProps = {
     placeholder?: placeholderProps;
     round?: keyof typeof roundMap;
     border?: borderProps;
+    font?: string;
 }
 
 export default function Input({
@@ -23,7 +24,8 @@ export default function Input({
     textColour = "default", 
     border = {type: 2, colour: "black"},
     placeholder = {placeholder: "Input", colour: "default"}, 
-    round = 1 
+    round = 1,
+    font
 }: InputProps) {
     return (
         <input
@@ -36,6 +38,7 @@ export default function Input({
                 ${getBorder(border)}
                 ${roundMap[round]}
                 ${colourMap[colour]}
+                ${font}
                 p-2
                 outline-none
             `}

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Urbanist } from "next/font/google";
 import {
     colourMap,
     roundMap,
@@ -8,8 +7,6 @@ import {
     getBorder,
     textColourMap,
 } from "./constants/constants";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 type NumberInputProps = {
     value?: number;
@@ -63,7 +60,7 @@ export default function NumberInput({
             }}
             
             className={`
-                ${urbanist.className}
+                ${font}
                 ${textColourMap[textColour]}
                 ${getBorder(border)}
                 ${roundMap[round]}

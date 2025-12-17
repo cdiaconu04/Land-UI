@@ -43,7 +43,6 @@ export function RadioItem({
     indicatorBorder = { type: 1, colour: "black" },
     indicatorColour = { type: "filled", colour: "black" },
     indicatorSize = "md",
-
 }: RadioItemProps) {
     const ctx = useContext(RadioGroupContext);
     if (!ctx) throw new Error("RadioItem must be used inside a RadioGroup");
@@ -98,7 +97,7 @@ export function RadioItem({
             </div>
             
 
-            <div className="text-sm">
+            <div className={`text-sm`}>
                 {children}
             </div>
         </label>

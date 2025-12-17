@@ -43,7 +43,7 @@ type DropdownProps = {
   optionTextColour?: keyof typeof textColourMap;
   optionSelectedTextColour?: keyof typeof textColourMap;
 
-  className?: string;
+  font?: string;
 };
 
 export default function Dropdown({
@@ -73,7 +73,7 @@ export default function Dropdown({
   optionTextColour = "default",
   optionSelectedTextColour = optionTextColour,
 
-  className = "",
+  font = "",
 }: DropdownProps) {
 
   const id = useId();
@@ -109,7 +109,7 @@ export default function Dropdown({
 
   return (
 
-    <div ref={rootRef} className={`relative inline-block ${className}`}>
+    <div ref={rootRef} className={`relative inline-block`}>
       <button
         disabled={disabled}
         onClick={() => !disabled && setOpen((v) => !v)}
@@ -125,7 +125,7 @@ export default function Dropdown({
           ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
         `}
       >
-        <div className="text-sm truncate">
+        <div className={`text-sm truncate ${font}`}>
           {selected ? selected.label : placeholder}
         </div>
 
@@ -153,7 +153,7 @@ export default function Dropdown({
               const selectedBg = getBgColour(itemSelectedColour);
 
               return (
-                <li key={opt.value} role="option" aria-selected={isSelected}>
+                <li key={opt.value} role="option">
                   <button
                     disabled={isOptDisabled}
                     onClick={() => {
@@ -167,6 +167,7 @@ export default function Dropdown({
                       ${isSelected ? selectedBg : baseBg}
                       ${textColourMap[isSelected ? optionSelectedTextColour : optionTextColour]}
                       ${isOptDisabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
+                      ${font}
                       transition-colors
                     `}
 
