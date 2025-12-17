@@ -80,11 +80,6 @@ export const components: DocsComponent[] = [
         demo: <div/>,
     },
     { 
-        name: "Drawer", 
-        slug: "drawer",
-        demo: <div/>, 
-    },
-    { 
         name: "Dropdown", 
         slug: "dropdown",
         demo: <DropDownDemo/>, 
