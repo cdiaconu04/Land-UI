@@ -25,6 +25,7 @@ import { InputDemo } from "./demos/inputDemo";
 import { TextAreaDemo } from "./demos/textAreaDemo";
 import { ToolTipDemo } from "./demos/tooltipDemo";
 import { TypographyDemo } from "./demos/typographyDemo";
+import { DialogDemo } from "./demos/dialogDemo";
 
 export type DocsComponent = {
   name: string;
@@ -78,7 +79,7 @@ export const components: DocsComponent[] = [
     { 
         name: "Dialog", 
         slug: "dialog",
-        demo: <div/>,
+        demo: <DialogDemo/>,
     },
     { 
         name: "Dropdown", 

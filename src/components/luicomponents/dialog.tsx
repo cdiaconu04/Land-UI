@@ -1,0 +1,83 @@
+"use client";
+
+import React, { useEffect, useId, useRef, useState } from "react";
+
+type DialogProps = {
+    trigger: (open: () => void) => React.ReactNode;
+
+    children: (close: () => void) => React.ReactNode;
+
+    overlayClassName?: string;
+    contentClassName?: string;
+
+    defaultOpen?: boolean;
+};
+
+export default function Dialog({
+    trigger,
+    children,
+    overlayClassName = "bg-black/40",
+    contentClassName = "",
+    defaultOpen = false,
+}: DialogProps) {
+    const [open, setOpen] = useState(defaultOpen);
+    const id = useId();
+    const contentRef = useRef<HTMLDivElement | null>(null);
+
+    const openDialog = () => setOpen(true);
+    const closeDialog = () => setOpen(false);
+
+    useEffect(() => {
+        if (!open) return;
+
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") closeDialog();
+        };
+
+        document.addEventListener("keydown", onKeyDown);
+
+        return () => document.removeEventListener("keydown", onKeyDown);
+    }, [open]);
+
+    useEffect(() => {
+        if (!open) return;
+
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = prev;
+        };
+    }, [open]);
+
+    useEffect(() => {
+        if (open) contentRef.current?.focus();
+    }, [open]);
+
+    return (
+        <div>
+            {trigger(openDialog)}
+
+            {open && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby={`${id}-dialog`}
+                >
+                    <div className={`absolute inset-0 ${overlayClassName}`} onMouseDown={closeDialog} />
+
+                    <div
+                        id={`${id}-dialog`}
+                        ref={contentRef}
+                        tabIndex={-1}
+                        className={`relative z-10 w-full max-w-lg outline-none ${contentClassName}`}
+                        onMouseDown={(e) => e.stopPropagation()} // don't close when clicking inside
+                    >
+                        {children(closeDialog)}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}

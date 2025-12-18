@@ -23,7 +23,7 @@ export default function Card({
     border,
     shadow = 0,
     children
-    }: CardProps) {
+}: CardProps) {
 
     return (
         <div className={`
