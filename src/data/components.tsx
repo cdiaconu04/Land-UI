@@ -1,37 +1,28 @@
 "use client"
 
-import Badge from "@/components/luicomponents/badge";
-import Button from "@/components/luicomponents/button";
-import Dropdown from "@/components/luicomponents/dropdown";
-import Input from "@/components/luicomponents/input";
-import { RadioGroup } from "@/components/luicomponents/radioGroup";
-import { RadioItem } from "@/components/luicomponents/radioItem";
-import TextArea from "@/components/luicomponents/textArea";
-import Toast from "@/components/luicomponents/toast";
-import Tooltip from "@/components/luicomponents/tooltip";
-import Typography from "@/components/luicomponents/typography";
-
+import { type ReactNode } from "react";
 import { AvatarDemo } from "./demos/avatarDemo";
 import { DropDownDemo } from "./demos/dropDownDemo";
 import { NumberInputDemo } from "./demos/numberInputDemo";
 import { RadioGroupDemo } from "./demos/radioGroupDemo";
 import { ToastDemo } from "./demos/toastDemo";
 import { ToggleDemo } from "./demos/toggleDemo";
-
-import { type ReactNode } from "react";
-import Avatar from "@/components/luicomponents/avatar";
 import { CheckboxDemo } from "./demos/checkboxDemo";
 import { InputDemo } from "./demos/inputDemo";
 import { TextAreaDemo } from "./demos/textAreaDemo";
 import { ToolTipDemo } from "./demos/tooltipDemo";
 import { TypographyDemo } from "./demos/typographyDemo";
 import { DialogDemo } from "./demos/dialogDemo";
+import { BadgeDemo } from "./demos/badgeDemo";
+import { ButtonDemo } from "./demos/buttonDemo";
+
+import { buttonDemoCode } from "./demos/buttonDemo";
 
 type Example = {
     name: string;
     description: string;
-    demo: ReactNode;
-    code: string; 
+    demo?: ReactNode;
+    code?: string; 
 }
 
 export type DocsComponent = {
@@ -39,6 +30,7 @@ export type DocsComponent = {
     description: string;
     slug: string;
     demo: ReactNode;
+    demoCode: string;
     examples: Example[];
 };
 
@@ -48,6 +40,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "accordion",
         demo: <div/>,
+        demoCode: "",
         examples: []
     },
     { 
@@ -55,39 +48,52 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "avatar",
         demo: <AvatarDemo/>,
+        demoCode: "",
         examples: []
     },
     {                                                           
         name: "Badge", 
         description: "",
         slug: "badge",
-        demo:   <Badge 
-                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                    size="md"
-                >
-                    <Typography type="p" colour="black" bold={1}>
-                        New
-                    </Typography>
-                </Badge>,
+        demo: <BadgeDemo/>,
+        demoCode: "",
         examples: []
     },
     { 
         name: "Button",
         description: "Simple button component for your project.", 
         slug: "button",
-        demo:   <Button 
-                    onClick={() => {}} 
-                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                >
-                    <Typography type="p" colour="black" bold={1}>Button</Typography>
-                </Button>, 
-        examples: []
+        demo: <ButtonDemo/>,
+        demoCode: buttonDemoCode, 
+        examples: [
+            {
+                name: "Button Colours",
+                description: ""
+            },
+            {
+                name: "Button Sizes",
+                description: ""
+            },
+            {
+                name: "Button Borders",
+                description: ""
+            },
+            {
+                name: "Button Rounding",
+                description: ""
+            },
+            {
+                name: "Button Hovering",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Card", 
         description: "",
         slug: "card",
         demo: <div/>,
+        demoCode: "",
         examples: [] 
     },
     { 
@@ -95,6 +101,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "checkbox",
         demo: <CheckboxDemo/>, 
+        demoCode: "",
         examples: []
     },
     { 
@@ -102,20 +109,23 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "dialog",
         demo: <DialogDemo/>,
+        demoCode: "",
         examples: []
     },
     { 
         name: "Dropdown", 
         description: "",
         slug: "dropdown",
-        demo: <DropDownDemo/>, 
+        demo: <DropDownDemo/>,
+        demoCode: "", 
         examples: []
     },
     { 
         name: "Input", 
         description: "",
         slug: "input",
-        demo:   <InputDemo/>, 
+        demo: <InputDemo/>, 
+        demoCode: "",
         examples: []
     },
     { 
@@ -123,6 +133,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "navbar",
         demo: <div/>, 
+        demoCode: "",
         examples: []
     },
     { 
@@ -130,6 +141,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "number-input",
         demo: <NumberInputDemo/>,
+        demoCode: "",
         examples: []
     },
     { 
@@ -137,13 +149,15 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "radio-group",
         demo: <RadioGroupDemo/>, 
+        demoCode: "",
         examples: []
     },
     { 
         name: "Text Area", 
         description: "",
         slug: "textarea",
-        demo: <TextAreaDemo/>, 
+        demo: <TextAreaDemo/>,
+        demoCode: "", 
         examples: []
     },
     { 
@@ -151,6 +165,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "toast",
         demo:   <ToastDemo/>,
+        demoCode: "",
         examples: []
     },
     { 
@@ -158,6 +173,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "toggle",
         demo: <ToggleDemo/>, 
+        demoCode: "",
         examples: []
     },
     { 
@@ -165,6 +181,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "tooltip",
         demo: <ToolTipDemo/>,
+        demoCode: "",
         examples: [] 
     },
     { 
@@ -172,6 +189,7 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "typography",
         demo:  <TypographyDemo/>, 
+        demoCode: "",
         examples: []
     },
 ];

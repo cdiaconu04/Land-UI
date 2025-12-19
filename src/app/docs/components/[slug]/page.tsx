@@ -2,6 +2,7 @@
 import { Urbanist } from 'next/font/google';
 import { useParams } from 'next/navigation';
 import { components } from '@/data/components';
+import CodeBlock from '@/components/codeBlock';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -31,12 +32,13 @@ export default function ComponentDocs() {
                         {component.demo}
                     </div>
 
+                    <CodeBlock code={component.demoCode}/>
                 </div>
 
 
-                {component.examples.map((e) => (
-                    <div className="flex flex-col gap-2 w-full">
-
+                {component.examples.map((e, i) => (
+                    <div key={i} className="flex flex-col gap-2 w-full">
+                        <p className={`${urbanist.className} text-2xl text-gray-800`}> {e.name} props</p>
                     </div>
                 ))}
 
@@ -49,9 +51,9 @@ export default function ComponentDocs() {
             
 
             {/* Right sidebar */}
-            <div className="col-span-1 flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2 fixed top-28 right-95">
                 <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>On this page</p>
-            </div>
+            </div> */}
         </div>
     )
 }
