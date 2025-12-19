@@ -27,10 +27,19 @@ import { ToolTipDemo } from "./demos/tooltipDemo";
 import { TypographyDemo } from "./demos/typographyDemo";
 import { DialogDemo } from "./demos/dialogDemo";
 
+type Example = {
+    name: string;
+    description: string;
+    demo: ReactNode;
+    code: string; 
+}
+
 export type DocsComponent = {
-  name: string;
-  slug: string;
-  demo: ReactNode;
+    name: string;
+    description?: string;
+    slug: string;
+    demo: ReactNode;
+    examples?: Example[];
 };
 
 export const components: DocsComponent[] = [
