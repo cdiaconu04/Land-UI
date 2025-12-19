@@ -36,25 +36,30 @@ type Example = {
 
 export type DocsComponent = {
     name: string;
-    description?: string;
+    description: string;
     slug: string;
     demo: ReactNode;
-    examples?: Example[];
+    examples: Example[];
 };
 
 export const components: DocsComponent[] = [
     { 
         name: "Accordion", 
+        description: "",
         slug: "accordion",
         demo: <div/>,
+        examples: []
     },
     { 
         name: "Avatar", 
+        description: "",
         slug: "avatar",
         demo: <AvatarDemo/>,
+        examples: []
     },
     {                                                           
         name: "Badge", 
+        description: "",
         slug: "badge",
         demo:   <Badge 
                     colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
@@ -64,9 +69,11 @@ export const components: DocsComponent[] = [
                         New
                     </Typography>
                 </Badge>,
+        examples: []
     },
     { 
-        name: "Button", 
+        name: "Button",
+        description: "Simple button component for your project.", 
         slug: "button",
         demo:   <Button 
                     onClick={() => {}} 
@@ -74,70 +81,97 @@ export const components: DocsComponent[] = [
                 >
                     <Typography type="p" colour="black" bold={1}>Button</Typography>
                 </Button>, 
+        examples: []
     },
     { 
         name: "Card", 
+        description: "",
         slug: "card",
-        demo: <div/>, 
+        demo: <div/>,
+        examples: [] 
     },
     { 
         name: "Checkbox", 
+        description: "",
         slug: "checkbox",
         demo: <CheckboxDemo/>, 
+        examples: []
     },
     { 
         name: "Dialog", 
+        description: "",
         slug: "dialog",
         demo: <DialogDemo/>,
+        examples: []
     },
     { 
         name: "Dropdown", 
+        description: "",
         slug: "dropdown",
         demo: <DropDownDemo/>, 
+        examples: []
     },
     { 
         name: "Input", 
+        description: "",
         slug: "input",
         demo:   <InputDemo/>, 
+        examples: []
     },
     { 
         name: "Navbar", 
+        description: "",
         slug: "navbar",
         demo: <div/>, 
+        examples: []
     },
     { 
         name: "Number Input", 
+        description: "",
         slug: "number-input",
         demo: <NumberInputDemo/>,
+        examples: []
     },
     { 
         name: "Radio Group", 
+        description: "",
         slug: "radio-group",
         demo: <RadioGroupDemo/>, 
+        examples: []
     },
     { 
         name: "Text Area", 
+        description: "",
         slug: "textarea",
         demo: <TextAreaDemo/>, 
+        examples: []
     },
     { 
         name: "Toast", 
+        description: "",
         slug: "toast",
-        demo:   <ToastDemo/>
+        demo:   <ToastDemo/>,
+        examples: []
     },
     { 
         name: "Toggle", 
+        description: "",
         slug: "toggle",
         demo: <ToggleDemo/>, 
+        examples: []
     },
     { 
         name: "Tooltip", 
+        description: "",
         slug: "tooltip",
-        demo: <ToolTipDemo/>, 
+        demo: <ToolTipDemo/>,
+        examples: [] 
     },
     { 
         name: "Typography", 
+        description: "",
         slug: "typography",
         demo:  <TypographyDemo/>, 
+        examples: []
     },
 ];
