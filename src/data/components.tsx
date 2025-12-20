@@ -17,6 +17,7 @@ import { BadgeDemo } from "./demos/badgeDemo";
 import { ButtonDemo } from "./demos/buttonDemo";
 
 import { buttonDemoCode } from "./demos/buttonDemo";
+import { badgeDemoCode } from "./demos/badgeDemo";
 
 type Example = {
     name: string;
@@ -56,8 +57,29 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "badge",
         demo: <BadgeDemo/>,
-        demoCode: "",
-        examples: []
+        demoCode: badgeDemoCode,
+        examples: [
+            {
+                name: "Badge Colours",
+                description: ""
+            },
+            {
+                name: "Badge Sizes",
+                description: ""
+            },
+            {
+                name: "Badge Borders",
+                description: ""
+            },
+            {
+                name: "Badge Rounding",
+                description: ""
+            },
+            {
+                name: "Badge Hovering",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Button",

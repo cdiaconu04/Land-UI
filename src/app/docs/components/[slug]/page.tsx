@@ -23,16 +23,17 @@ export default function ComponentDocs() {
         <div className="bg-white grid grid-cols-5 gap-8 justify-between w-full">
             
             {/* Docs content */}
-            <div className="col-span-4 flex flex-col gap-10 w-full">
+            <div className="col-span-4 flex flex-col gap-10 min-w-full items-start justify-top">
                 <div className="flex flex-col gap-2 w-full">
                     <p className={`${urbanist.className} text-3xl text-gray-800`}> {component.name} </p>
                     <p className={`${urbanist.className} text-lg text-gray-800`}> {component.description} </p>
 
-                    <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                    <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
                         {component.demo}
                     </div>
 
-                    <CodeBlock code={component.demoCode}/>
+                    {/* TODO: Fix: div does not fully stretch unless line filled with code */}
+                    <CodeBlock code={component.demoCode ?? ""}/>
                 </div>
 
 
@@ -51,9 +52,9 @@ export default function ComponentDocs() {
             
 
             {/* Right sidebar */}
-            {/* <div className="flex flex-col gap-2 fixed top-28 right-95">
+            <div className="flex flex-col gap-2 fixed top-28 right-95">
                 <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>On this page</p>
-            </div> */}
+            </div>
         </div>
     )
 }
