@@ -16,8 +16,20 @@ import { DialogDemo } from "./demos/dialogDemo";
 import { BadgeDemo } from "./demos/badgeDemo";
 import { ButtonDemo } from "./demos/buttonDemo";
 
+import { avatarDemoCode } from "./demos/avatarDemo";
 import { buttonDemoCode } from "./demos/buttonDemo";
 import { badgeDemoCode } from "./demos/badgeDemo";
+import { checkboxDemoCode } from "./demos/checkboxDemo";
+import { dialogDemoCode } from "./demos/dialogDemo";
+import { dropdownDemoCode } from "./demos/dropDownDemo";
+import { inputDemoCode } from "./demos/inputDemo";
+import { numberInputDemoCode } from "./demos/numberInputDemo";
+import { radioGroupDemoCode } from "./demos/radioGroupDemo";
+import { textAreaDemoCode } from "./demos/textAreaDemo";
+import { toastDemoCode } from "./demos/toastDemo";
+import { toggleDemoCode } from "./demos/toggleDemo";
+import { tooltipDemoCode } from "./demos/tooltipDemo";
+import { typographyDemoCode } from "./demos/typographyDemo";
 
 type Example = {
     name: string;
@@ -49,8 +61,29 @@ export const components: DocsComponent[] = [
         description: "",
         slug: "avatar",
         demo: <AvatarDemo/>,
-        demoCode: "",
-        examples: []
+        demoCode: avatarDemoCode,
+        examples: [
+            {
+                name: "Avatar Colours",
+                description: ""
+            },
+            {
+                name: "Avatar Borders",
+                description: ""
+            },
+            {
+                name: "Avatar Size",
+                description: ""
+            },
+            {
+                name: "Avatar Text",
+                description: ""
+            },
+            {
+                name: "Avatar Rounding",
+                description: ""
+            },
+        ]
     },
     {                                                           
         name: "Badge", 
@@ -116,39 +149,132 @@ export const components: DocsComponent[] = [
         slug: "card",
         demo: <div/>,
         demoCode: "",
-        examples: [] 
+        examples: [
+            {
+                name: "Card Colours",
+                description: ""
+            },
+            {
+                name: "Card Borders",
+                description: ""
+            },
+            {
+                name: "Card Rounding",
+                description: ""
+            },
+            {
+                name: "Card Shadows",
+                description: ""
+            },
+        ] 
     },
     { 
         name: "Checkbox", 
         description: "",
         slug: "checkbox",
         demo: <CheckboxDemo/>, 
-        demoCode: "",
-        examples: []
+        demoCode: checkboxDemoCode,
+        examples: [
+            {
+                name: "Checkbox Colours",
+                description: ""
+            },
+            {
+                name: "Checkbox Text",
+                description: ""
+            },
+            {
+                name: "Checkbox Borders",
+                description: ""
+            },
+            {
+                name: "Checkbox Rounding",
+                description: ""
+            },
+            {
+                name: "Checkbox Size",
+                description: ""
+            },
+            {
+                name: "Checkbox Disabled",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Dialog", 
         description: "",
         slug: "dialog",
         demo: <DialogDemo/>,
-        demoCode: "",
-        examples: []
+        demoCode: dialogDemoCode,
+        examples: [
+            {
+                name: "Dialog Overlay Colours",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Dropdown", 
         description: "",
         slug: "dropdown",
         demo: <DropDownDemo/>,
-        demoCode: "", 
-        examples: []
+        demoCode: dropdownDemoCode, 
+        examples: [
+            {
+                name: "Dropdown Colours",
+                description: ""
+            },
+            {
+                name: "Dropdown Placeholders",
+                description: ""
+            },
+            {
+                name: "Dropdown Borders",
+                description: ""
+            },
+            {
+                name: "Dropdown Rounding",
+                description: ""
+            },
+            {
+                name: "Dropdown Shadows",
+                description: ""
+            },
+            {
+                name: "Dropdown Text",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Input", 
         description: "",
         slug: "input",
         demo: <InputDemo/>, 
-        demoCode: "",
-        examples: []
+        demoCode: inputDemoCode,
+        examples: [
+            {
+                name: "Input Colours",
+                description: ""
+            },
+            {
+                name: "Input Placeholders",
+                description: ""
+            },
+            {
+                name: "Input Text",
+                description: ""
+            },
+            {
+                name: "Input Borders",
+                description: ""
+            },
+            {
+                name: "Input Rounding",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Navbar", 
@@ -156,62 +282,238 @@ export const components: DocsComponent[] = [
         slug: "navbar",
         demo: <div/>, 
         demoCode: "",
-        examples: []
+        examples: [
+            {
+                name: "Navbar Colours",
+                description: ""
+            },
+            {
+                name: "Navbar Sticky",
+                description: ""
+            },
+            {
+                name: "Navbar Padding",
+                description: ""
+            },
+            {
+                name: "Navbar Rounding",
+                description: ""
+            },
+            {
+                name: "Navbar Borders",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Number Input", 
         description: "",
         slug: "number-input",
         demo: <NumberInputDemo/>,
-        demoCode: "",
-        examples: []
+        demoCode: numberInputDemoCode,
+        examples: [
+            {
+                name: "Number Input Range",
+                description: ""
+            },
+            {
+                name: "Number Input Colours",
+                description: ""
+            },
+            {
+                name: "Number Input Border",
+                description: ""
+            },
+            {
+                name: "Number Input Rounding",
+                description: ""
+            },
+            {
+                name: "Number Input Text",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Radio Group", 
         description: "",
         slug: "radio-group",
         demo: <RadioGroupDemo/>, 
-        demoCode: "",
-        examples: []
+        demoCode: radioGroupDemoCode,
+        examples: [
+            {
+                name: "Radio Group Direction",
+                description: ""
+            },
+            {
+                name: "Radio Group Indicator Size",
+                description: ""
+            },
+            {
+                name: "Radio Group Colours",
+                description: ""
+            },
+            {
+                name: "Radio Group Disabled",
+                description: ""
+            },
+            {
+                name: "Radio Group Border",
+                description: ""
+            },
+            {
+                name: "Radio Group Rounding",
+                description: ""
+            },
+            {
+                name: "Radio Group Shadows",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Text Area", 
         description: "",
         slug: "textarea",
         demo: <TextAreaDemo/>,
-        demoCode: "", 
-        examples: []
+        demoCode: textAreaDemoCode, 
+        examples: [
+            {
+                name: "Text Area Colours",
+                description: ""
+            },
+            {
+                name: "Text Area Placeholders",
+                description: ""
+            },
+            {
+                name: "Text Area Text",
+                description: ""
+            },
+            {
+                name: "Text Area Borders",
+                description: ""
+            },
+            {
+                name: "Text Area Rounding",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Toast", 
         description: "",
         slug: "toast",
         demo:   <ToastDemo/>,
-        demoCode: "",
-        examples: []
+        demoCode: toastDemoCode,
+        examples: [
+            {
+                name: "Toast Colours",
+                description: ""
+            },
+            {
+                name: "Toast Shadows",
+                description: ""
+            },
+            {
+                name: "Toast Text",
+                description: ""
+            },
+            {
+                name: "Toast Borders",
+                description: ""
+            },
+            {
+                name: "Toast Scaling",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Toggle", 
         description: "",
         slug: "toggle",
         demo: <ToggleDemo/>, 
-        demoCode: "",
-        examples: []
+        demoCode: toggleDemoCode,
+        examples: [
+            {
+                name: "Toggle Size",
+                description: ""
+            },
+            {
+                name: "Toggle Colours",
+                description: ""
+            },
+            {
+                name: "Toggle Shadows",
+                description: ""
+            },
+            {
+                name: "Toggle Rounding",
+                description: ""
+            },
+            {
+                name: "Toggle Borders",
+                description: ""
+            },
+        ]
     },
     { 
         name: "Tooltip", 
         description: "",
         slug: "tooltip",
         demo: <ToolTipDemo/>,
-        demoCode: "",
-        examples: [] 
+        demoCode: tooltipDemoCode,
+        examples: [
+            {
+                name: "Tooltip Colours",
+                description: ""
+            },
+            {
+                name: "Tooltip Text",
+                description: ""
+            },
+            {
+                name: "Tooltip Placement",
+                description: ""
+            },
+            {
+                name: "Tooltip Rounding",
+                description: ""
+            },
+            {
+                name: "Tooltip Scale",
+                description: ""
+            },
+            {
+                name: "Tooltip Size",
+                description: ""
+            },
+        ] 
     },
     { 
         name: "Typography", 
         description: "",
         slug: "typography",
         demo:  <TypographyDemo/>, 
-        demoCode: "",
-        examples: []
+        demoCode: typographyDemoCode,
+        examples: [
+            {
+                name: "Typography Types",
+                description: ""
+            },
+            {
+                name: "Typography Colours",
+                description: ""
+            },
+            {
+                name: "Typography Bolding",
+                description: ""
+            },
+            {
+                name: "Typography Sizes",
+                description: ""
+            },
+        ]
     },
 ];

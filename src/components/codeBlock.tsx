@@ -52,6 +52,7 @@ export default function CodeBlock({ code, lang = "tsx" }: CodeBlockProps) {
                 className="
                     w-full max-w-full
                     overflow-x-auto
+                    overflow-y-auto max-h-[40vh]
                     text-sm
                     [&_.shiki]:!bg-transparent
                     [&_.shiki]:!m-0

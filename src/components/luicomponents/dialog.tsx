@@ -17,7 +17,6 @@ export default function Dialog({
     trigger,
     children,
     overlayClassName = "bg-black/40",
-    contentClassName = "",
     defaultOpen = false,
 }: DialogProps) {
     const [open, setOpen] = useState(defaultOpen);
@@ -71,8 +70,7 @@ export default function Dialog({
                         id={`${id}-dialog`}
                         ref={contentRef}
                         tabIndex={-1}
-                        className={`relative z-10 w-full max-w-lg outline-none ${contentClassName}`}
-                        onMouseDown={(e) => e.stopPropagation()} // don't close when clicking inside
+                        className={`relative z-10 w-full max-w-lg outline-none`}
                     >
                         {children(closeDialog)}
                     </div>

@@ -27,12 +27,22 @@ const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 export function BadgeDemo() {
     return (
         <Badge 
-            colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}} 
+            colour={{
+                type: "gradient", 
+                colourFrom: "lightSky", 
+                colourVia: "lightSky", 
+                colourTo: "lightEmerald"
+            }} 
             size="md"
         >
-            <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+            <Typography 
+                type="p" 
+                font={urbanist.className} 
+                colour="black" 
+                bold={1}
+            >
                 New
             </Typography>
         </Badge>
     )
-}`
+}                                                                                                                `

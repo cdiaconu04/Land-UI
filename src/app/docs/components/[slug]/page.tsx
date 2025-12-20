@@ -39,7 +39,7 @@ export default function ComponentDocs() {
 
                 {component.examples.map((e, i) => (
                     <div key={i} className="flex flex-col gap-2 w-full">
-                        <p className={`${urbanist.className} text-2xl text-gray-800`}> {e.name} props</p>
+                        <p className={`${urbanist.className} text-2xl text-gray-800`}> {e.name}</p>
                     </div>
                 ))}
 
