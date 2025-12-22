@@ -9,6 +9,7 @@ export function ButtonDemo() {
         <Button 
             onClick={() => {}} 
             colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+            hoverColour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
         >
             <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
         </Button>
@@ -31,6 +32,12 @@ export function ButtonDemo() {
                 colourFrom: "lightSky", 
                 colourVia: "lightSky", 
                 colourTo: "lightEmerald"
+            }}
+            hoverColour={{
+                type: "gradient", 
+                colourFrom: "sky", 
+                colourVia: "sky", 
+                colourTo: "emerald"
             }}
         >
             <Typography 

@@ -31,6 +31,8 @@ import { toggleDemoCode } from "./demos/toggleDemo";
 import { tooltipDemoCode } from "./demos/tooltipDemo";
 import { typographyDemoCode } from "./demos/typographyDemo";
 
+import { ButtonColoursDemo } from "./examples/button/buttonColours";
+
 type Example = {
     name: string;
     description: string;
@@ -68,19 +70,11 @@ export const components: DocsComponent[] = [
                 description: ""
             },
             {
-                name: "Avatar Borders",
-                description: ""
-            },
-            {
                 name: "Avatar Size",
                 description: ""
             },
             {
                 name: "Avatar Text",
-                description: ""
-            },
-            {
-                name: "Avatar Rounding",
                 description: ""
             },
         ]
@@ -107,11 +101,7 @@ export const components: DocsComponent[] = [
             {
                 name: "Badge Rounding",
                 description: ""
-            },
-            {
-                name: "Badge Hovering",
-                description: ""
-            },
+            }
         ]
     },
     { 
@@ -123,7 +113,8 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Button Colours",
-                description: ""
+                description: "",
+                demo: <ButtonColoursDemo/>
             },
             {
                 name: "Button Sizes",
@@ -135,10 +126,6 @@ export const components: DocsComponent[] = [
             },
             {
                 name: "Button Rounding",
-                description: ""
-            },
-            {
-                name: "Button Hovering",
                 description: ""
             },
         ]
@@ -350,23 +337,11 @@ export const components: DocsComponent[] = [
                 description: ""
             },
             {
-                name: "Radio Group Colours",
-                description: ""
-            },
-            {
                 name: "Radio Group Disabled",
                 description: ""
             },
             {
                 name: "Radio Group Border",
-                description: ""
-            },
-            {
-                name: "Radio Group Rounding",
-                description: ""
-            },
-            {
-                name: "Radio Group Shadows",
                 description: ""
             },
         ]
@@ -394,10 +369,6 @@ export const components: DocsComponent[] = [
                 name: "Text Area Borders",
                 description: ""
             },
-            {
-                name: "Text Area Rounding",
-                description: ""
-            },
         ]
     },
     { 
@@ -407,22 +378,6 @@ export const components: DocsComponent[] = [
         demo:   <ToastDemo/>,
         demoCode: toastDemoCode,
         examples: [
-            {
-                name: "Toast Colours",
-                description: ""
-            },
-            {
-                name: "Toast Shadows",
-                description: ""
-            },
-            {
-                name: "Toast Text",
-                description: ""
-            },
-            {
-                name: "Toast Borders",
-                description: ""
-            },
             {
                 name: "Toast Scaling",
                 description: ""
@@ -466,19 +421,11 @@ export const components: DocsComponent[] = [
         demoCode: tooltipDemoCode,
         examples: [
             {
-                name: "Tooltip Colours",
-                description: ""
-            },
-            {
                 name: "Tooltip Text",
                 description: ""
             },
             {
                 name: "Tooltip Placement",
-                description: ""
-            },
-            {
-                name: "Tooltip Rounding",
                 description: ""
             },
             {
@@ -500,10 +447,6 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Typography Types",
-                description: ""
-            },
-            {
-                name: "Typography Colours",
                 description: ""
             },
             {

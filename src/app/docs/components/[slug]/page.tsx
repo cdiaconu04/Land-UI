@@ -16,7 +16,7 @@ export default function ComponentDocs() {
         <div className="bg-white flex flex-col items-center justify-center">
             <p className={`${urbanist.className} text-3xl text-gray-800`}> Component not found. </p>
         </div>
-    )
+    );
 
     // If component defined
     return (
@@ -40,6 +40,10 @@ export default function ComponentDocs() {
                 {component.examples.map((e, i) => (
                     <div key={i} className="flex flex-col gap-2 w-full">
                         <p className={`${urbanist.className} text-2xl text-gray-800`}> {e.name}</p>
+                        
+                        <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                            {e.demo}
+                        </div>
                     </div>
                 ))}
 
@@ -56,5 +60,5 @@ export default function ComponentDocs() {
                 <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>On this page</p>
             </div>
         </div>
-    )
+    );
 }

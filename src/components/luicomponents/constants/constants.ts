@@ -148,6 +148,153 @@ export const viaColourMap = {
     default: "via-gray-950",
 };
 
+export const hoverColourMap = {
+    darkRed: "hover:bg-red-500",
+    darkOrange: "hover:bg-orange-500",
+    darkYellow: "hover:bg-yellow-500",
+    darkGreen: "hover:bg-green-500",
+    darkBlue: "hover:bg-blue-500",
+    darkPurple: "hover:bg-purple-500",
+    darkGray: "hover:bg-gray-500",
+    darkSky: "hover:bg-sky-500",
+    darkEmerald: "hover:bg-emerald-500",
+
+    red: "hover:bg-red-400",
+    orange: "hover:bg-orange-400",
+    yellow: "hover:bg-yellow-400",
+    green: "hover:bg-green-400",
+    blue: "hover:bg-blue-400",
+    purple: "hover:bg-purple-400",
+    gray: "hover:bg-gray-400",
+    sky: "hover:bg-sky-400",
+    emerald: "hover:bg-emerald-400",
+
+    lightRed: "hover:bg-red-300",
+    lightOrange: "hover:bg-orange-300",
+    lightYellow: "hover:bg-yellow-300",
+    lightGreen: "hover:bg-green-300",
+    lightBlue: "hover:bg-blue-300",
+    lightPurple: "hover:bg-purple-300",
+    lightGray: "hover:bg-gray-300",
+    lightSky: "hover:bg-sky-300",
+    lightEmerald: "hover:bg-emerald-300",
+
+    white: "hover:bg-white",
+    black: "hover:bg-black",
+
+    default: "hover:bg-gray-950",
+};
+
+export const hoverFromColourMap = {
+    darkRed: "hover:from-red-500",
+    darkOrange: "hover:from-orange-500",
+    darkYellow: "hover:from-yellow-500",
+    darkGreen: "hover:from-green-500",
+    darkBlue: "hover:from-blue-500",
+    darkPurple: "hover:from-purple-500",
+    darkGray: "hover:from-gray-500",
+    darkSky: "hover:from-sky-500",
+    darkEmerald: "hover:from-emerald-500",
+
+    red: "hover:from-red-400",
+    orange: "hover:from-orange-400",
+    yellow: "hover:from-yellow-400",
+    green: "hover:from-green-400",
+    blue: "hover:from-blue-400",
+    purple: "hover:from-purple-400",
+    gray: "hover:from-gray-400",
+    sky: "hover:from-sky-400",
+    emerald: "hover:from-emerald-400",
+
+    lightRed: "hover:from-red-300",
+    lightOrange: "hover:from-orange-300",
+    lightYellow: "hover:from-yellow-300",
+    lightGreen: "hover:from-green-300",
+    lightBlue: "hover:from-blue-300",
+    lightPurple: "hover:from-purple-300",
+    lightGray: "hover:from-gray-300",
+    lightSky: "hover:from-sky-300",
+    lightEmerald: "hover:from-emerald-300",
+
+    white: "hover:from-white",
+    black: "hover:from-black",
+
+    default: "hover:from-gray-950",
+};
+
+export const hoverViaColourMap = {
+    darkRed: "hover:via-red-500",
+    darkOrange: "hover:via-orange-500",
+    darkYellow: "hover:via-yellow-500",
+    darkGreen: "hover:via-green-500",
+    darkBlue: "hover:via-blue-500",
+    darkPurple: "hover:via-purple-500",
+    darkGray: "hover:via-gray-500",
+    darkSky: "hover:via-sky-500",
+    darkEmerald: "hover:via-emerald-500",
+
+    red: "hover:via-red-400",
+    orange: "hover:via-orange-400",
+    yellow: "hover:via-yellow-400",
+    green: "hover:via-green-400",
+    blue: "hover:via-blue-400",
+    purple: "hover:via-purple-400",
+    gray: "hover:via-gray-400",
+    sky: "hover:via-sky-400",
+    emerald: "hover:via-emerald-400",
+
+    lightRed: "hover:via-red-300",
+    lightOrange: "hover:via-orange-300",
+    lightYellow: "hover:via-yellow-300",
+    lightGreen: "hover:via-green-300",
+    lightBlue: "hover:via-blue-300",
+    lightPurple: "hover:via-purple-300",
+    lightGray: "hover:via-gray-300",
+    lightSky: "hover:via-sky-300",
+    lightEmerald: "hover:via-emerald-300",
+
+    white: "hover:via-white",
+    black: "hover:via-black",
+
+    default: "hover:via-gray-950",
+};
+
+export const hoverToColourMap = {
+    darkRed: "hover:to-red-500",
+    darkOrange: "hover:to-orange-500",
+    darkYellow: "hover:to-yellow-500",
+    darkGreen: "hover:to-green-500",
+    darkBlue: "hover:to-blue-500",
+    darkPurple: "hover:to-purple-500",
+    darkGray: "hover:to-gray-500",
+    darkSky: "hover:to-sky-500",
+    darkEmerald: "hover:to-emerald-500",
+
+    red: "hover:to-red-400",
+    orange: "hover:to-orange-400",
+    yellow: "hover:to-yellow-400",
+    green: "hover:to-green-400",
+    blue: "hover:to-blue-400",
+    purple: "hover:to-purple-400",
+    gray: "hover:to-gray-400",
+    sky: "hover:to-sky-400",
+    emerald: "hover:to-emerald-400",
+
+    lightRed: "hover:to-red-300",
+    lightOrange: "hover:to-orange-300",
+    lightYellow: "hover:to-yellow-300",
+    lightGreen: "hover:to-green-300",
+    lightBlue: "hover:to-blue-300",
+    lightPurple: "hover:to-purple-300",
+    lightGray: "hover:to-gray-300",
+    lightSky: "hover:to-sky-300",
+    lightEmerald: "hover:to-emerald-300",
+
+    white: "hover:to-white",
+    black: "hover:to-black",
+
+    default: "hover:to-gray-950",
+};
 
 export const textColourMap = {
     darkRed: "text-red-500",
@@ -366,12 +513,34 @@ export function getBorder(border?: borderProps): string {
 
 export function getBgColour(colour: colourProps): string {
     if (colour.type === "filled") {
-        return colourMap[colour.colour ?? "white"]
+        return `${colourMap[colour.colour ?? "white"]}`;
     }
 
     if (colour.colourVia) {
-        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${viaColourMap[colour.colourVia ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
+        return `bg-gradient-to-r 
+            ${fromColourMap[colour.colourFrom ?? "white"]} 
+            ${viaColourMap[colour.colourVia ?? "white"]} 
+            ${toColourMap[colour.colourTo ?? "white"]}`;
     } else {
-        return `bg-gradient-to-r ${fromColourMap[colour.colourFrom ?? "white"]} ${toColourMap[colour.colourTo ?? "white"]}`;
+        return `bg-gradient-to-r 
+            ${fromColourMap[colour.colourFrom ?? "white"]} 
+            ${toColourMap[colour.colourTo ?? "white"]}`;
+    }
+}
+
+export function getHoverBgColour(colour: colourProps): string {
+    if (colour.type === "filled") {
+        return `${hoverColourMap[colour.colour ?? "white"]}`;
+    }
+
+    if (colour.colourVia) {
+        return `hover:bg-gradient-to-r 
+            ${hoverFromColourMap[colour.colourFrom ?? "white"]} 
+            ${hoverViaColourMap[colour.colourVia ?? "white"]} 
+            ${hoverToColourMap[colour.colourTo ?? "white"]}`;
+    } else {
+        return `bg-gradient-to-r 
+            ${hoverFromColourMap[colour.colourFrom ?? "white"]} 
+            ${hoverToColourMap[colour.colourTo ?? "white"]}`;
     }
 }

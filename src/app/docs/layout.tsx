@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <div className="mx-auto max-w-screen-xl px-6 pt-28 pb-10 flex">
         
         <aside
-          className="fixed top-28 h-[calc(100vh-7rem)] overflow-y-auto pr-2 px-6"
+          className="fixed top-28 h-[calc(95vh-7rem)] overflow-y-auto pr-2 px-6"
           style={{
             width: SIDEBAR_W,
             left: `max(1.5rem, calc(50% - 640px))`,

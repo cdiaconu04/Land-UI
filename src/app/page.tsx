@@ -11,10 +11,6 @@ import { components } from "@/data/components";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
-function doNothing() {
-
-}
-
 export default function Home() {
   return (
     <div className="bg-white flex flex-col items-center justify-center">
@@ -112,6 +108,6 @@ export default function Home() {
 
       </div>
 
-    </div>
+    </div> 
   );
 }
