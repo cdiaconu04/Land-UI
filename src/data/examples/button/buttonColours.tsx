@@ -13,6 +13,7 @@ export function ButtonColoursDemo() {
             <Button 
                 onClick={() => {}} 
                 colour={{type: "filled", colour: "red"}}
+                hoverColour={{type: "filled", colour: "darkRed"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
             </Button>
@@ -20,6 +21,7 @@ export function ButtonColoursDemo() {
             <Button 
                 onClick={() => {}} 
                 colour={{type: "filled", colour: "yellow"}}
+                hoverColour={{type: "filled", colour: "darkYellow"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
             </Button>
@@ -27,6 +29,7 @@ export function ButtonColoursDemo() {
             <Button 
                 onClick={() => {}} 
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                hoverColour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
             </Button>
