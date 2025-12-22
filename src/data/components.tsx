@@ -31,6 +31,9 @@ import { toggleDemoCode } from "./demos/toggleDemo";
 import { tooltipDemoCode } from "./demos/tooltipDemo";
 import { typographyDemoCode } from "./demos/typographyDemo";
 
+import { BadgeColoursDemo } from "./examples/badge/badgeColours";
+import { badgeColoursCode } from "./examples/badge/badgeColours";
+
 import { ButtonColoursDemo } from "./examples/button/buttonColours";
 import { buttonColoursCode } from "./examples/button/buttonColours";
 
@@ -89,11 +92,9 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Badge Colours",
-                description: ""
-            },
-            {
-                name: "Badge Sizes",
-                description: ""
+                description: "",
+                demo: <BadgeColoursDemo/>,
+                code: badgeColoursCode
             },
             {
                 name: "Badge Borders",
