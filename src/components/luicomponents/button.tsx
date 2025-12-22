@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Urbanist } from 'next/font/google';
-import { colourProps, shadowMap, roundMap, borderProps, getBorder, getBgColour, getHoverBgColour } from "./constants/constants";
+import { colourProps, hoverShadowMap, roundMap, borderProps, getBorder, getBgColour, getHoverBgColour } from "./constants/constants";
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -17,7 +17,7 @@ type ButtonProps = {
     hoverColour?: colourProps;
     border?: borderProps;
     size?: keyof typeof sizeMap;
-    hoverShadow?: keyof typeof shadowMap;
+    hoverShadow?: keyof typeof hoverShadowMap;
     round?: keyof typeof roundMap;
     children?: React.ReactNode;
 };
@@ -39,7 +39,7 @@ export default function Button({
                 ${getBgColour(colour)}
                 ${getBorder(border)}
                 ${urbanist.className} 
-                hover:${shadowMap[hoverShadow]}
+                ${hoverShadowMap[hoverShadow]}
                 ${getHoverBgColour(hoverColour)}
                 transition-colours duration-100
                 ${roundMap[round]}

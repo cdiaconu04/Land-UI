@@ -44,6 +44,8 @@ export default function ComponentDocs() {
                         <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
                             {e.demo}
                         </div>
+
+                        <CodeBlock code={e.code ?? ""}/>
                     </div>
                 ))}
 

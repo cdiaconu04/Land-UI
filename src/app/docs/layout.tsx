@@ -53,6 +53,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Rounding
               </Link>
+              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+                Shadows
+              </Link>
             </div>
 
             <div className="flex flex-col gap-2">

@@ -449,6 +449,15 @@ export const shadowMap = {
     5: "shadow-2xl",
 }
 
+export const hoverShadowMap = {
+    0: "",
+    1: "hover:shadow-sm",
+    2: "hover:shadow-md",
+    3: "hover:shadow-lg",
+    4: "hover:shadow-xl",
+    5: "hover:shadow-2xl",
+}
+
 export const scaleMap = {
     0: "scale-20",
     1: "scale-40",

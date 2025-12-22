@@ -32,6 +32,7 @@ import { tooltipDemoCode } from "./demos/tooltipDemo";
 import { typographyDemoCode } from "./demos/typographyDemo";
 
 import { ButtonColoursDemo } from "./examples/button/buttonColours";
+import { buttonColoursCode } from "./examples/button/buttonColours";
 
 type Example = {
     name: string;
@@ -114,11 +115,8 @@ export const components: DocsComponent[] = [
             {
                 name: "Button Colours",
                 description: "",
-                demo: <ButtonColoursDemo/>
-            },
-            {
-                name: "Button Sizes",
-                description: ""
+                demo: <ButtonColoursDemo/>,
+                code: buttonColoursCode,
             },
             {
                 name: "Button Borders",
@@ -137,10 +135,6 @@ export const components: DocsComponent[] = [
         demo: <div/>,
         demoCode: "",
         examples: [
-            {
-                name: "Card Colours",
-                description: ""
-            },
             {
                 name: "Card Borders",
                 description: ""
@@ -162,10 +156,6 @@ export const components: DocsComponent[] = [
         demo: <CheckboxDemo/>, 
         demoCode: checkboxDemoCode,
         examples: [
-            {
-                name: "Checkbox Colours",
-                description: ""
-            },
             {
                 name: "Checkbox Text",
                 description: ""
@@ -209,27 +199,11 @@ export const components: DocsComponent[] = [
         demoCode: dropdownDemoCode, 
         examples: [
             {
-                name: "Dropdown Colours",
-                description: ""
-            },
-            {
                 name: "Dropdown Placeholders",
                 description: ""
             },
             {
                 name: "Dropdown Borders",
-                description: ""
-            },
-            {
-                name: "Dropdown Rounding",
-                description: ""
-            },
-            {
-                name: "Dropdown Shadows",
-                description: ""
-            },
-            {
-                name: "Dropdown Text",
                 description: ""
             },
         ]
@@ -257,10 +231,6 @@ export const components: DocsComponent[] = [
                 name: "Input Borders",
                 description: ""
             },
-            {
-                name: "Input Rounding",
-                description: ""
-            },
         ]
     },
     { 
@@ -271,23 +241,7 @@ export const components: DocsComponent[] = [
         demoCode: "",
         examples: [
             {
-                name: "Navbar Colours",
-                description: ""
-            },
-            {
                 name: "Navbar Sticky",
-                description: ""
-            },
-            {
-                name: "Navbar Padding",
-                description: ""
-            },
-            {
-                name: "Navbar Rounding",
-                description: ""
-            },
-            {
-                name: "Navbar Borders",
                 description: ""
             },
         ]
@@ -309,10 +263,6 @@ export const components: DocsComponent[] = [
             },
             {
                 name: "Number Input Border",
-                description: ""
-            },
-            {
-                name: "Number Input Rounding",
                 description: ""
             },
             {
@@ -340,10 +290,6 @@ export const components: DocsComponent[] = [
                 name: "Radio Group Disabled",
                 description: ""
             },
-            {
-                name: "Radio Group Border",
-                description: ""
-            },
         ]
     },
     { 
@@ -353,10 +299,6 @@ export const components: DocsComponent[] = [
         demo: <TextAreaDemo/>,
         demoCode: textAreaDemoCode, 
         examples: [
-            {
-                name: "Text Area Colours",
-                description: ""
-            },
             {
                 name: "Text Area Placeholders",
                 description: ""
@@ -392,23 +334,7 @@ export const components: DocsComponent[] = [
         demoCode: toggleDemoCode,
         examples: [
             {
-                name: "Toggle Size",
-                description: ""
-            },
-            {
                 name: "Toggle Colours",
-                description: ""
-            },
-            {
-                name: "Toggle Shadows",
-                description: ""
-            },
-            {
-                name: "Toggle Rounding",
-                description: ""
-            },
-            {
-                name: "Toggle Borders",
                 description: ""
             },
         ]
