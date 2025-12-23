@@ -37,6 +37,8 @@ import { badgeColoursCode } from "./examples/badge/badgeColours";
 import { ButtonColoursDemo } from "./examples/button/buttonColours";
 import { buttonColoursCode } from "./examples/button/buttonColours";
 
+import { toastScaleCode, ToastScaleDemo } from "./examples/toast/toastScale";
+
 type Example = {
     name: string;
     description: string;
@@ -323,7 +325,9 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Toast Scaling",
-                description: ""
+                description: "",
+                demo: <ToastScaleDemo/>,
+                code: toastScaleCode
             },
         ]
     },
