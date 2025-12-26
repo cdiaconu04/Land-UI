@@ -31,13 +31,39 @@ import { toggleDemoCode } from "./demos/toggleDemo";
 import { tooltipDemoCode } from "./demos/tooltipDemo";
 import { typographyDemoCode } from "./demos/typographyDemo";
 
-import { BadgeColoursDemo } from "./examples/badge/badgeColours";
-import { badgeColoursCode } from "./examples/badge/badgeColours";
+import { AvatarColours, avatarColoursCode } from "./examples/avatar/avatarColours";
+import { AvatarSize, avatarSizeCode } from "./examples/avatar/avatarSize";
 
-import { ButtonColoursDemo } from "./examples/button/buttonColours";
-import { buttonColoursCode } from "./examples/button/buttonColours";
+import { BadgeBordersDemo, badgeBordersCode } from "./examples/badge/badgeBorders";
+import { BadgeColoursDemo, badgeColoursCode } from "./examples/badge/badgeColours";
+import { BadgeRoundingDemo, badgeRoundingCode } from "./examples/badge/badgeRounding";
+
+import { ButtonBordersDemo, buttonBordersCode } from "./examples/button/buttonBorders";
+import { ButtonColoursDemo, buttonColoursCode } from "./examples/button/buttonColours";
+import { buttonRoundCode, ButtonRoundDemo } from "./examples/button/buttonRounding";
+
+import { CheckboxDisabled, checkboxDisabledCode } from "./examples/checkbox/checkboxDisabled";
+import { CheckboxSize, checkboxSizeCode } from "./examples/checkbox/checkboxSize";
+
+import { InputBorders, inputBordersCode } from "./examples/input/inputBorders";
+
+import { NumberInputBorders, numberInputBordersCode } from "./examples/numberInput/numberInputBorders";
+
+import { RadioGroupDisabled, radioGroupDisabledCode } from "./examples/radioGroup/radioGroupDisabled";
+import { RadioGroupDirection, radioGroupDirectionCode } from "./examples/radioGroup/radioGroupDirection";
+
+import { TextAreaBorders, textAreaBordersCode } from "./examples/textArea/textAreaBorders";
 
 import { toastScaleCode, ToastScaleDemo } from "./examples/toast/toastScale";
+
+import { ToggleColours, toggleColoursCode } from "./examples/toggle/toggleColours";
+
+import { ToolTipColours, tooltipColoursCode } from "./examples/tooltip/tooltipColours";
+import { ToolTipPlacement, tooltipPlacementCode } from "./examples/tooltip/tooltipPlacement";
+import { ToolTipScale, tooltipScaleCode } from "./examples/tooltip/tooltipScale";
+
+import { TypographyBold, typographyBoldCode } from "./examples/typography/typographyBold";
+import { TypographySize, typographySizeCode } from "./examples/typography/typographySizes";
 
 type Example = {
     name: string;
@@ -73,15 +99,15 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Avatar Colours",
-                description: ""
+                description: "",
+                demo: <AvatarColours/>,
+                code: avatarColoursCode
             },
             {
                 name: "Avatar Size",
-                description: ""
-            },
-            {
-                name: "Avatar Text",
-                description: ""
+                description: "",
+                demo: <AvatarSize/>,
+                code: avatarSizeCode
             },
         ]
     },
@@ -100,11 +126,15 @@ export const components: DocsComponent[] = [
             },
             {
                 name: "Badge Borders",
-                description: ""
+                description: "",
+                demo: <BadgeBordersDemo/>,
+                code: badgeBordersCode
             },
             {
                 name: "Badge Rounding",
-                description: ""
+                description: "",
+                demo: <BadgeRoundingDemo/>,
+                code: badgeRoundingCode
             }
         ]
     },
@@ -123,11 +153,15 @@ export const components: DocsComponent[] = [
             },
             {
                 name: "Button Borders",
-                description: ""
+                description: "",
+                demo: <ButtonBordersDemo/>,
+                code: buttonBordersCode
             },
             {
                 name: "Button Rounding",
-                description: ""
+                description: "",
+                demo: <ButtonRoundDemo/>,
+                code: buttonRoundCode
             },
         ]
     },
@@ -160,24 +194,16 @@ export const components: DocsComponent[] = [
         demoCode: checkboxDemoCode,
         examples: [
             {
-                name: "Checkbox Text",
-                description: ""
-            },
-            {
-                name: "Checkbox Borders",
-                description: ""
-            },
-            {
-                name: "Checkbox Rounding",
-                description: ""
-            },
-            {
                 name: "Checkbox Size",
-                description: ""
+                description: "",
+                demo: <CheckboxSize/>,
+                code: checkboxSizeCode
             },
             {
                 name: "Checkbox Disabled",
-                description: ""
+                description: "",
+                demo: <CheckboxDisabled/>,
+                code: checkboxDisabledCode
             },
         ]
     },
@@ -202,10 +228,6 @@ export const components: DocsComponent[] = [
         demoCode: dropdownDemoCode, 
         examples: [
             {
-                name: "Dropdown Placeholders",
-                description: ""
-            },
-            {
                 name: "Dropdown Borders",
                 description: ""
             },
@@ -219,20 +241,10 @@ export const components: DocsComponent[] = [
         demoCode: inputDemoCode,
         examples: [
             {
-                name: "Input Colours",
-                description: ""
-            },
-            {
-                name: "Input Placeholders",
-                description: ""
-            },
-            {
-                name: "Input Text",
-                description: ""
-            },
-            {
                 name: "Input Borders",
-                description: ""
+                description: "",
+                demo: <InputBorders/>,
+                code: inputBordersCode
             },
         ]
     },
@@ -257,20 +269,10 @@ export const components: DocsComponent[] = [
         demoCode: numberInputDemoCode,
         examples: [
             {
-                name: "Number Input Range",
-                description: ""
-            },
-            {
-                name: "Number Input Colours",
-                description: ""
-            },
-            {
                 name: "Number Input Border",
-                description: ""
-            },
-            {
-                name: "Number Input Text",
-                description: ""
+                description: "",
+                demo: <NumberInputBorders/>,
+                code: numberInputBordersCode
             },
         ]
     },
@@ -283,15 +285,15 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Radio Group Direction",
-                description: ""
-            },
-            {
-                name: "Radio Group Indicator Size",
-                description: ""
+                description: "",
+                demo: <RadioGroupDirection/>,
+                code: radioGroupDirectionCode
             },
             {
                 name: "Radio Group Disabled",
-                description: ""
+                description: "",
+                demo: <RadioGroupDisabled/>,
+                code: radioGroupDisabledCode
             },
         ]
     },
@@ -303,16 +305,10 @@ export const components: DocsComponent[] = [
         demoCode: textAreaDemoCode, 
         examples: [
             {
-                name: "Text Area Placeholders",
-                description: ""
-            },
-            {
-                name: "Text Area Text",
-                description: ""
-            },
-            {
                 name: "Text Area Borders",
-                description: ""
+                description: "",
+                demo: <TextAreaBorders/>,
+                code: textAreaBordersCode
             },
         ]
     },
@@ -340,7 +336,9 @@ export const components: DocsComponent[] = [
         examples: [
             {
                 name: "Toggle Colours",
-                description: ""
+                description: "",
+                demo: <ToggleColours/>,
+                code: toggleColoursCode
             },
         ]
     },
@@ -352,20 +350,22 @@ export const components: DocsComponent[] = [
         demoCode: tooltipDemoCode,
         examples: [
             {
-                name: "Tooltip Text",
-                description: ""
+                name: "Tooltip Colours",
+                description: "",
+                demo: <ToolTipColours/>,
+                code: tooltipColoursCode
             },
             {
-                name: "Tooltip Placement",
-                description: ""
+                name: "Tooltip Top",
+                description: "",
+                demo: <ToolTipPlacement/>,
+                code: tooltipPlacementCode
             },
             {
                 name: "Tooltip Scale",
-                description: ""
-            },
-            {
-                name: "Tooltip Size",
-                description: ""
+                description: "",
+                demo: <ToolTipScale/>,
+                code: tooltipScaleCode
             },
         ] 
     },
@@ -377,16 +377,16 @@ export const components: DocsComponent[] = [
         demoCode: typographyDemoCode,
         examples: [
             {
-                name: "Typography Types",
-                description: ""
+                name: "Typography Sizes",
+                description: "",
+                demo: <TypographySize/>,
+                code: typographySizeCode
             },
             {
                 name: "Typography Bolding",
-                description: ""
-            },
-            {
-                name: "Typography Sizes",
-                description: ""
+                description: "",
+                demo: <TypographyBold/>,
+                code: typographyBoldCode
             },
         ]
     },

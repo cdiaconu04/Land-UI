@@ -8,7 +8,6 @@ type DialogProps = {
     children: (close: () => void) => React.ReactNode;
 
     overlayClassName?: string;
-    contentClassName?: string;
 
     defaultOpen?: boolean;
 };
@@ -16,7 +15,6 @@ type DialogProps = {
 export default function Dialog({
     trigger,
     children,
-    overlayClassName = "bg-black/40",
     defaultOpen = false,
 }: DialogProps) {
     const [open, setOpen] = useState(defaultOpen);
@@ -64,7 +62,7 @@ export default function Dialog({
                     aria-modal="true"
                     aria-labelledby={`${id}-dialog`}
                 >
-                    <div className={`absolute inset-0 ${overlayClassName}`} onMouseDown={closeDialog} />
+                    <div className={`absolute inset-0 "bg-black/40"`} onMouseDown={closeDialog} />
 
                     <div
                         id={`${id}-dialog`}
