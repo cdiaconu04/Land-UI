@@ -445,8 +445,7 @@ export const shadowMap = {
     1: "shadow-sm",
     2: "shadow-md",
     3: "shadow-lg",
-    4: "shadow-xl",
-    5: "shadow-2xl",
+    4: "shadow-xl"
 }
 
 export const hoverShadowMap = {
