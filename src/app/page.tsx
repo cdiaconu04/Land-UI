@@ -38,18 +38,6 @@ export default function Home() {
 
 
       </div>
-      
-      
-      {/* Templates section */}
-      <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
-        <div className="flex flex-col gap-10 w-full items-start">
-          <h3 className={`${urbanist.className} text-5xl text-gray-800`}> Templates </h3>
-
-          
-
-        </div>
-        
-      </div>
 
       {/* Components section */}
       <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">

@@ -8,7 +8,7 @@ import Link from "next/link";
 const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 const SIDEBAR_W = 240;
-const GAP = 32; // gap-8
+const GAP = 32;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
                 Getting Started
               </p>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/getting-started/installation/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Installation
               </Link>
               <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
@@ -41,19 +41,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
                 Customization
               </p>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
-                Bold
+              <Link href={`/docs/customization/bolding/`} className={`${urbanist.className} text-md text-gray-800`}>
+                Bolding
               </Link>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Borders
               </Link>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/colours/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Colours
               </Link>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/rounding/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Rounding
               </Link>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/shadows/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Shadows
               </Link>
             </div>
