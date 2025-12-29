@@ -41,9 +41,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
                 Customization
               </p>
-              <Link href={`/docs/customization/bolding/`} className={`${urbanist.className} text-md text-gray-800`}>
-                Bolding
-              </Link>
               <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800`}>
                 Borders
               </Link>
