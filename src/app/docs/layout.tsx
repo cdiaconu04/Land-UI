@@ -24,46 +24,53 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             left: `max(1.5rem, calc(50% - 640px))`,
           }}
         >
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-1">
+              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
                 Getting Started
               </p>
-              <Link href={`/docs/getting-started/installation/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/getting-started/installation/`} className={`${urbanist.className} text-md text-gray-800
+                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+              `}>
                 Installation
-              </Link>
-              <Link href={`/docs/components/`} className={`${urbanist.className} text-md text-gray-800`}>
-                What is LandUI
               </Link>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
+            <div className="flex flex-col gap-1">
+              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
                 Customization
               </p>
-              <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800
+                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+              `}>
                 Borders
               </Link>
-              <Link href={`/docs/customization/colours/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/colours/`} className={`${urbanist.className} text-md text-gray-800
+                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+              `}>
                 Colours
               </Link>
-              <Link href={`/docs/customization/rounding/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/rounding/`} className={`${urbanist.className} text-md text-gray-800
+                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+              `}>
                 Rounding
               </Link>
-              <Link href={`/docs/customization/shadows/`} className={`${urbanist.className} text-md text-gray-800`}>
+              <Link href={`/docs/customization/shadows/`} className={`${urbanist.className} text-md text-gray-800
+                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+              `}>
                 Shadows
               </Link>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>
+            <div className="flex flex-col gap-1">
+              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
                 Components
               </p>
               {components.map((c) => (
                 <Link
                   key={c.slug}
                   href={`/docs/components/${c.slug}`}
-                  className={`${urbanist.className} text-md text-gray-800`}
+                  className={`${urbanist.className} text-md text-gray-800 hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2`}
                 >
                   {c.name}
                 </Link>

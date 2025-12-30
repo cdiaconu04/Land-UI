@@ -62,7 +62,7 @@ export default function Colours() {
                 </div>
 
                 <div className="flex flex-col gap-4 w-full">
-                    <p className={`${urbanist.className} text-2xl text-gray-800`}> Colours </p>
+                    <p className={`${urbanist.className} text-2xl text-gray-800`}> Available Colours </p>
                     
                     <div className="grid grid-cols-7 gap-5 w-full border border-1 border-gray-300 rounded-lg px-2 py-3">
                         {Object.entries(colourMap).map(([name, className]) => (
@@ -85,9 +85,9 @@ export default function Colours() {
 
 
             {/* Right sidebar */}
-            <div className="flex flex-col gap-2 fixed top-28 right-95">
+            {/* <div className="flex flex-col gap-2 fixed top-28 right-95">
                 <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>On this page</p>
-            </div>
+            </div> */}
         </div>
     )
 }

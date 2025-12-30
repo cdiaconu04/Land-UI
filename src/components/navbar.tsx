@@ -14,8 +14,12 @@ export default function Navbar() {
                 <div className="flex flex-row justify-center items-center gap-6">
                     <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                         <li className="">
-                            <Link href="/" className={`${urbanist.className} text-3xl bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500 
-                                text-transparent bg-clip-text group block px-5 py-2`}> LandUI </Link>
+                            <Link href="/" className={`${urbanist.className} group text-3xl bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500 
+                                text-transparent bg-clip-text group block px-5 py-2`}> LandUI 
+                                
+                                <span className="block max-w-0 group-hover:max-w-full transition-all duration-800 h-0.5
+                                    bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500"/>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -24,13 +28,13 @@ export default function Navbar() {
                     <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                         <li className="">
                             <div className="group hover:bg-gray-100 rounded-lg transition duration-200">
-                                <a href="/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Getting Started </a>
+                                <a href="/docs/getting-started/installation/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Getting Started </a>
                             </div>
                         </li>
 
                         <li className="">
                             <div className="group hover:bg-gray-100 rounded-lg transition duration-200">
-                                <a href="/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Customization </a>
+                                <a href="/docs/customization/borders/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> Customization </a>
                             </div>
                         </li>
 
