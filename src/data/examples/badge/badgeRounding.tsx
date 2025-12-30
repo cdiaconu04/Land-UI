@@ -54,28 +54,58 @@ export function BadgeRoundingDemo() {
     return (
         <div className="flex flex-row gap-5">
             <Badge 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
                 round={0}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
                     New
                 </Typography>
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
                 round={1}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
                     New
                 </Typography>
             </Badge>
             
             <Badge 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
                 round={4}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
                     New
                 </Typography>
             </Badge>

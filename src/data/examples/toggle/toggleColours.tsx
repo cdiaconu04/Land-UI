@@ -78,7 +78,12 @@ export function ToggleColours() {
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1}
+                >
                     Toggle Me
                 </Typography>
             </Toggle>
@@ -91,7 +96,12 @@ export function ToggleColours() {
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1}
+                >
                     Toggle Me
                 </Typography>
             </Toggle>
@@ -99,12 +109,22 @@ export function ToggleColours() {
             <Toggle
                 onToggle={setOn3}
                 untoggledColour={{ type: "filled", colour: "white" }}
-                toggledColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                toggledColour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 border={{ type: 2, colour: "black" }}
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1}
+                >
                     Toggle Me
                 </Typography>
             </Toggle>

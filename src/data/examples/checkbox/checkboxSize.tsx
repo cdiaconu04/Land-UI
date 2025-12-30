@@ -58,7 +58,12 @@ export function CheckboxSize() {
                 checked={newsletter}
                 onChange={setNewsletter}
                 label="Check me!"
-                checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                checkedColour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 checkTextColour="black"
                 font={urbanist.className}
                 size={"sm"}
@@ -68,7 +73,12 @@ export function CheckboxSize() {
                 checked={newsletter}
                 onChange={setNewsletter}
                 label="Check me!"
-                checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                checkedColour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 checkTextColour="black"
                 font={urbanist.className}
                 size={"md"}
@@ -78,7 +88,12 @@ export function CheckboxSize() {
                 checked={newsletter}
                 onChange={setNewsletter}
                 label="Check me!"
-                checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                checkedColour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky",
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 checkTextColour="black"
                 font={urbanist.className}
                 size={"lg"}

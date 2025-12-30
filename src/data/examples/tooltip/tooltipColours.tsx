@@ -92,7 +92,12 @@ export function ToolTipColours() {
                     onClick={() => {}}
                     colour={{ type: "filled", colour: "red" }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>
@@ -111,7 +116,12 @@ export function ToolTipColours() {
                     onClick={() => {}}
                     colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>
@@ -130,7 +140,12 @@ export function ToolTipColours() {
                     onClick={() => {}}
                     colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>

@@ -107,7 +107,13 @@ export function RadioGroupDemo() {
                 indicatorColour={{ type: "filled", colour: "black" }}
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1} 
+                    size={2}
+                >
                     Free
                 </Typography>
             </RadioItem>
@@ -127,7 +133,13 @@ export function RadioGroupDemo() {
                 indicatorSize="md"
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1} 
+                    size={2}
+                >
                     Pro
                 </Typography>
             </RadioItem>
@@ -145,7 +157,13 @@ export function RadioGroupDemo() {
                 indicatorColour={{ type: "filled", colour: "black" }}
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography 
+                    font={urbanist.className} 
+                    type="p" 
+                    colour="black" 
+                    bold={1} 
+                    size={2}
+                >
                     Enterprise
                 </Typography>
             </RadioItem>

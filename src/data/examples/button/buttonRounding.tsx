@@ -55,29 +55,80 @@ export function ButtonRoundDemo() {
         <div className="flex flex-row gap-5">
             <Button 
                 onClick={() => {}} 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                hoverColour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
+                hoverColour={{
+                    type: "gradient", 
+                    colourFrom: "sky", 
+                    colourVia: "sky", 
+                    colourTo: "emerald"
+                }}
                 round={0}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
+                    Button
+                </Typography>
             </Button>
 
             <Button 
                 onClick={() => {}} 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                hoverColour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
+                hoverColour={{
+                    type: "gradient", 
+                    colourFrom: "sky", 
+                    colourVia: "sky", 
+                    colourTo: "emerald"
+                }}
                 round={1}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
+                    Button
+                </Typography>
             </Button>
 
             <Button 
                 onClick={() => {}} 
-                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
-                hoverColour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
+                }}
+                hoverColour={{
+                    type: "gradient", 
+                    colourFrom: "sky", 
+                    colourVia: "sky", 
+                    colourTo: "emerald"
+                }}
                 round={4}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>Button</Typography>
+                <Typography 
+                    type="p" 
+                    font={urbanist.className} 
+                    colour="black" 
+                    bold={1}
+                >
+                    Button
+                </Typography>
             </Button>
         </div>
     );

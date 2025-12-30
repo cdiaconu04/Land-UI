@@ -28,7 +28,12 @@ export function Filled() {
         <Badge 
             colour={{type: "filled", colour: "sky"}}
         >
-            <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+            <Typography 
+                type="p" 
+                font={urbanist.className} 
+                colour="black"
+                bold={1}
+            >
                 Filled
             </Typography>
         </Badge>

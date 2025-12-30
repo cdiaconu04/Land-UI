@@ -66,7 +66,12 @@ export function AvatarColours() {
             <Avatar
                 src="h.jpg"
                 initials="CD"
-                bgColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                bgColour={{
+                    type: "gradient", 
+                    colourFrom: "sky", 
+                    colourVia: "sky", 
+                    colourTo: "emerald"
+                }}
                 textColour="black"
                 round={4}
                 font={urbanist.className}

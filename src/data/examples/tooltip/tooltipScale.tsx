@@ -83,16 +83,31 @@ export function ToolTipScale() {
                 content="Tooltip"
                 placement="left"
                 size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 textColour="black"
                 round={4}
                 scale={0}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>
@@ -102,16 +117,31 @@ export function ToolTipScale() {
                 content="Tooltip"
                 placement="left"
                 size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 textColour="black"
                 round={4}
                 scale={3}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>
@@ -121,16 +151,31 @@ export function ToolTipScale() {
                 content="Tooltip"
                 placement="left"
                 size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 textColour="black"
                 round={4}
                 scale={5}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                    <Typography 
+                        font={urbanist.className} 
+                        type="p" 
+                        colour="black" 
+                        bold={1}
+                    >
                         Hover me
                     </Typography>
                 </Button>
