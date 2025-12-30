@@ -10,7 +10,7 @@ export function ToolTipScale() {
         <div className="flex flex-row gap-5">
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
@@ -29,7 +29,7 @@ export function ToolTipScale() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
@@ -48,7 +48,7 @@ export function ToolTipScale() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
@@ -81,7 +81,7 @@ export function ToolTipScale() {
         <div className="flex flex-row gap-5">
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ 
                     type: "gradient", 
@@ -115,7 +115,7 @@ export function ToolTipScale() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ 
                     type: "gradient", 
@@ -149,7 +149,7 @@ export function ToolTipScale() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
                 colour={{ 
                     type: "gradient", 

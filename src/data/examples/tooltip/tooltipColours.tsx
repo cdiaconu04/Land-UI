@@ -10,28 +10,9 @@ export function ToolTipColours() {
         <div className="flex flex-row gap-5">
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
-                colour={{ type: "filled", colour: "black" }}
-                textColour="black"
-                round={4}
-                scale={5}
-            >
-                <Button
-                    onClick={() => {}}
-                    colour={{ type: "filled", colour: "red" }}
-                >
-                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
-                        Hover me
-                    </Typography>
-                </Button>
-            </Tooltip>
-
-            <Tooltip
-                content="Tooltip"
-                placement="left"
-                size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ type: "filled", colour: "red" }}
                 textColour="black"
                 round={4}
                 scale={5}
@@ -48,7 +29,26 @@ export function ToolTipColours() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
+                size="md"
+                colour={{ type: "filled", colour: "orange" }}
+                textColour="black"
+                round={4}
+                scale={5}
+            >
+                <Button
+                    onClick={() => {}}
+                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                >
+                    <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                        Hover me
+                    </Typography>
+                </Button>
+            </Tooltip>
+
+            <Tooltip
+                content="Tooltip"
+                placement="bottom"
                 size="md"
                 colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
@@ -81,16 +81,21 @@ export function ToolTipColours() {
         <div className="flex flex-row gap-5">
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
-                colour={{ type: "filled", colour: "black" }}
+                colour={{ type: "filled", colour: "red" }}
                 textColour="black"
                 round={4}
                 scale={5}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "filled", colour: "red" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
                     <Typography 
                         font={urbanist.className} 
@@ -105,16 +110,21 @@ export function ToolTipColours() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ type: "filled", colour: "orange" }}
                 textColour="black"
                 round={4}
                 scale={5}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
                     <Typography 
                         font={urbanist.className} 
@@ -129,16 +139,26 @@ export function ToolTipColours() {
 
             <Tooltip
                 content="Tooltip"
-                placement="left"
+                placement="bottom"
                 size="md"
-                colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                colour={{ 
+                    type: "gradient", 
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald" 
+                }}
                 textColour="black"
                 round={4}
                 scale={5}
             >
                 <Button
                     onClick={() => {}}
-                    colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
+                    colour={{ 
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald" 
+                    }}
                 >
                     <Typography 
                         font={urbanist.className} 

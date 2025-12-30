@@ -9,7 +9,7 @@ export function ToolTipPlacement() {
     return (
         <Tooltip
             content="Tooltip"
-            placement="left"
+            placement="top"
             size="md"
             colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
             textColour="black"
@@ -40,7 +40,7 @@ export function ToolTipPlacement() {
     return (
         <Tooltip
             content="Tooltip"
-            placement="left"
+            placement="top"
             size="md"
             colour={{ 
                 type: "gradient", 
