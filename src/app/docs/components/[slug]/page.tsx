@@ -50,8 +50,54 @@ export default function ComponentDocs() {
                 ))}
 
                 <div className="flex flex-col gap-2 w-full">
-                    <p className={`${urbanist.className} text-2xl text-gray-800`}> {component.name} props</p>
+                    <p className={`${urbanist.className} text-2xl text-gray-800`}> Props</p>
+                    
+                    <table className="w-full text-left border border-gray-300 rounded-lg border-separate border-spacing-0">
+                        <thead className="border-b border-gray-300">
+                            <tr>
+                                <th className={`${urbanist.className} py-3 px-4 text-gray-800 font-normal text-lg rounded-tl-lg border-b border-gray-300`}>
+                                    Prop name
+                                </th>
 
+                                <th className={`${urbanist.className} py-3 px-4 text-gray-800 font-normal text-lg border-b border-gray-300`}>
+                                    Type
+                                </th>
+
+                                <th className={`${urbanist.className} py-3 px-4 text-gray-800 font-normal text-lg rounded-tr-lg border-b border-gray-300`}>
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody className="text-gray-600">
+                            {component.props.map((prop, i) => (
+                                <tr key={i} className="hover:bg-gray-100 border-b last:border-b-0">
+                                    <td className={`${urbanist.className} py-3 px-4 text-md text-gray-800 
+                                        ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
+                                    `}>
+                                        {prop.name}
+                                    </td>
+
+                                    <td className={`${urbanist.className} py-3 px-4 text-md text-gray-800 
+                                        ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
+                                    `}>
+
+                                        <p className={`${urbanist.className} w-fit p-0.5 text-md text-gray-800 bg-gray-200 rounded-md`}>
+                                            {prop.type}
+                                        </p>
+                                        
+                                    </td>
+
+                                    <td className={`${urbanist.className} py-3 px-4 text-md text-gray-800 
+                                        ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
+                                    `}>
+                                        {prop.description}
+                                    </td>
+                                </tr>
+                            ))}
+
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
@@ -60,6 +106,8 @@ export default function ComponentDocs() {
             {/* Right sidebar */}
             <div className="flex flex-col gap-2 fixed top-28 right-95">
                 <p className={`${urbanist.className} text-md text-gray-800 font-semibold`}>On this page</p>
+
+                
             </div>
         </div>
     );

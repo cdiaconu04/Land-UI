@@ -65,6 +65,12 @@ import { ToolTipScale, tooltipScaleCode } from "./examples/tooltip/tooltipScale"
 import { TypographyBold, typographyBoldCode } from "./examples/typography/typographyBold";
 import { TypographySize, typographySizeCode } from "./examples/typography/typographySizes";
 
+type Prop = {
+    name: string;
+    type: string;
+    description: string;
+}
+
 type Example = {
     name: string;
     description: string;
@@ -79,6 +85,7 @@ export type DocsComponent = {
     demo: ReactNode;
     demoCode: string;
     examples: Example[];
+    props: Prop[];
 };
 
 export const components: DocsComponent[] = [
@@ -88,7 +95,8 @@ export const components: DocsComponent[] = [
         slug: "accordion",
         demo: <div/>,
         demoCode: "",
-        examples: []
+        examples: [],
+        props: []
     },
     { 
         name: "Avatar", 
@@ -108,6 +116,53 @@ export const components: DocsComponent[] = [
                 description: "",
                 demo: <AvatarSize/>,
                 code: avatarSizeCode
+            },
+        ],
+        props: [
+            {
+                name: "alt",
+                type: "string",
+                description: "Image alt text",
+            },
+            {
+                name: "bgColour",
+                type: "Colour",
+                description: "Background colour",
+            },
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling",
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class",
+            },
+            {
+                name: "initials",
+                type: "string",
+                description: "Fallback initials",
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding",
+            },
+            {
+                name: "size",
+                type: "keyof typeof sizeMap",
+                description: "Avatar size",
+            },
+            {
+                name: "src",
+                type: "string",
+                description: "Image URL",
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text color",
             },
         ]
     },
@@ -136,7 +191,8 @@ export const components: DocsComponent[] = [
                 demo: <BadgeRoundingDemo/>,
                 code: badgeRoundingCode
             }
-        ]
+        ],
+        props: []
     },
     { 
         name: "Button",
@@ -163,7 +219,8 @@ export const components: DocsComponent[] = [
                 demo: <ButtonRoundDemo/>,
                 code: buttonRoundCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Card", 
@@ -184,7 +241,8 @@ export const components: DocsComponent[] = [
                 name: "Card Shadows",
                 description: ""
             },
-        ] 
+        ],
+        props: [] 
     },
     { 
         name: "Checkbox", 
@@ -205,7 +263,8 @@ export const components: DocsComponent[] = [
                 demo: <CheckboxDisabled/>,
                 code: checkboxDisabledCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Dialog", 
@@ -218,7 +277,8 @@ export const components: DocsComponent[] = [
                 name: "Dialog Overlay Colours",
                 description: ""
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Dropdown", 
@@ -231,7 +291,8 @@ export const components: DocsComponent[] = [
                 name: "Dropdown Borders",
                 description: ""
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Input", 
@@ -246,7 +307,8 @@ export const components: DocsComponent[] = [
                 demo: <InputBorders/>,
                 code: inputBordersCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Navbar", 
@@ -259,7 +321,8 @@ export const components: DocsComponent[] = [
                 name: "Navbar Sticky",
                 description: ""
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Number Input", 
@@ -274,7 +337,8 @@ export const components: DocsComponent[] = [
                 demo: <NumberInputBorders/>,
                 code: numberInputBordersCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Radio Group", 
@@ -295,7 +359,8 @@ export const components: DocsComponent[] = [
                 demo: <RadioGroupDisabled/>,
                 code: radioGroupDisabledCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Text Area", 
@@ -310,7 +375,8 @@ export const components: DocsComponent[] = [
                 demo: <TextAreaBorders/>,
                 code: textAreaBordersCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Toast", 
@@ -325,7 +391,8 @@ export const components: DocsComponent[] = [
                 demo: <ToastScaleDemo/>,
                 code: toastScaleCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Toggle", 
@@ -340,7 +407,8 @@ export const components: DocsComponent[] = [
                 demo: <ToggleColours/>,
                 code: toggleColoursCode
             },
-        ]
+        ],
+        props: []
     },
     { 
         name: "Tooltip", 
@@ -367,7 +435,8 @@ export const components: DocsComponent[] = [
                 demo: <ToolTipScale/>,
                 code: tooltipScaleCode
             },
-        ] 
+        ],
+        props: [] 
     },
     { 
         name: "Typography", 
@@ -388,6 +457,7 @@ export const components: DocsComponent[] = [
                 demo: <TypographyBold/>,
                 code: typographyBoldCode
             },
-        ]
+        ],
+        props: []
     },
 ];

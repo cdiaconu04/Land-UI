@@ -56,10 +56,15 @@ export default function Home() {
           <div className="grid grid-cols-4 gap-5 w-full h-full items-stretch auto-rows-fr">
             {components.map((c) => (
               <div key={c.slug} className="w-full flex flex-col gap-2">
-                <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 bg-white">
                   {c.demo}
                 </div>
-                <p className={`${urbanist.className} text-gray-950`}>{c.name}</p>
+                
+                <Link href={`/docs/components/${c.slug}`} className="w-fit group flex flex-row items-center justify-center">
+                  <p className={`${urbanist.className} text-gray-950 group-hover:underline`}>{c.name}</p>
+                  <ChevronRight className="group text-gray-800 transition duration-200 group-hover:translate-x-1.5" size={17}/>
+                </Link>
+                
               </div>
             ))}
 
@@ -82,13 +87,13 @@ export default function Home() {
               <span className="bg-gradient-to-r from-sky-500 via-sky-500 to-emerald-500 text-transparent bg-clip-text leading-relaxed">LandUI</span> 
             </h3>
 
-            <button className={`${urbanist.className} group flex flex-row items-center justify-center gap-1 text-2xl text-gray-800 py-2 px-3 
+            <Link href={'/docs/getting-started/installation'} className={`${urbanist.className} group flex flex-row items-center justify-center gap-1 text-2xl text-gray-800 py-2 px-3 
               bg-gradient-to-r from-sky-300 via-sky-300 to-emerald-300 rounded-lg cursor-pointer
               hover:bg-gradient-to-r hover:from-sky-400 hover:via-sky-400 hover:to-emerald-400 hover:shadow-xl
             `}>
               Get started
               <ChevronRight className="group text-gray-800 transition duration-200 group-hover:translate-x-1" size={20}/>
-            </button>
+            </Link>
 
           </div>
 
