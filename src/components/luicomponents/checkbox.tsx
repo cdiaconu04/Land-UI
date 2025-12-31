@@ -30,7 +30,6 @@ type CheckboxProps = {
 
     className?: string;
     font?: string;
-    id?: string;
 };
 
 export default function Checkbox({
@@ -50,9 +49,7 @@ export default function Checkbox({
 
     size = "md",
 
-    className = "",
     font,
-    id,
 }: CheckboxProps) {
   const boxBg = checked ? getBgColour(checkedColour) : getBgColour(colour);
 
@@ -62,11 +59,9 @@ export default function Checkbox({
             inline-flex items-center select-none
             ${checkboxSizeMap[size].gap}
             ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
-            ${className}
         `}
     >
         <input
-            id={id}
             type="checkbox"
             checked={checked}
             disabled={disabled}

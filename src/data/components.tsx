@@ -192,7 +192,28 @@ export const components: DocsComponent[] = [
                 code: badgeRoundingCode
             }
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "shadow",
+                type: "Shadow",
+                description: "Shadow styling"
+            }
+        ]
     },
     { 
         name: "Button",
@@ -220,7 +241,43 @@ export const components: DocsComponent[] = [
                 code: buttonRoundCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "hoverColour",
+                type: "Colour",
+                description: "Background colour on hover"
+            },
+            {
+                name: "hoverShadow",
+                type: "Shadow",
+                description: "Shadow on hover"
+            },
+            {
+                name: "onClick",
+                type: "Function",
+                description: "Function triggered when button is clicked"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "size",
+                type: "small, medium, or large",
+                description: "Button size"
+            },
+        ]
     },
     { 
         name: "Card", 
@@ -242,7 +299,28 @@ export const components: DocsComponent[] = [
                 description: ""
             },
         ],
-        props: [] 
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Shadow"
+            },
+            {
+                name: "shadow",
+                type: "Shadow",
+                description: "Shadow styling"
+            },
+        ] 
     },
     { 
         name: "Checkbox", 
@@ -264,7 +342,63 @@ export const components: DocsComponent[] = [
                 code: checkboxDisabledCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "checked",
+                type: "boolean",
+                description: "Current state of checkbox"
+            },
+            {
+                name: "checkedColour",
+                type: "Colour",
+                description: "Background colour when checked"
+            },
+            {
+                name: "checkTextColour",
+                type: "Colour type",
+                description: "Checkmark colour when checked"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour when unchecked"
+            },
+            {
+                name: "disabled",
+                type: "boolean",
+                description: "Disables interaction"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font for label"
+            },
+            {
+                name: "labelTextColour",
+                type: "Colour type",
+                description: "Text colour for the label"
+            },
+            {
+                name: "onChange",
+                type: "Function",
+                description: "Fires when checkbox state changes"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "size",
+                type: "sm, md, or lg",
+                description: "Checkbox size"
+            },
+        ]
     },
     { 
         name: "Dialog", 

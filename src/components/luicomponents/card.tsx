@@ -13,7 +13,6 @@ type CardProps = {
     round?: keyof typeof roundMap;
     border?: borderProps;
     shadow?: keyof typeof shadowMap;
-    className?: string;
     children?: React.ReactNode;
 };
 
