@@ -4,20 +4,15 @@ import React, { useEffect, useId, useRef, useState } from "react";
 
 type DialogProps = {
     trigger: (open: () => void) => React.ReactNode;
-
     children: (close: () => void) => React.ReactNode;
-
-    overlayClassName?: string;
-
     defaultOpen?: boolean;
 };
 
 export default function Dialog({
     trigger,
     children,
-    defaultOpen = false,
 }: DialogProps) {
-    const [open, setOpen] = useState(defaultOpen);
+    const [open, setOpen] = useState(false);
     const id = useId();
     const contentRef = useRef<HTMLDivElement | null>(null);
 

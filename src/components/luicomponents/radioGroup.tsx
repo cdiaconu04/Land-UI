@@ -9,7 +9,6 @@ type RadioGroupProps = {
   children: React.ReactNode;
   disabled?: boolean;
   direction?: "row" | "col";
-  className?: string;
 };
 
 export function RadioGroup({

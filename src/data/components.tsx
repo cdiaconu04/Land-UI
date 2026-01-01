@@ -412,7 +412,18 @@ export const components: DocsComponent[] = [
                 description: ""
             },
         ],
-        props: []
+        props: [
+            {
+                name: "children",
+                type: "Function",
+                description: "Render function for dialog content"
+            },
+            {
+                name: "trigger",
+                type: "Function",
+                description: "Render function for the trigger element. Receives an open function."
+            },
+        ]
     },
     { 
         name: "Dropdown", 
@@ -426,7 +437,108 @@ export const components: DocsComponent[] = [
                 description: ""
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling for closed dropdown trigger"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour for trigger"
+            },
+            {
+                name: "disabled",
+                type: "boolean",
+                description: "Disables interaction when true"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "itemColour",
+                type: "Colour",
+                description: "Background colour for each option item"
+            },
+            {
+                name: "itemHoverColour",
+                type: "Colour",
+                description: "Background colour when hovering"
+            },
+            {
+                name: "itemSelectedColour",
+                type: "Colour",
+                description: "Background colour for selected option"
+            },
+            {
+                name: "menuBorder",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "menuColour",
+                type: "Colour",
+                description: "Background colour or gradient"
+            },
+            {
+                name: "menuRound",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "menuShadow",
+                type: "Shadow",
+                description: "Shadow styling"
+            },
+            {
+                name: "onChange",
+                type: "Function",
+                description: "Called when a new option is selected"
+            },
+            {
+                name: "optionSelectedTextColour",
+                type: "Colour type",
+                description: "Text colour for the selected option"
+            },
+            {
+                name: "optionTextColour",
+                type: "Colour type",
+                description: "Text colour for unselected options"
+            },
+            {
+                name: "options",
+                type: "DropdownOption[]",
+                description: "Array of options { label, value, disabled? }"
+            },
+            {
+                name: "placeholder",
+                type: "React component",
+                description: "Content shown when no value is selected"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding for the trigger"
+            },
+            {
+                name: "shadow",
+                type: "Shadow",
+                description: "Shadow styling for the trigger"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour for the trigger content"
+            },
+            {
+                name: "value",
+                type: "string",
+                description: "Currently selected value"
+            },
+        ]
     },
     { 
         name: "Input", 
@@ -442,7 +554,38 @@ export const components: DocsComponent[] = [
                 code: inputBordersCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "placeholder",
+                type: "{ placeholder: string; colour: Colour }",
+                description: "Placeholder text and colour"
+            },
+            {
+                name: "round",
+                type: "Rounding",
+                description: "Border rounding"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour of the input"
+            },
+        ]
     },
     { 
         name: "Navbar", 
@@ -456,7 +599,38 @@ export const components: DocsComponent[] = [
                 description: ""
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "rounded",
+                type: "Rounded",
+                description: "Border rounding for the inner navbar container"
+            },
+            {
+                name: "sidePadLevel",
+                type: "0, 1, 2, 3",
+                description: "Side padding levels"
+            },
+            {
+                name: "sticky",
+                type: "boolean",
+                description: "Whether the navbar is fixed at the top of the screen"
+            },
+            {
+                name: "type",
+                type: `"default" | "floating"`,
+                description: "Navbar style"
+            },
+        ]
     },
     { 
         name: "Number Input", 
@@ -472,7 +646,58 @@ export const components: DocsComponent[] = [
                 code: numberInputBordersCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "max",
+                type: "number",
+                description: "Maximum allowed value"
+            },
+            {
+                name: "min",
+                type: "number",
+                description: "Minimum allowed value"
+            },
+            {
+                name: "onChange",
+                type: "Function",
+                description: "Fires when the value changes"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "step",
+                type: "number",
+                description: "Increment between allowed values"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour of the input"
+            },
+            {
+                name: "value",
+                type: "number",
+                description: "Current number value displayed"
+            },
+        ]
     },
     { 
         name: "Radio Group", 
@@ -494,7 +719,88 @@ export const components: DocsComponent[] = [
                 code: radioGroupDisabledCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "direction",
+                type: `"row" | "col"`,
+                description: "Direction for radio items"
+            },
+            {
+                name: "disabled",
+                type: "boolean",
+                description: "Disables interaction for all radios in the group"
+            },
+            {
+                name: "name",
+                type: "string",
+                description: "Shared name attribute for all radio inputs"
+            },
+            {
+                name: "onChange",
+                type: "Function",
+                description: "Called when a different radio is selected"
+            },
+            {
+                name: "value",
+                type: "string",
+                description: "Currently selected radio value"
+            },
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour when not selected"
+            },
+            {
+                name: "disabled",
+                type: "boolean",
+                description: "Disables interaction"
+            },
+            {
+                name: "indicatorBorder",
+                type: "Border",
+                description: "Border styling for the circle indicator"
+            },
+            {
+                name: "indicatorColour",
+                type: "Colour",
+                description: "Inner colour of the radio indicator when checked"
+            },
+            {
+                name: "indicatorSize",
+                type: `"sm" | "md" | "lg"`,
+                description: "Size of the radio indicator"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding for radio item"
+            },
+            {
+                name: "selectedColour",
+                type: "Colour",
+                description: "Background colour when selected"
+            },
+            {
+                name: "shadow",
+                type: "Shadow",
+                description: "Shadow styling for radio item container"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour for the label"
+            },
+            {
+                name: "value",
+                type: "string",
+                description: "Unique value used to determine if this item is selected"
+            },
+        ]
     },
     { 
         name: "Text Area", 
@@ -510,7 +816,38 @@ export const components: DocsComponent[] = [
                 code: textAreaBordersCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "placeholder",
+                type: "{ placeholder: string; colour: Colour type }",
+                description: "Placeholder text and its colour"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour of the text area content"
+            },
+        ]
     },
     { 
         name: "Toast", 
@@ -526,7 +863,58 @@ export const components: DocsComponent[] = [
                 code: toastScaleCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "duration",
+                type: "number",
+                description: "Duration of toast visibility in ms"
+            },
+            {
+                name: "onHide",
+                type: "Function",
+                description: "Callback when the toast hides (triggered after duration)"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "scale",
+                type: "0 | 1 | 2 | 3 | 4 | 5",
+                description: "Initial transform scale animation when showing"
+            },
+            {
+                name: "shadow",
+                type: "Shadows",
+                description: "Shadow intensity style"
+            },
+            {
+                name: "show",
+                type: "boolean",
+                description: "Controls whether the toast is visible"
+            },
+            {
+                name: "size",
+                type: `"small" | "medium" | "large"`,
+                description: "Sizing of the toast"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Text colour"
+            },
+        ]
     },
     { 
         name: "Toggle", 
@@ -542,7 +930,43 @@ export const components: DocsComponent[] = [
                 code: toggleColoursCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "border",
+                type: "Border",
+                description: "Border styling"
+            },
+            {
+                name: "hoverShadow",
+                type: "Shadow",
+                description: "Shadow styling when hovering"
+            },
+            {
+                name: "onToggle",
+                type: "Function",
+                description: "Callback fired when the toggle state changes"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "size",
+                type: `"small" | "medium" | "large"`,
+                description: "Size of the toggle"
+            },
+            {
+                name: "toggledColour",
+                type: "Colour",
+                description: "Background colour when toggled on"
+            },
+            {
+                name: "untoggledColour",
+                type: "Colour",
+                description: "Background colour when toggled off"
+            }
+        ]
     },
     { 
         name: "Tooltip", 
@@ -570,7 +994,48 @@ export const components: DocsComponent[] = [
                 code: tooltipScaleCode
             },
         ],
-        props: [] 
+        props: [
+            {
+                name: "colour",
+                type: "Colour",
+                description: "Background colour"
+            },
+            {
+                name: "content",
+                type: "string",
+                description: "Text displayed in the tooltip"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "placement",
+                type: `"top" | "bottom" | "left" | "right"`,
+                description: "Tooltip position relative to trigger element"
+            },
+            {
+                name: "round",
+                type: "Round",
+                description: "Border rounding"
+            },
+            {
+                name: "scale",
+                type: "0 | 1 | 2 | 3 | 4 | 5",
+                description: "Scaling in show/hide animations"
+            },
+            {
+                name: "size",
+                type: `"sm" | "md" | "lg"`,
+                description: "Tooltip size"
+            },
+            {
+                name: "textColour",
+                type: "Colour type",
+                description: "Tooltip text colour"
+            },
+        ] 
     },
     { 
         name: "Typography", 
@@ -592,6 +1057,32 @@ export const components: DocsComponent[] = [
                 code: typographyBoldCode
             },
         ],
-        props: []
+        props: [
+            {
+                name: "bold",
+                type: "0 | 1 | 2 | 3 | 4",
+                description: "Font boldness level"
+            },
+            {
+                name: "colour",
+                type: "Colour type",
+                description: "Text colour"
+            },
+            {
+                name: "font",
+                type: "string",
+                description: "Font class"
+            },
+            {
+                name: "size",
+                type: "0 - 11",
+                description: "Text size"
+            },
+            {
+                name: "type",
+                type: `"p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6"`,
+                description: "HTML tag to render"
+            }
+        ]
     },
 ];

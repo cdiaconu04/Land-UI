@@ -9,7 +9,6 @@ type InputProps = React.PropsWithChildren<{
     sidePadLevel?: keyof typeof sidePadMap;
     rounded?: keyof typeof roundMap;
     border?: borderProps;
-    className?: string;
 }>
 
 

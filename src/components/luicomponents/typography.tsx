@@ -8,7 +8,6 @@ type InputProps = React.PropsWithChildren<{
     colour: keyof typeof textColourMap;
     bold: keyof typeof boldMap;
     size?: keyof typeof textSizeMap;
-    className?: string;
     font?: string;
 }>;
 
