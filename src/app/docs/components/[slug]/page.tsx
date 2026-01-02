@@ -56,7 +56,7 @@ export default function ComponentDocs() {
                         <thead className="border-b border-gray-300">
                             <tr>
                                 <th className={`${urbanist.className} py-3 px-4 text-gray-800 font-normal text-lg rounded-tl-lg border-b border-gray-300`}>
-                                    Prop name
+                                    Name
                                 </th>
 
                                 <th className={`${urbanist.className} py-3 px-4 text-gray-800 font-normal text-lg border-b border-gray-300`}>
