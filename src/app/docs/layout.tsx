@@ -3,6 +3,7 @@
 import Navbar from "@/components/navbar";
 import { Urbanist } from "next/font/google";
 import { components } from "@/data/components";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 
 const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
@@ -11,6 +12,8 @@ const SIDEBAR_W = 240;
 const GAP = 32;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const curUrl = usePathname();
+
   return (
     <div className="bg-white min-h-screen flex items-center justify-center">
       <Navbar />
@@ -30,7 +33,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Getting Started
               </p>
               <Link href={`/docs/getting-started/installation/`} className={`${urbanist.className} text-md text-gray-800
-                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+                rounded-lg transition duration-200 py-1 px-2
+                ${curUrl === `/docs/getting-started/installation` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Installation
               </Link>
@@ -41,22 +45,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Customization
               </p>
               <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800
-                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+                rounded-lg transition duration-200 py-1 px-2
+                ${curUrl === `/docs/customization/borders` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Borders
               </Link>
               <Link href={`/docs/customization/colours/`} className={`${urbanist.className} text-md text-gray-800
-                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+                rounded-lg transition duration-200 py-1 px-2
+                ${curUrl === `/docs/customization/colours` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Colours
               </Link>
               <Link href={`/docs/customization/rounding/`} className={`${urbanist.className} text-md text-gray-800
-                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+                rounded-lg transition duration-200 py-1 px-2
+                ${curUrl === `/docs/customization/rounding` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Rounding
               </Link>
               <Link href={`/docs/customization/shadows/`} className={`${urbanist.className} text-md text-gray-800
-                hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2
+                rounded-lg transition duration-200 py-1 px-2
+                ${curUrl === `/docs/customization/shadows` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Shadows
               </Link>
@@ -70,7 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link
                   key={c.slug}
                   href={`/docs/components/${c.slug}`}
-                  className={`${urbanist.className} text-md text-gray-800 hover:bg-gray-100 rounded-lg transition duration-200 py-1 px-2`}
+                  className={`${urbanist.className} text-md text-gray-800 rounded-lg transition duration-200 py-1 px-2
+                    ${curUrl === `/docs/components/${c.slug}` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
+                  `}
                 >
                   {c.name}
                 </Link>

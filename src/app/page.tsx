@@ -33,6 +33,7 @@ export default function Home() {
           alt="Computer" 
           width={450} 
           height={450} 
+          className="hover:scale-101 transition duration-500"
         />
 
 
