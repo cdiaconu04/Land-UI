@@ -13,7 +13,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
+    <div className="min-h-screen w-full mx-auto px-6 flex flex-col justify-between items-center bg-white">
       <Navbar/>
 
       <div className="min-h-screen w-full max-w-screen-xl mx-auto px-6 flex flex-row justify-between items-center bg-white">
