@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 export function Gradient1() {
     return (
         <Badge 
-            colour={{type: "gradient", colourFrom: "emerald", colourTo: "sky"}}
+            colour={{type: "gradient", colourFrom: "lightEmerald", colourTo: "lightSky"}}
         >
             <Typography type="p" font={urbanist.className} colour="black" bold={1}>
                 Gradient
@@ -28,8 +28,8 @@ export function Gradient1() {
         <Badge 
             colour={{
                 type: "gradient", 
-                colourFrom: "emerald", 
-                colourTo: "sky"
+                colourFrom: "lightEmerald", 
+                colourTo: "lightSky"
             }}
         >
             <Typography 

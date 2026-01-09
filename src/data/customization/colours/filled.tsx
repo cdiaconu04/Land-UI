@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 export function Filled() {
     return (
         <Badge 
-            colour={{type: "filled", colour: "sky"}}
+            colour={{type: "filled", colour: "lightSky"}}
         >
             <Typography type="p" font={urbanist.className} colour="black" bold={1}>
                 Filled
@@ -26,7 +26,7 @@ const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 export function Filled() {
     return (
         <Badge 
-            colour={{type: "filled", colour: "sky"}}
+            colour={{type: "filled", colour: "lightSky"}}
         >
             <Typography 
                 type="p" 

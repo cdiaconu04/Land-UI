@@ -8,47 +8,47 @@ export function ShadowLevels() {
     return (
         <div className="grid grid-cols-3 gap-3">
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={0}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={1}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={2}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={3}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={4}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
         </div>
@@ -68,9 +68,9 @@ export function ShadowLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={0}
             >
@@ -80,16 +80,16 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={1}
             >
@@ -99,16 +99,16 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={2}
             >
@@ -118,16 +118,16 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={3}
             >
@@ -137,16 +137,16 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={4}
             >
@@ -156,16 +156,16 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>
 
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 shadow={5}
             >
@@ -175,7 +175,7 @@ export function ShadowLevels() {
                     colour="black" 
                     bold={1}
                 >
-                    Filled
+                    Shadow
                 </Typography>
             </Badge>   
         </div>

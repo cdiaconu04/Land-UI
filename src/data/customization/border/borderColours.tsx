@@ -8,7 +8,7 @@ export function BorderColours() {
     return (
         <div className="flex flex-row gap-3">
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 border={{type: 2, colour: "black"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -17,7 +17,7 @@ export function BorderColours() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 border={{type: 2, colour: "red"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -26,7 +26,7 @@ export function BorderColours() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 border={{type: 2, colour: "yellow"}}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -50,9 +50,9 @@ export function BorderWeights() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 border={{type: 0, colour: "black"}}
             >
@@ -69,9 +69,9 @@ export function BorderWeights() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 border={{type: 1, colour: "black"}}
             >
@@ -88,9 +88,9 @@ export function BorderWeights() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 border={{type: 2, colour: "black"}}
             >
@@ -107,9 +107,9 @@ export function BorderWeights() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 border={{type: 3, colour: "black"}}
             >

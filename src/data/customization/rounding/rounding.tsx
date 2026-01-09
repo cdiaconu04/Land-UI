@@ -8,7 +8,7 @@ export function RoundingLevels() {
     return (
         <div className="grid grid-cols-3 gap-3">
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 round={0}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -17,7 +17,7 @@ export function RoundingLevels() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 round={1}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -26,7 +26,7 @@ export function RoundingLevels() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 round={2}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -35,7 +35,7 @@ export function RoundingLevels() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 round={3}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -44,7 +44,7 @@ export function RoundingLevels() {
             </Badge>
 
             <Badge 
-                colour={{type: "gradient", colourFrom: "sky", colourVia: "sky", colourTo: "emerald"}}
+                colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 round={4}
             >
                 <Typography type="p" font={urbanist.className} colour="black" bold={1}>
@@ -68,9 +68,9 @@ export function RoundingLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 round={0}
             >
@@ -87,9 +87,9 @@ export function RoundingLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 round={1}
             >
@@ -106,9 +106,9 @@ export function RoundingLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 round={2}
             >
@@ -125,9 +125,9 @@ export function RoundingLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 round={3}
             >
@@ -144,9 +144,9 @@ export function RoundingLevels() {
             <Badge 
                 colour={{
                     type: "gradient", 
-                    colourFrom: "sky", 
-                    colourVia: "sky", 
-                    colourTo: "emerald"
+                    colourFrom: "lightSky", 
+                    colourVia: "lightSky", 
+                    colourTo: "lightEmerald"
                 }}
                 round={4}
             >
