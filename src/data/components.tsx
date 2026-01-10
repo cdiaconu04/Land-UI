@@ -16,6 +16,7 @@ import { TypographyDemo } from "./demos/typographyDemo";
 import { DialogDemo } from "./demos/dialogDemo";
 import { BadgeDemo } from "./demos/badgeDemo";
 import { ButtonDemo } from "./demos/buttonDemo";
+import { NavbarDemo } from "./demos/navbarDemo";
 
 import { avatarDemoCode } from "./demos/avatarDemo";
 import { buttonDemoCode } from "./demos/buttonDemo";
@@ -32,6 +33,7 @@ import { toastDemoCode } from "./demos/toastDemo";
 import { toggleDemoCode } from "./demos/toggleDemo";
 import { tooltipDemoCode } from "./demos/tooltipDemo";
 import { typographyDemoCode } from "./demos/typographyDemo";
+import { navbarDemoCode } from "./demos/navbarDemo";
 
 import { AvatarColours, avatarColoursCode } from "./examples/avatar/avatarColours";
 import { AvatarSize, avatarSizeCode } from "./examples/avatar/avatarSize";
@@ -590,14 +592,9 @@ export const components: DocsComponent[] = [
         name: "Navbar", 
         description: "",
         slug: "navbar",
-        demo: <div/>, 
-        demoCode: "",
-        examples: [
-            {
-                name: "Navbar Sticky",
-                description: ""
-            },
-        ],
+        demo: <NavbarDemo/>, 
+        demoCode: navbarDemoCode,
+        examples: [],
         props: [
             {
                 name: "border",

@@ -28,7 +28,7 @@ export default function ComponentDocs() {
                     <p className={`${urbanist.className} text-3xl text-gray-800`}> {component.name} </p>
                     <p className={`${urbanist.className} text-lg text-gray-800`}> {component.description} </p>
 
-                    <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                    <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 p-5">
                         {component.demo}
                     </div>
 
@@ -41,7 +41,7 @@ export default function ComponentDocs() {
                     <div key={i} className="flex flex-col gap-2 w-full">
                         <p className={`${urbanist.className} text-2xl text-gray-800`}> {e.name}</p>
                         
-                        <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10">
+                        <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 px-5">
                             {e.demo}
                         </div>
 
