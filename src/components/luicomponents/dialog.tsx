@@ -1,15 +1,17 @@
 "use client";
-
 import React, { useEffect, useId, useRef, useState } from "react";
+import { backdropMap } from "./constants/constants";
 
 type DialogProps = {
     trigger: (open: () => void) => React.ReactNode;
+    backdrop?: keyof typeof backdropMap;
     children: (close: () => void) => React.ReactNode;
     defaultOpen?: boolean;
 };
 
 export default function Dialog({
     trigger,
+    backdrop = 1,
     children,
 }: DialogProps) {
     const [open, setOpen] = useState(false);
@@ -57,7 +59,7 @@ export default function Dialog({
                     aria-modal="true"
                     aria-labelledby={`${id}-dialog`}
                 >
-                    <div className={`absolute inset-0 "bg-black/40"`} onMouseDown={closeDialog} />
+                    <div className={`absolute inset-0 ${backdropMap[backdrop]}`} onMouseDown={closeDialog} />
 
                     <div
                         id={`${id}-dialog`}

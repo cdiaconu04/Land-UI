@@ -45,6 +45,8 @@ import { buttonRoundCode, ButtonRoundDemo } from "./examples/button/buttonRoundi
 import { CheckboxDisabled, checkboxDisabledCode } from "./examples/checkbox/checkboxDisabled";
 import { CheckboxSize, checkboxSizeCode } from "./examples/checkbox/checkboxSize";
 
+import { DialogBackdropDemo, dialogBackdropCode } from "./examples/dialog/dialogOverlay";
+
 import { InputBorders, inputBordersCode } from "./examples/input/inputBorders";
 
 import { NumberInputBorders, numberInputBordersCode } from "./examples/numberInput/numberInputBorders";
@@ -408,8 +410,10 @@ export const components: DocsComponent[] = [
         demoCode: dialogDemoCode,
         examples: [
             {
-                name: "Dialog Overlay Colours",
-                description: ""
+                name: "Dialog Backdrop Colours",
+                description: "",
+                demo: <DialogBackdropDemo/>,
+                code: dialogBackdropCode
             },
         ],
         props: [
@@ -422,6 +426,11 @@ export const components: DocsComponent[] = [
                 name: "trigger",
                 type: "Function",
                 description: "Render function for the trigger element. Receives an open function."
+            },
+            {
+                name: "backdrop",
+                type: "0 | 1 | 2 | 3 | 4",
+                description: "Level of backdrop darkening when dialog active"
             },
         ]
     },

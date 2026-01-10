@@ -15,10 +15,17 @@ export function DialogDemo() {
             trigger={(open) => (
                 <Button
                     onClick={open}
-                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                    colour={{
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald"
+                    }}
                     round={2}
                 >
-                    <Typography type="p" colour="black" bold={1} font={urbanist.className}>Open Dialog</Typography>
+                    <Typography type="p" colour="black" bold={1} font={urbanist.className}>
+                        Open Dialog
+                    </Typography>
                 </Button>
             )}
         >
@@ -29,16 +36,25 @@ export function DialogDemo() {
                     shadow={2}
                     className="p-7 gap-4"
                 >
-                    <Typography type="p" colour="black" bold={1} size={3} font={urbanist.className}>Here is a Dialog.</Typography>
+                    <Typography type="p" colour="black" bold={1} size={3} font={urbanist.className}>
+                        Here is a Dialog.
+                    </Typography>
 
                     
 
                     <Button
                         onClick={close}
-                        colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                        colour={{
+                            type: "gradient", 
+                            colourFrom: "lightSky", 
+                            colourVia: "lightSky", 
+                            colourTo: "lightEmerald"
+                        }}
                         round={2}
                     >
-                        <Typography type="p" colour="black" bold={1} font={urbanist.className}>Close</Typography>
+                        <Typography type="p" colour="black" bold={1} font={urbanist.className}>
+                            Close
+                        </Typography>
                     </Button>
                 </Card>
             )}
@@ -64,10 +80,22 @@ export function DialogDemo() {
             trigger={(open) => (
                 <Button
                     onClick={open}
-                    colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
+                    colour={{
+                        type: "gradient", 
+                        colourFrom: "lightSky", 
+                        colourVia: "lightSky", 
+                        colourTo: "lightEmerald"
+                    }}
                     round={2}
                 >
-                    <Typography type="p" colour="black" bold={1} font={urbanist.className}>Open Dialog</Typography>
+                    <Typography 
+                        type="p" 
+                        colour="black" 
+                        bold={1} 
+                        font={urbanist.className}
+                    >
+                        Open Dialog
+                    </Typography>
                 </Button>
             )}
         >

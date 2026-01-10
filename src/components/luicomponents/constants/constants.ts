@@ -465,6 +465,14 @@ export const scaleMap = {
     5: "scale-100"
 }
 
+export const backdropMap = {
+    0: "bg-black/100",
+    1: "bg-black/70",
+    2: "bg-black/50",
+    3: "bg-black/30",
+    4: "bg-black/10"
+}
+
 export const textSizeMap = {
     0: "text-xs",
     1: "text-sm",
