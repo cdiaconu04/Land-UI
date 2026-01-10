@@ -513,6 +513,7 @@ export type borderProps = {
     colour: keyof typeof borderColourMap;
 }
 
+export type AccordionType = "single" | "multiple";
 
 export function getBorder(border?: borderProps): string {
     if (!border || border.type === 0) {

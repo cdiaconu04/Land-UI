@@ -36,8 +36,6 @@ export default function Home() {
           className="hover:scale-101 transition duration-500"
         />
 
-
-
       </div>
 
       {/* Components section */}
@@ -57,7 +55,7 @@ export default function Home() {
           <div className="grid grid-cols-4 gap-5 w-full h-full items-stretch auto-rows-fr">
             {components.map((c) => (
               <div key={c.slug} className="w-full flex flex-col gap-2 group">
-                <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 bg-white group-hover:shadow-md duration transition-200">
+                <div className="flex h-full justify-center items-center border border-1 border-gray-300 rounded-lg py-13 px-5 bg-white group-hover:shadow-md duration transition-200 overflow-hidden">
                   {c.demo}
                 </div>
                 
@@ -73,8 +71,6 @@ export default function Home() {
 
         </div>
 
-        
-        
       </div>
 
       {/* Call to action */}

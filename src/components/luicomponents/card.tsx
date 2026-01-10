@@ -26,7 +26,7 @@ export default function Card({
 
     return (
         <div className={`
-            flex flex-col gap-3 p-2
+            flex flex-col gap-3 p-4
             ${getBgColour(colour)}
             ${roundMap[round]}
             ${getBorder(border)}

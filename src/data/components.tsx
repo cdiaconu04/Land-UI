@@ -2,6 +2,7 @@
 
 import { type ReactNode } from "react";
 import { AvatarDemo } from "./demos/avatarDemo";
+import { CardDemo } from "./demos/cardDemo";
 import { DropDownDemo } from "./demos/dropDownDemo";
 import { NumberInputDemo } from "./demos/numberInputDemo";
 import { RadioGroupDemo } from "./demos/radioGroupDemo";
@@ -19,6 +20,7 @@ import { ButtonDemo } from "./demos/buttonDemo";
 import { avatarDemoCode } from "./demos/avatarDemo";
 import { buttonDemoCode } from "./demos/buttonDemo";
 import { badgeDemoCode } from "./demos/badgeDemo";
+import { cardDemoCode } from "./demos/cardDemo";
 import { checkboxDemoCode } from "./demos/checkboxDemo";
 import { dialogDemoCode } from "./demos/dialogDemo";
 import { dropdownDemoCode } from "./demos/dropDownDemo";
@@ -91,15 +93,15 @@ export type DocsComponent = {
 };
 
 export const components: DocsComponent[] = [
-    { 
-        name: "Accordion", 
-        description: "",
-        slug: "accordion",
-        demo: <div/>,
-        demoCode: "",
-        examples: [],
-        props: []
-    },
+    // { 
+    //     name: "Accordion", 
+    //     description: "",
+    //     slug: "accordion",
+    //     demo: <div/>,
+    //     demoCode: "",
+    //     examples: [],
+    //     props: []
+    // },
     { 
         name: "Avatar", 
         description: "",
@@ -285,21 +287,9 @@ export const components: DocsComponent[] = [
         name: "Card", 
         description: "",
         slug: "card",
-        demo: <div/>,
-        demoCode: "",
+        demo: <CardDemo/>,
+        demoCode: cardDemoCode,
         examples: [
-            {
-                name: "Card Borders",
-                description: ""
-            },
-            {
-                name: "Card Rounding",
-                description: ""
-            },
-            {
-                name: "Card Shadows",
-                description: ""
-            },
         ],
         props: [
             {
@@ -418,6 +408,11 @@ export const components: DocsComponent[] = [
         ],
         props: [
             {
+                name: "backdrop",
+                type: "0 | 1 | 2 | 3 | 4",
+                description: "Level of backdrop darkening when dialog active"
+            },
+            {
                 name: "children",
                 type: "Function",
                 description: "Render function for dialog content"
@@ -426,11 +421,6 @@ export const components: DocsComponent[] = [
                 name: "trigger",
                 type: "Function",
                 description: "Render function for the trigger element. Receives an open function."
-            },
-            {
-                name: "backdrop",
-                type: "0 | 1 | 2 | 3 | 4",
-                description: "Level of backdrop darkening when dialog active"
             },
         ]
     },
