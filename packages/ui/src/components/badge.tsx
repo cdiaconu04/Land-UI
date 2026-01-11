@@ -1,30 +1,28 @@
 "use client";
 import React from "react";
-import { colourProps, getBgColour, borderColourMap } from "../constants";
-
-const sizeMap = {
-    sm: "text-sm px-2 py-0.5",
-    md: "text-sm px-3 py-1",
-    lg: "text-base px-4 py-1.5",
-};
+import { colourProps, getBgColour, roundMap, shadowMap } from "../constants";
+import { getBorder } from "../constants";
+import { borderProps } from "../constants";
 
 type BadgeProps = {
     colour?: colourProps;
-    borderColour?: keyof typeof borderColourMap;
-    size?: keyof typeof sizeMap;
+    border?: borderProps;
     children?: React.ReactNode;
+    round?: keyof typeof roundMap;
+    shadow?: keyof typeof shadowMap;
 };
 
-export default function Badge({ colour = { type: "filled" }, borderColour = "default", size = "md", children }: BadgeProps) {
+export default function Badge({ colour = { type: "filled" }, border, round = 4, shadow = 0, children }: BadgeProps) {
     return (
         <div
             className={`
+                px-2 py-1
                 flex-row items-center justify-center
                 border-1
                 ${getBgColour(colour)}
-                ${borderColourMap[borderColour]}
-                rounded-full
-                ${sizeMap[size]}
+                ${getBorder(border)}
+                ${roundMap[round]}
+                ${shadowMap[shadow]}
             `}
         >
             {children}

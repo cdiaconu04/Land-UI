@@ -13,7 +13,6 @@ type CardProps = {
     round?: keyof typeof roundMap;
     border?: borderProps;
     shadow?: keyof typeof shadowMap;
-    className?: string;
     children?: React.ReactNode;
 };
 
@@ -23,11 +22,11 @@ export default function Card({
     border,
     shadow = 0,
     children
-    }: CardProps) {
+}: CardProps) {
 
     return (
         <div className={`
-            flex flex-col gap-3 p-2
+            flex flex-col gap-3 p-4
             ${getBgColour(colour)}
             ${roundMap[round]}
             ${getBorder(border)}

@@ -3,13 +3,12 @@ import React from "react";
 import { sidePadMap, borderProps, getBgColour, getBorder, roundMap, colourProps } from "../constants";
 
 type InputProps = React.PropsWithChildren<{
-    type: "default" | "floating";
+    type?: "default" | "floating";
     sticky?: boolean;
     colour?: colourProps;
     sidePadLevel?: keyof typeof sidePadMap;
     rounded?: keyof typeof roundMap;
     border?: borderProps;
-    className?: string;
 }>
 
 
@@ -23,7 +22,6 @@ export default function Navbar({ type = "default", sticky = true, colour = {type
                 ${sidePadMap[sidePadLevel]}
                 ${roundMap[rounded]}
                 ${getBorder(border)}
-                ${type === "default" ? "" : "top-3 fixed z-50"}
             `}>
                 {children}
             </div>

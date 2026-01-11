@@ -46,7 +46,7 @@ export default function Navbar() {
                         
                         <li className="">
                             <div className="group hover:bg-gray-100 rounded-lg transition duration-200">
-                                <a href="/" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> GitHub </a>
+                                <a target="_blank" href="https://github.com/cdiaconu04/Land-UI" className={`${urbanist.className} group block px-3 py-2 text-md text-gray-800`}> GitHub </a>
                             </div>
                         </li>
                         {/* <li className="">

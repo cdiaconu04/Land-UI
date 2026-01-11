@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { Urbanist } from 'next/font/google';
 import { colourMap, placeholderColourMap, roundMap, borderProps, getBorder, textColourMap } from "./constants/constants";
-
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 type placeholderProps = {
     placeholder: string;
@@ -31,7 +28,6 @@ export default function Input({
         <input
             placeholder={placeholder.placeholder}
             className={`
-                ${urbanist.className} 
                 ${textColourMap[textColour]}
                 ${placeholderColourMap[placeholder.colour]}
                 border-2

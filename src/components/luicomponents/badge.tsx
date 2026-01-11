@@ -1,11 +1,8 @@
 "use client";
 import React from "react";
-import { Urbanist } from 'next/font/google';
-import { colourProps, getBgColour, borderColourMap, roundMap, shadowMap } from "./constants/constants";
+import { colourProps, getBgColour, roundMap, shadowMap } from "./constants/constants";
 import { getBorder } from "./constants/constants";
 import { borderProps } from "./constants/constants";
-
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 type BadgeProps = {
     colour?: colourProps;
@@ -24,7 +21,6 @@ export default function Badge({ colour = { type: "filled" }, border, round = 4, 
                 border-1
                 ${getBgColour(colour)}
                 ${getBorder(border)}
-                ${urbanist.className}
                 ${roundMap[round]}
                 ${shadowMap[shadow]}
             `}

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { colourProps, getBgColour, roundMap, scaleMap } from "../constants";
+import { colourProps, getBgColour, roundMap, scaleMap, textColourMap } from "../constants";
 
 type Placement = "top" | "bottom" | "left" | "right";
 
@@ -13,6 +13,7 @@ const sizeMap = {
 type TooltipProps = React.PropsWithChildren<{
   font?: string,
   colour?: colourProps;
+  textColour?: keyof typeof textColourMap;
   content: string;
   placement?: Placement;
   size?: "sm" | "md" | "lg";
@@ -23,6 +24,7 @@ type TooltipProps = React.PropsWithChildren<{
 export default function Tooltip({ 
   font = "",
   colour = {type: "filled", colour: "black"}, 
+  textColour = "white",
   content, 
   placement = "top", 
   size = "md",
@@ -39,14 +41,14 @@ export default function Tooltip({
   };
 
   return (
-    <div className="group relative inline-block">
+    <div className="group/tooltip relative inline-block">
       {children}
 
       <div
         role="tooltip"
-        className={`absolute z-50 ${posClass[placement]} opacity-0 ${scaleMap[scale]} transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100`}
+        className={`absolute z-50 ${posClass[placement]} opacity-0 ${scaleMap[scale]} transform transition-all duration-150 pointer-events-none group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100`}
       >
-        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} text-white rounded-full ${sizeMap[size]}`}> 
+        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]}`}> 
           {content}
         </div>
 

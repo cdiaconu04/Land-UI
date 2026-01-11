@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { Urbanist } from 'next/font/google';
 import { colourProps, getBgColour, roundMap, scaleMap, textColourMap } from "./constants/constants";
-
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 type Placement = "top" | "bottom" | "left" | "right";
 
@@ -51,7 +48,7 @@ export default function Tooltip({
         role="tooltip"
         className={`absolute z-50 ${posClass[placement]} opacity-0 ${scaleMap[scale]} transform transition-all duration-150 pointer-events-none group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100`}
       >
-        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]} ${urbanist.className}`}> 
+        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]}`}> 
           {content}
         </div>
 

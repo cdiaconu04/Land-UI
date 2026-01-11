@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { colourProps, shadowMap, textColourMap, roundMap, borderProps, getBorder, getBgColour } from "./constants/constants";
+import { colourProps, shadowMap, textColourMap, roundMap, borderProps, getBorder, getBgColour } from "../constants";
 
 const sizeMap = {
     small: "text-md",

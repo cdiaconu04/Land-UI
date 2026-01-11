@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { Urbanist } from 'next/font/google';
 import { colourProps, hoverShadowMap, roundMap, borderProps, getBorder, getBgColour, getHoverBgColour } from "./constants/constants";
-
-const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 const sizeMap = {
     small: "text-md",
@@ -38,7 +35,6 @@ export default function Button({
             className={`
                 ${getBgColour(colour)}
                 ${getBorder(border)}
-                ${urbanist.className} 
                 ${hoverShadowMap[hoverShadow]}
                 ${getHoverBgColour(hoverColour)}
                 transition-colours duration-100

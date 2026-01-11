@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
 
           <p className={`${urbanist.className} text-3xl text-gray-800 leading-10`}>
-            17 modern and customizable, <br/> React components to make your website stand out.
+            16 modern and customizable, <br/> React components to make your website stand out.
           </p>
         </div>
 

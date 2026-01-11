@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { colourProps, shadowMap, textColourMap, roundMap, borderProps, getBorder, getBgColour } from "../constants";
+import { colourProps, hoverShadowMap, roundMap, borderProps, getBorder, getBgColour, getHoverBgColour } from "../constants";
 
 const sizeMap = {
     small: "text-md",
@@ -11,10 +11,10 @@ const sizeMap = {
 type ButtonProps = {
     onClick: () => void;
     colour?: colourProps;
-    textColour?: keyof typeof textColourMap;
+    hoverColour?: colourProps;
     border?: borderProps;
     size?: keyof typeof sizeMap;
-    hoverShadow?: keyof typeof shadowMap;
+    hoverShadow?: keyof typeof hoverShadowMap;
     round?: keyof typeof roundMap;
     children?: React.ReactNode;
 };
@@ -22,6 +22,7 @@ type ButtonProps = {
 export default function Button({
     onClick, 
     colour = {type: "filled"},
+    hoverColour = colour,
     size = "medium", 
     border, 
     hoverShadow = 0, 
@@ -34,7 +35,9 @@ export default function Button({
             className={`
                 ${getBgColour(colour)}
                 ${getBorder(border)}
-                ${shadowMap[hoverShadow]}
+                ${hoverShadowMap[hoverShadow]}
+                ${getHoverBgColour(hoverColour)}
+                transition-colours duration-100
                 ${roundMap[round]}
                 ${sizeMap[size]}
                 px-2 py-1
