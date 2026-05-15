@@ -2,9 +2,6 @@ import { RadioGroup } from "@/components/luicomponents/radioGroup";
 import { RadioItem } from "@/components/luicomponents/radioItem";
 import Typography from "@/components/luicomponents/typography";
 import { useState } from "react";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function RadioGroupDisabled() {
     const [plan, setPlan] = useState("free");
@@ -29,7 +26,7 @@ export function RadioGroupDisabled() {
                 indicatorColour={{ type: "filled", colour: "black" }}
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Free
                 </Typography>
             </RadioItem>
@@ -49,7 +46,7 @@ export function RadioGroupDisabled() {
                 indicatorSize="md"
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Pro
                 </Typography>
             </RadioItem>
@@ -67,7 +64,7 @@ export function RadioGroupDisabled() {
                 indicatorColour={{ type: "filled", colour: "black" }}
                 disabled={true}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Enterprise
                 </Typography>
             </RadioItem>
@@ -80,9 +77,6 @@ export const radioGroupDisabledCode =
 import { RadioItem } from "@/components/luicomponents/radioItem";
 import Typography from "@/components/luicomponents/typography";
 import { useState } from "react";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function RadioGroupDemo() {
     const [plan, setPlan] = useState("free");
@@ -108,7 +102,6 @@ export function RadioGroupDemo() {
                 disabled={true}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 
@@ -134,7 +127,6 @@ export function RadioGroupDemo() {
                 disabled={true}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 
@@ -158,7 +150,6 @@ export function RadioGroupDemo() {
                 disabled={true}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 

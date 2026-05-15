@@ -1,15 +1,12 @@
 import Badge from "@/components/luicomponents/badge";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function Filled() {
     return (
-        <Badge 
+        <Badge
             colour={{type: "filled", colour: "lightSky"}}
         >
-            <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+            <Typography type="p" colour="black" bold={1}>
                 Filled
             </Typography>
         </Badge>
@@ -19,9 +16,6 @@ export function Filled() {
 export const filledCode = 
 `import Badge from "@/components/luicomponents/badge";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function Filled() {
     return (
@@ -30,7 +24,6 @@ export function Filled() {
         >
             <Typography 
                 type="p" 
-                font={urbanist.className} 
                 colour="black"
                 bold={1}
             >

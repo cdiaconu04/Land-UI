@@ -2,9 +2,6 @@ import { RadioGroup } from "@/components/luicomponents/radioGroup";
 import { RadioItem } from "@/components/luicomponents/radioItem";
 import Typography from "@/components/luicomponents/typography";
 import { useState } from "react";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function RadioGroupDirection() {
     const [plan, setPlan] = useState("free");
@@ -28,7 +25,7 @@ export function RadioGroupDirection() {
                 round={2}
                 indicatorColour={{ type: "filled", colour: "black" }}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Free
                 </Typography>
             </RadioItem>
@@ -47,7 +44,7 @@ export function RadioGroupDirection() {
                 indicatorColour={{ type: "filled", colour: "black" }}
                 indicatorSize="md"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Pro
                 </Typography>
             </RadioItem>
@@ -64,7 +61,7 @@ export function RadioGroupDirection() {
                 round={2}
                 indicatorColour={{ type: "filled", colour: "black" }}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1} size={2}>
+                <Typography type="p" colour="black" bold={1} size={2}>
                     Enterprise
                 </Typography>
             </RadioItem>
@@ -77,9 +74,6 @@ export const radioGroupDirectionCode =
 import { RadioItem } from "@/components/luicomponents/radioItem";
 import Typography from "@/components/luicomponents/typography";
 import { useState } from "react";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function RadioGroupDemo() {
     const [plan, setPlan] = useState("free");
@@ -104,7 +98,6 @@ export function RadioGroupDemo() {
                 indicatorColour={{ type: "filled", colour: "black" }}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 
@@ -129,7 +122,6 @@ export function RadioGroupDemo() {
                 indicatorSize="md"
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 
@@ -152,7 +144,6 @@ export function RadioGroupDemo() {
                 indicatorColour={{ type: "filled", colour: "black" }}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1} 

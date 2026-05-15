@@ -29,7 +29,6 @@ type CheckboxProps = {
     size?: keyof typeof checkboxSizeMap;
 
     className?: string;
-    font?: string;
 };
 
 export default function Checkbox({
@@ -48,8 +47,6 @@ export default function Checkbox({
     checkTextColour = "white",
 
     size = "md",
-
-    font,
 }: CheckboxProps) {
   const boxBg = checked ? getBgColour(checkedColour) : getBgColour(colour);
 
@@ -90,7 +87,7 @@ export default function Checkbox({
         </div>
 
         {label && (
-            <span className={`${checkboxSizeMap[size].label} ${textColourMap[labelTextColour]} ${font} text-xl`}>
+            <span className={`${checkboxSizeMap[size].label} ${textColourMap[labelTextColour]} text-xl`}>
                 {label}
             </span>
         )}

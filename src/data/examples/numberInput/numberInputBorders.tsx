@@ -1,7 +1,4 @@
 import NumberInput from "@/components/luicomponents/numberInput";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function NumberInputBorders() {
     return (
@@ -13,7 +10,6 @@ export function NumberInputBorders() {
                 onChange={(v) => console.log(v)}
                 round={2}
                 border={{ type: 2, colour: "red" }}
-                font={urbanist.className}
             />
 
             <NumberInput
@@ -23,17 +19,13 @@ export function NumberInputBorders() {
                 onChange={(v) => console.log(v)}
                 round={2}
                 border={{ type: 2, colour: "orange" }}
-                font={urbanist.className}
             />
-        </div> 
+        </div>
     );
 }
 
 export const numberInputBordersCode =
 `import NumberInput from "@/components/luicomponents/numberInput";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function NumberInputDemo() {
     return (
@@ -45,7 +37,6 @@ export function NumberInputDemo() {
                 onChange={(v) => console.log(v)}
                 round={2}
                 border={{ type: 2, colour: "red" }}
-                font={urbanist.className}
             />
 
             <NumberInput
@@ -55,7 +46,6 @@ export function NumberInputDemo() {
                 onChange={(v) => console.log(v)}
                 round={2}
                 border={{ type: 2, colour: "orange" }}
-                font={urbanist.className}
             />
         </div> 
     );

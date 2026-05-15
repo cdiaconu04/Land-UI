@@ -1,7 +1,4 @@
 import Avatar from "@/components/luicomponents/avatar";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function AvatarSize() {
     return (
@@ -12,7 +9,6 @@ export function AvatarSize() {
                 bgColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"sm"}
             />
 
@@ -22,7 +18,6 @@ export function AvatarSize() {
                 bgColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"md"}
             />
 
@@ -32,7 +27,6 @@ export function AvatarSize() {
                 bgColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"lg"}
             />
 
@@ -42,7 +36,6 @@ export function AvatarSize() {
                 bgColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"xl"}
             />
         </div>
@@ -51,9 +44,6 @@ export function AvatarSize() {
 
 export const avatarSizeCode = 
 `import Avatar from "@/components/luicomponents/avatar";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function AvatarColours() {
     return (
@@ -69,7 +59,6 @@ export function AvatarColours() {
                 }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"sm"}
             />
 
@@ -84,7 +73,6 @@ export function AvatarColours() {
                 }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"md"}
             />
 
@@ -99,7 +87,6 @@ export function AvatarColours() {
                 }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"lg"}
             />
 
@@ -114,7 +101,6 @@ export function AvatarColours() {
                 }}
                 textColour="black"
                 round={4}
-                font={urbanist.className}
                 size={"xl"}
             />
         </div>

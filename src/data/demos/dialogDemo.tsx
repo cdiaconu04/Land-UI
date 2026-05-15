@@ -5,9 +5,6 @@ import Dialog from "@/components/luicomponents/dialog";
 import Card from "@/components/luicomponents/card";
 import Button from "@/components/luicomponents/button";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function DialogDemo() {
     return (
@@ -16,14 +13,14 @@ export function DialogDemo() {
                 <Button
                     onClick={open}
                     colour={{
-                        type: "gradient", 
-                        colourFrom: "lightSky", 
-                        colourVia: "lightSky", 
+                        type: "gradient",
+                        colourFrom: "lightSky",
+                        colourVia: "lightSky",
                         colourTo: "lightEmerald"
                     }}
                     round={2}
                 >
-                    <Typography type="p" colour="black" bold={1} font={urbanist.className}>
+                    <Typography type="p" colour="black" bold={1}>
                         Open Dialog
                     </Typography>
                 </Button>
@@ -36,23 +33,21 @@ export function DialogDemo() {
                     shadow={2}
                     className="p-7 gap-4"
                 >
-                    <Typography type="p" colour="black" bold={1} size={3} font={urbanist.className}>
+                    <Typography type="p" colour="black" bold={1} size={3}>
                         Here is a Dialog.
                     </Typography>
-
-                    
 
                     <Button
                         onClick={close}
                         colour={{
-                            type: "gradient", 
-                            colourFrom: "lightSky", 
-                            colourVia: "lightSky", 
+                            type: "gradient",
+                            colourFrom: "lightSky",
+                            colourVia: "lightSky",
                             colourTo: "lightEmerald"
                         }}
                         round={2}
                     >
-                        <Typography type="p" colour="black" bold={1} font={urbanist.className}>
+                        <Typography type="p" colour="black" bold={1}>
                             Close
                         </Typography>
                     </Button>
@@ -70,9 +65,6 @@ import Dialog from "@/components/luicomponents/dialog";
 import Card from "@/components/luicomponents/card";
 import Button from "@/components/luicomponents/button";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function DialogDemo() {
     return (
@@ -92,7 +84,6 @@ export function DialogDemo() {
                         type="p" 
                         colour="black" 
                         bold={1} 
-                        font={urbanist.className}
                     >
                         Open Dialog
                     </Typography>
@@ -114,7 +105,6 @@ export function DialogDemo() {
                         colour="black" 
                         bold={1} 
                         size={3} 
-                        font={urbanist.className}
                     >
                         Here is a Dialog.
                     </Typography>
@@ -133,7 +123,6 @@ export function DialogDemo() {
                             type="p" 
                             colour="black" 
                             bold={1} 
-                            font={urbanist.className}
                         >
                             Close
                         </Typography>

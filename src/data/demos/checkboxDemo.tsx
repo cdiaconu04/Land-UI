@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Checkbox from "@/components/luicomponents/checkbox";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function CheckboxDemo() {
   const [newsletter, setNewsletter] = useState(true);
@@ -15,7 +12,6 @@ export function CheckboxDemo() {
           label="Check me!"
           checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
           checkTextColour="black"
-          font={urbanist.className}
         />
     </div>
   );
@@ -24,9 +20,6 @@ export function CheckboxDemo() {
 export const checkboxDemoCode = 
 `import { useState } from "react";
 import Checkbox from "@/components/luicomponents/checkbox";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function CheckboxDemo() {
   const [newsletter, setNewsletter] = useState(true);
@@ -44,7 +37,6 @@ export function CheckboxDemo() {
             colourTo: "lightEmerald" 
           }}
           checkTextColour="black"
-          font={urbanist.className}
         />
     </div>
   );

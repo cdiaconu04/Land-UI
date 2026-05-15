@@ -1,53 +1,50 @@
 import Badge from "@/components/luicomponents/badge";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ShadowLevels() {
     return (
         <div className="grid grid-cols-3 gap-3">
-            <Badge 
+            <Badge
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={0}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Shadow
                 </Typography>
             </Badge>
 
-            <Badge 
+            <Badge
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={1}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Shadow
                 </Typography>
             </Badge>
 
-            <Badge 
+            <Badge
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={2}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Shadow
                 </Typography>
             </Badge>
 
-            <Badge 
+            <Badge
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={3}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Shadow
                 </Typography>
             </Badge>
 
-            <Badge 
+            <Badge
                 colour={{type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald"}}
                 shadow={4}
             >
-                <Typography type="p" font={urbanist.className} colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Shadow
                 </Typography>
             </Badge>
@@ -58,9 +55,6 @@ export function ShadowLevels() {
 export const shadowLevelsCode = 
 `import Badge from "@/components/luicomponents/badge";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ShadowLevels() {
     return (
@@ -76,7 +70,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >
@@ -95,7 +88,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >
@@ -114,7 +106,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >
@@ -133,7 +124,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >
@@ -152,7 +142,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >
@@ -171,7 +160,6 @@ export function ShadowLevels() {
             >
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1}
                 >

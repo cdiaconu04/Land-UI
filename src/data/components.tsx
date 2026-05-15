@@ -141,11 +141,6 @@ export const components: DocsComponent[] = [
                 description: "Border styling",
             },
             {
-                name: "font",
-                type: "string",
-                description: "Font class",
-            },
-            {
                 name: "initials",
                 type: "string",
                 description: "Fallback initials",
@@ -368,11 +363,6 @@ export const components: DocsComponent[] = [
                 description: "Disables interaction"
             },
             {
-                name: "font",
-                type: "string",
-                description: "Font for label"
-            },
-            {
                 name: "labelTextColour",
                 type: "Colour type",
                 description: "Text colour for the label"
@@ -453,11 +443,6 @@ export const components: DocsComponent[] = [
                 name: "disabled",
                 type: "boolean",
                 description: "Disables interaction when true"
-            },
-            {
-                name: "font",
-                type: "string",
-                description: "Font class"
             },
             {
                 name: "itemColour",
@@ -567,11 +552,6 @@ export const components: DocsComponent[] = [
                 description: "Background colour"
             },
             {
-                name: "font",
-                type: "string",
-                description: "Font class"
-            },
-            {
                 name: "placeholder",
                 type: "{ placeholder: string; colour: Colour }",
                 description: "Placeholder text and colour"
@@ -652,11 +632,6 @@ export const components: DocsComponent[] = [
                 name: "colour",
                 type: "Colour",
                 description: "Background colour"
-            },
-            {
-                name: "font",
-                type: "string",
-                description: "Font class"
             },
             {
                 name: "max",
@@ -822,11 +797,6 @@ export const components: DocsComponent[] = [
                 name: "colour",
                 type: "Colour",
                 description: "Background colour"
-            },
-            {
-                name: "font",
-                type: "string",
-                description: "Font class"
             },
             {
                 name: "placeholder",
@@ -1002,11 +972,6 @@ export const components: DocsComponent[] = [
                 description: "Text displayed in the tooltip"
             },
             {
-                name: "font",
-                type: "string",
-                description: "Font class"
-            },
-            {
                 name: "placement",
                 type: `"top" | "bottom" | "left" | "right"`,
                 description: "Tooltip position relative to trigger element"
@@ -1063,11 +1028,6 @@ export const components: DocsComponent[] = [
                 name: "colour",
                 type: "Colour type",
                 description: "Text colour"
-            },
-            {
-                name: "font",
-                type: "string",
-                description: "Font class"
             },
             {
                 name: "size",

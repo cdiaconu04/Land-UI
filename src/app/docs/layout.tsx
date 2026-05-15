@@ -1,12 +1,9 @@
 "use client";
 
 import Navbar from "@/components/navbar";
-import { Urbanist } from "next/font/google";
 import { components } from "@/data/components";
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 const SIDEBAR_W = 240;
 const GAP = 32;
@@ -29,10 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-1">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
+              <p className="text-md text-gray-800 font-semibold py-1 px-2">
                 Getting Started
               </p>
-              <Link href={`/docs/getting-started/installation/`} className={`${urbanist.className} text-md text-gray-800
+              <Link href={`/docs/getting-started/installation/`} className={`text-md text-gray-800
                 rounded-lg transition duration-200 py-1 px-2
                 ${curUrl === `/docs/getting-started/installation` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
@@ -41,28 +38,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             <div className="flex flex-col gap-1">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
+              <p className="text-md text-gray-800 font-semibold py-1 px-2">
                 Customization
               </p>
-              <Link href={`/docs/customization/borders/`} className={`${urbanist.className} text-md text-gray-800
+              <Link href={`/docs/customization/borders/`} className={`text-md text-gray-800
                 rounded-lg transition duration-200 py-1 px-2
                 ${curUrl === `/docs/customization/borders` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Borders
               </Link>
-              <Link href={`/docs/customization/colours/`} className={`${urbanist.className} text-md text-gray-800
+              <Link href={`/docs/customization/colours/`} className={`text-md text-gray-800
                 rounded-lg transition duration-200 py-1 px-2
                 ${curUrl === `/docs/customization/colours` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Colours
               </Link>
-              <Link href={`/docs/customization/rounding/`} className={`${urbanist.className} text-md text-gray-800
+              <Link href={`/docs/customization/rounding/`} className={`text-md text-gray-800
                 rounded-lg transition duration-200 py-1 px-2
                 ${curUrl === `/docs/customization/rounding` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
                 Rounding
               </Link>
-              <Link href={`/docs/customization/shadows/`} className={`${urbanist.className} text-md text-gray-800
+              <Link href={`/docs/customization/shadows/`} className={`text-md text-gray-800
                 rounded-lg transition duration-200 py-1 px-2
                 ${curUrl === `/docs/customization/shadows` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
               `}>
@@ -71,14 +68,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             <div className="flex flex-col gap-1">
-              <p className={`${urbanist.className} text-md text-gray-800 font-semibold py-1 px-2`}>
+              <p className="text-md text-gray-800 font-semibold py-1 px-2">
                 Components
               </p>
               {components.map((c) => (
                 <Link
                   key={c.slug}
                   href={`/docs/components/${c.slug}`}
-                  className={`${urbanist.className} text-md text-gray-800 rounded-lg transition duration-200 py-1 px-2
+                  className={`text-md text-gray-800 rounded-lg transition duration-200 py-1 px-2
                     ${curUrl === `/docs/components/${c.slug}` ? "bg-gray-100 hover:bg-gray-200" : "hover:bg-gray-100 "}
                   `}
                 >

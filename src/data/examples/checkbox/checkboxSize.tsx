@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Checkbox from "@/components/luicomponents/checkbox";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function CheckboxSize() {
     const [newsletter, setNewsletter] = useState(true);
@@ -15,7 +12,6 @@ export function CheckboxSize() {
                 label="Check me!"
                 checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"sm"}
             />
 
@@ -25,7 +21,6 @@ export function CheckboxSize() {
                 label="Check me!"
                 checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"md"}
             />
 
@@ -35,7 +30,6 @@ export function CheckboxSize() {
                 label="Check me!"
                 checkedColour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"lg"}
             />
         </div>
@@ -45,9 +39,6 @@ export function CheckboxSize() {
 export const checkboxSizeCode = 
 `import { useState } from "react";
 import Checkbox from "@/components/luicomponents/checkbox";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function CheckboxSize() {
     const [newsletter, setNewsletter] = useState(true);
@@ -65,7 +56,6 @@ export function CheckboxSize() {
                     colourTo: "lightEmerald" 
                 }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"sm"}
             />
 
@@ -80,7 +70,6 @@ export function CheckboxSize() {
                     colourTo: "lightEmerald" 
                 }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"md"}
             />
 
@@ -95,7 +84,6 @@ export function CheckboxSize() {
                     colourTo: "lightEmerald" 
                 }}
                 checkTextColour="black"
-                font={urbanist.className}
                 size={"lg"}
             />
         </div>

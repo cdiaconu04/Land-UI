@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Toggle from "@/components/luicomponents/toggle";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToggleColours() {
     const [on1, setOn1] = useState(false);
@@ -20,7 +17,7 @@ export function ToggleColours() {
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Toggle Me
                 </Typography>
             </Toggle>
@@ -33,7 +30,7 @@ export function ToggleColours() {
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Toggle Me
                 </Typography>
             </Toggle>
@@ -46,7 +43,7 @@ export function ToggleColours() {
                 round={2}
                 size="medium"
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Toggle Me
                 </Typography>
             </Toggle>
@@ -59,9 +56,6 @@ export const toggleColoursCode =
 `import { useState } from "react";
 import Toggle from "@/components/luicomponents/toggle";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToggleColours() {
     const [on1, setOn1] = useState(false);
@@ -79,7 +73,6 @@ export function ToggleColours() {
                 size="medium"
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1}
@@ -97,7 +90,6 @@ export function ToggleColours() {
                 size="medium"
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1}
@@ -120,7 +112,6 @@ export function ToggleColours() {
                 size="medium"
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1}

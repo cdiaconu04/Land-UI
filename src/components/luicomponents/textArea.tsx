@@ -14,22 +14,19 @@ type InputProps = {
     placeholder?: placeholderProps;
     round?: keyof typeof roundMap;
     border?: borderProps;
-    font?: string;
 }
 
-export default function TextArea({ 
-    colour = "default", 
-    textColour = "default", 
-    border = {type: 2, colour: "black"}, 
+export default function TextArea({
+    colour = "default",
+    textColour = "default",
+    border = {type: 2, colour: "black"},
     placeholder = {placeholder: "Input", colour: "default"},
     round = 1,
-    font
 }: InputProps) {
     return (
         <textarea
             placeholder={placeholder.placeholder}
             className={`
-                ${font} 
                 ${textColourMap[textColour]}
                 ${placeholderColourMap[placeholder.colour]}
                 border-2

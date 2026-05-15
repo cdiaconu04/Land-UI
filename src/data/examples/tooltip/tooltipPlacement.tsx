@@ -1,9 +1,6 @@
 import Button from "@/components/luicomponents/button";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToolTipPlacement() {
     return (
@@ -20,7 +17,7 @@ export function ToolTipPlacement() {
                 onClick={() => {}}
                 colour={{ type: "gradient", colourFrom: "lightSky", colourVia: "lightSky", colourTo: "lightEmerald" }}
             >
-                <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+                <Typography type="p" colour="black" bold={1}>
                     Hover me
                 </Typography>
             </Button>
@@ -32,9 +29,6 @@ export const tooltipPlacementCode =
 `import Button from "@/components/luicomponents/button";
 import Tooltip from "@/components/luicomponents/tooltip";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToolTipPlacement() {
     return (
@@ -62,7 +56,6 @@ export function ToolTipPlacement() {
                 }}
             >
                 <Typography 
-                    font={urbanist.className} 
                     type="p" 
                     colour="black" 
                     bold={1}

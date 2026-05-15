@@ -1,9 +1,6 @@
 import NavSection from "@/components/luicomponents/navSection";
 import Navbar from "@/components/luicomponents/navbar";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function NavbarDemo() {
     return (
@@ -13,11 +10,11 @@ export function NavbarDemo() {
             type={"default"}
         >
             <NavSection>
-                <Typography type="p" font={urbanist.className} colour="black" bold={1} size={4}>Website</Typography>
+                <Typography type="p" colour="black" bold={1} size={4}>Website</Typography>
             </NavSection>
 
             <NavSection>
-                <Typography type="p" font={urbanist.className} colour="black" bold={1} size={2}>Link</Typography>
+                <Typography type="p" colour="black" bold={1} size={2}>Link</Typography>
             </NavSection>
         </Navbar>
     )
@@ -27,9 +24,6 @@ export const navbarDemoCode =
 `import NavSection from "@/components/luicomponents/navSection";
 import Navbar from "@/components/luicomponents/navbar";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function NavbarDemo() {
     return (
@@ -41,7 +35,6 @@ export function NavbarDemo() {
             <NavSection>
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1} 
                     size={4}
@@ -53,7 +46,6 @@ export function NavbarDemo() {
             <NavSection>
                 <Typography 
                     type="p" 
-                    font={urbanist.className} 
                     colour="black" 
                     bold={1} 
                     size={2}

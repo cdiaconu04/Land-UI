@@ -30,8 +30,6 @@ type AvatarProps = {
 
     border?: borderProps;
     round?: keyof typeof roundMap;
-
-    font?: string;
 };
 
 export default function Avatar({
@@ -43,7 +41,6 @@ export default function Avatar({
     textColour = "black",
     border,
     round = 4,
-    font,
 }: AvatarProps) {
     const [imgError, setImgError] = useState(false);
     const showImage = src && !imgError;
@@ -71,7 +68,6 @@ export default function Avatar({
                     className={`
                         font-semibold select-none
                         ${textColourMap[textColour]}
-                        ${font}
                     `}
                     >
                     {initials.toUpperCase()}

@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Toggle from "@/components/luicomponents/toggle";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToggleDemo() {
   const [on, setOn] = useState(false);
@@ -17,7 +14,7 @@ export function ToggleDemo() {
       round={2}
       size="medium"
     >
-      <Typography font={urbanist.className} type="p" colour="black" bold={1}>
+      <Typography type="p" colour="black" bold={1}>
         Toggle Me
       </Typography>
     </Toggle>
@@ -28,9 +25,6 @@ export const toggleDemoCode =
 `import { useState } from "react";
 import Toggle from "@/components/luicomponents/toggle";
 import Typography from "@/components/luicomponents/typography";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function ToggleDemo() {
   const [on, setOn] = useState(false);
@@ -50,7 +44,6 @@ export function ToggleDemo() {
       size="medium"
     >
       <Typography 
-        font={urbanist.className} 
         type="p" 
         colour="black" 
         bold={1}

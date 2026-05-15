@@ -1,7 +1,4 @@
 import TextArea from "@/components/luicomponents/textArea";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function TextAreaBorders() {
     return (
@@ -12,7 +9,6 @@ export function TextAreaBorders() {
                 placeholder={{ placeholder: "What do you think?", colour: "default" }}
                 border={{ type: 1, colour: "red" }}
                 round={2}
-                font={urbanist.className}
             />
 
             <TextArea
@@ -21,18 +17,14 @@ export function TextAreaBorders() {
                 placeholder={{ placeholder: "What do you think?", colour: "default" }}
                 border={{ type: 1, colour: "orange" }}
                 round={2}
-                font={urbanist.className}
             />
         </div>
-        
+
     )
 }
 
 export const textAreaBordersCode =
 `import TextArea from "@/components/luicomponents/textArea";
-import { Urbanist } from "next/font/google";
-
-const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700"] });
 
 export function TextAreaDemo() {
     return (
@@ -43,7 +35,6 @@ export function TextAreaDemo() {
                 placeholder={{ placeholder: "What do you think?", colour: "default" }}
                 border={{ type: 1, colour: "red" }}
                 round={2}
-                font={urbanist.className}
             />
 
             <TextArea
@@ -52,7 +43,6 @@ export function TextAreaDemo() {
                 placeholder={{ placeholder: "What do you think?", colour: "default" }}
                 border={{ type: 1, colour: "orange" }}
                 round={2}
-                font={urbanist.className}
             />
         </div>
         

@@ -20,7 +20,6 @@ type NumberInputProps = {
     textColour?: keyof typeof textColourMap;
     border?: borderProps;
     round?: keyof typeof roundMap;
-    font?: string
 };
 
 export default function NumberInput({
@@ -35,7 +34,6 @@ export default function NumberInput({
     textColour = "default",
     border = { type: 2, colour: "black" },
     round = 1,
-    font,
 }: NumberInputProps) {
     const [curNum, setCurNum] = useState(value);
     
@@ -60,7 +58,6 @@ export default function NumberInput({
             }}
             
             className={`
-                ${font}
                 ${textColourMap[textColour]}
                 ${getBorder(border)}
                 ${roundMap[round]}
