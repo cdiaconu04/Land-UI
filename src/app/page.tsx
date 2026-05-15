@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import CodeBlock from "@/components/codeBlock";
 import { ChevronRight } from 'lucide-react';
 import Link from "next/link";
 import Button from "@/components/luicomponents/button";
@@ -23,6 +24,9 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-lg lg:text-2xl xl:text-3xl text-gray-800 leading-7 sm:leading-8 md:leading-7 lg:leading-9 xl:leading-10">
             16 modern and customizable, <br className="hidden md:block"/> React components to make your website stand out.
           </p>
+          <div className="w-fit">
+            <CodeBlock code={`npm install @cdiaconu/land-ui`} />
+          </div>
         </div>
 
         <Image
