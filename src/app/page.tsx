@@ -4,10 +4,7 @@ import Navbar from "@/components/navbar";
 import CodeBlock from "@/components/codeBlock";
 import { ChevronRight } from 'lucide-react';
 import Link from "next/link";
-import Button from "@/components/luicomponents/button";
-import Badge from "@/components/luicomponents/badge";
 import { Copy } from 'lucide-react';
-import Typography from "@/components/luicomponents/typography";
 import { components } from "@/data/components";
 
 async function handleCopy() {

@@ -12,11 +12,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const curUrl = usePathname();
 
   return (
-    <div className="bg-white min-h-screen flex items-center justify-center">
+    <div className="bg-white min-h-screen flex items-start">
       <Navbar />
 
       <div className="mx-auto max-w-screen-xl px-6 pt-28 pb-10 flex">
-        
+
         <aside
           className="fixed top-28 h-[calc(95vh-7rem)] overflow-y-auto pr-2 px-6"
           style={{
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </aside>
 
         <main
-          className="min-w-0"
+          className="flex-1 min-w-0"
           style={{ paddingLeft: SIDEBAR_W + GAP }}
         >
           {children}

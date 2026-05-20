@@ -10,57 +10,56 @@ export default function ComponentDocs() {
 
     // If component undefined
     if (!component) return (
-        <div className="bg-white flex flex-col items-center justify-center">
-            <p className="text-3xl text-gray-800"> Component not found. </p>
+        <div className="bg-white flex flex-col items-center justify-center min-h-64">
+            <p className="text-2xl sm:text-3xl text-gray-800"> Component not found. </p>
         </div>
     );
 
     // If component defined
     return (
-        <div className="bg-white grid grid-cols-5 gap-8 justify-between w-full">
-            
+        <div className="bg-white flex flex-col gap-8 sm:gap-10 w-full">
+
             {/* Docs content */}
-            <div className="col-span-4 flex flex-col gap-10 min-w-full items-start justify-top">
-                <div className="flex flex-col gap-2 w-full">
-                    <p className="text-3xl text-gray-800"> {component.name} </p>
-                    <p className="text-lg text-gray-800"> {component.description} </p>
+            <div className="flex flex-col gap-2 w-full">
+                <p className="text-2xl sm:text-3xl text-gray-800"> {component.name} </p>
+                <p className="text-base sm:text-lg text-gray-800"> {component.description} </p>
 
-                    <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 p-5">
-                        {component.demo}
-                    </div>
-
-                    {/* TODO: Fix: div does not fully stretch unless line filled with code */}
-                    <CodeBlock code={component.demoCode ?? ""}/>
+                <div className="flex h-full w-full justify-center items-center border border-gray-300 rounded-lg py-8 sm:py-10 px-4 sm:px-5">
+                    {component.demo}
                 </div>
 
+                {/* TODO: Fix: div does not fully stretch unless line filled with code */}
+                <CodeBlock code={component.demoCode ?? ""}/>
+            </div>
 
-                {component.examples.map((e, i) => (
-                    <div key={i} className="flex flex-col gap-2 w-full">
-                        <p className="text-2xl text-gray-800"> {e.name}</p>
-                        
-                        <div className="flex h-full w-full justify-center items-center border border-1 border-gray-300 rounded-lg py-10 px-5">
-                            {e.demo}
-                        </div>
+            {component.examples.map((e, i) => (
+                <div key={i} className="flex flex-col gap-2 w-full">
+                    <p className="text-xl sm:text-2xl text-gray-800"> {e.name}</p>
 
-                        <CodeBlock code={e.code ?? ""}/>
+                    <div className="flex h-full w-full justify-center items-center border border-gray-300 rounded-lg py-8 sm:py-10 px-4 sm:px-5">
+                        {e.demo}
                     </div>
-                ))}
 
-                <div className="flex flex-col gap-2 w-full">
-                    <p className="text-2xl text-gray-800"> Props</p>
-                    
-                    <table className="w-full text-left border border-gray-300 rounded-lg border-separate border-spacing-0">
-                        <thead className="border-b border-gray-300">
+                    <CodeBlock code={e.code ?? ""}/>
+                </div>
+            ))}
+
+            <div className="flex flex-col gap-2 w-full">
+                <p className="text-xl sm:text-2xl text-gray-800"> Props</p>
+
+                <div className="w-full overflow-x-auto">
+                    <table className="w-full min-w-[480px] text-left border border-gray-300 rounded-lg border-separate border-spacing-0">
+                        <thead>
                             <tr>
-                                <th className="py-3 px-4 text-gray-800 font-normal text-lg rounded-tl-lg border-b border-gray-300">
+                                <th className="py-3 px-3 sm:px-4 text-gray-800 font-normal text-base sm:text-lg rounded-tl-lg border-b border-gray-300">
                                     Name
                                 </th>
 
-                                <th className="py-3 px-4 text-gray-800 font-normal text-lg border-b border-gray-300">
+                                <th className="py-3 px-3 sm:px-4 text-gray-800 font-normal text-base sm:text-lg border-b border-gray-300">
                                     Type
                                 </th>
 
-                                <th className="py-3 px-4 text-gray-800 font-normal text-lg rounded-tr-lg border-b border-gray-300">
+                                <th className="py-3 px-3 sm:px-4 text-gray-800 font-normal text-base sm:text-lg rounded-tr-lg border-b border-gray-300">
                                     Description
                                 </th>
                             </tr>
@@ -68,42 +67,33 @@ export default function ComponentDocs() {
 
                         <tbody className="text-gray-600">
                             {component.props.map((prop, i) => (
-                                <tr key={i} className="hover:bg-gray-100 border-b last:border-b-0">
-                                    <td className={`py-3 px-4 text-md text-gray-800
+                                <tr key={i} className="hover:bg-gray-100">
+                                    <td className={`py-3 px-3 sm:px-4 text-sm sm:text-md text-gray-800
                                         ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
                                     `}>
                                         {prop.name}
                                     </td>
 
-                                    <td className={`py-3 px-4 text-md text-gray-800
+                                    <td className={`py-3 px-3 sm:px-4 text-sm sm:text-md text-gray-800
                                         ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
                                     `}>
-
-                                        <p className="w-fit p-0.5 text-md text-gray-800 bg-gray-200 rounded-md">
+                                        <p className="w-fit p-0.5 text-sm sm:text-md text-gray-800 bg-gray-200 rounded-md">
                                             {prop.type}
                                         </p>
-
                                     </td>
 
-                                    <td className={`py-3 px-4 text-md text-gray-800
+                                    <td className={`py-3 px-3 sm:px-4 text-sm sm:text-md text-gray-800
                                         ${i === component.props.length - 1 ? "" : "border-b border-gray-200"}
                                     `}>
                                         {prop.description}
                                     </td>
                                 </tr>
                             ))}
-
                         </tbody>
                     </table>
-
                 </div>
             </div>
-            
 
-            {/* Right sidebar */}
-            {/* <div className="flex flex-col gap-2 fixed top-28 right-95">
-                <p className="text-md text-gray-800 font-semibold">On this page</p>
-            </div> */}
         </div>
     );
 }
