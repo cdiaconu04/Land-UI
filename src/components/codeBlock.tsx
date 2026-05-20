@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createHighlighter } from "shiki/bundle/web";
 
 const highlighterPromise = createHighlighter({
-    themes: ["github-dark"],
+    themes: ["github-light"],
     langs: ["tsx"],
 });
 
@@ -28,7 +28,7 @@ export default function CodeBlock({ code, lang = "tsx" }: CodeBlockProps) {
 
             const out = highlighter.codeToHtml(code, {
                 lang: safeLang,
-                theme: "github-dark",
+                theme: "github-light",
             });
 
             if (!cancelled) setHtml(out);
@@ -45,7 +45,7 @@ export default function CodeBlock({ code, lang = "tsx" }: CodeBlockProps) {
                 className="
                     w-full max-w-full min-w-0
                     rounded-lg border border-gray-200 overflow-hidden
-                    bg-[#0d1117]   /* github-dark background */
+                    bg-white
                 "
             >
             <div
