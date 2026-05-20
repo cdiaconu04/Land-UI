@@ -6,8 +6,13 @@ import { ChevronRight } from 'lucide-react';
 import Link from "next/link";
 import Button from "@/components/luicomponents/button";
 import Badge from "@/components/luicomponents/badge";
+import { Copy } from 'lucide-react';
 import Typography from "@/components/luicomponents/typography";
 import { components } from "@/data/components";
+
+async function handleCopy() {
+  await navigator.clipboard.writeText("npm install @cdiaconu/land-ui");
+}
 
 export default function Home() {
   return (
@@ -24,8 +29,12 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-lg lg:text-2xl xl:text-3xl text-gray-800 leading-7 sm:leading-8 md:leading-7 lg:leading-9 xl:leading-10">
             16 modern and customizable, <br className="hidden md:block"/> React components to make your website stand out.
           </p>
-          <div className="w-fit">
+          <div className="w-fit flex flex-row gap-2 items-center justify-center">
             <CodeBlock code={`npm install @cdiaconu/land-ui`} />
+
+            <button onClick={handleCopy} className="border border-1 border-gray-200 p-3 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+              <Copy color="gray"/>
+            </button>
           </div>
         </div>
 
