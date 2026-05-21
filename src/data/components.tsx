@@ -295,6 +295,11 @@ export const components: DocsComponent[] = [
                 description: "Border styling"
             },
             {
+                name: "className",
+                type: "string",
+                description: "Additional Tailwind classes applied to the card"
+            },
+            {
                 name: "colour",
                 type: "Colour",
                 description: "Background colour"
@@ -302,14 +307,14 @@ export const components: DocsComponent[] = [
             {
                 name: "round",
                 type: "Round",
-                description: "Shadow"
+                description: "Border rounding"
             },
             {
                 name: "shadow",
                 type: "Shadow",
                 description: "Shadow styling"
             },
-        ] 
+        ]
     },
     { 
         name: "Checkbox", 

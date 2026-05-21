@@ -13,6 +13,7 @@ type CardProps = {
     round?: keyof typeof roundMap;
     border?: borderProps;
     shadow?: keyof typeof shadowMap;
+    className?: string;
     children?: React.ReactNode;
 };
 
@@ -21,6 +22,7 @@ export default function Card({
     round = 1,
     border,
     shadow = 0,
+    className,
     children
 }: CardProps) {
 
@@ -31,6 +33,7 @@ export default function Card({
             ${roundMap[round]}
             ${getBorder(border)}
             ${shadowMap[shadow]}
+            ${className ?? ""}
         `}>
             {children}
         </div>
