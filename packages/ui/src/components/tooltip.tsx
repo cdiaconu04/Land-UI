@@ -11,7 +11,6 @@ const sizeMap = {
 };
 
 type TooltipProps = React.PropsWithChildren<{
-  font?: string,
   colour?: colourProps;
   textColour?: keyof typeof textColourMap;
   content: string;
@@ -21,18 +20,17 @@ type TooltipProps = React.PropsWithChildren<{
   scale?: keyof typeof scaleMap;
 }>;
 
-export default function Tooltip({ 
-  font = "",
-  colour = {type: "filled", colour: "black"}, 
+export default function Tooltip({
+  colour = {type: "filled", colour: "black"},
   textColour = "white",
-  content, 
-  placement = "top", 
+  content,
+  placement = "top",
   size = "md",
-  round = 4, 
+  round = 4,
   scale = 5,
-  children 
+  children
 }: TooltipProps) {
-  
+
   const posClass: Record<Placement, string> = {
     top: "bottom-full left-1/2 transform -translate-x-1/2 mb-2",
     bottom: "top-full left-1/2 transform -translate-x-1/2 mt-2",
@@ -48,7 +46,7 @@ export default function Tooltip({
         role="tooltip"
         className={`absolute z-50 ${posClass[placement]} opacity-0 ${scaleMap[scale]} transform transition-all duration-150 pointer-events-none group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100`}
       >
-        <div className={`${font} ${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]}`}> 
+        <div className={`${getBgColour(colour)} ${roundMap[round]} ${textColourMap[textColour]} rounded-full ${sizeMap[size]}`}>
           {content}
         </div>
 

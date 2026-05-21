@@ -42,8 +42,6 @@ type DropdownProps = {
 
   optionTextColour?: keyof typeof textColourMap;
   optionSelectedTextColour?: keyof typeof textColourMap;
-
-  font?: string;
 };
 
 export default function Dropdown({
@@ -72,8 +70,6 @@ export default function Dropdown({
 
   optionTextColour = "default",
   optionSelectedTextColour = optionTextColour,
-
-  font = "",
 }: DropdownProps) {
 
   const id = useId();
@@ -88,7 +84,7 @@ export default function Dropdown({
       if (!rootRef.current.contains(e.target as Node)) setOpen(false);
 
     }
-    
+
     document.addEventListener("mousedown", onDocMouseDown);
 
     return () => document.removeEventListener("mousedown", onDocMouseDown);
@@ -125,7 +121,7 @@ export default function Dropdown({
           ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
         `}
       >
-        <div className={`text-sm truncate ${font}`}>
+        <div className="text-sm truncate">
           {selected ? selected.label : placeholder}
         </div>
 
@@ -167,7 +163,6 @@ export default function Dropdown({
                       ${isSelected ? selectedBg : baseBg}
                       ${textColourMap[isSelected ? optionSelectedTextColour : optionTextColour]}
                       ${isOptDisabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
-                      ${font}
                       transition-colors
                     `}
 

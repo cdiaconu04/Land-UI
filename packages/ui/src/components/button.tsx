@@ -20,12 +20,12 @@ type ButtonProps = {
 };
 
 export default function Button({
-    onClick, 
+    onClick,
     colour = {type: "filled"},
     hoverColour = colour,
-    size = "medium", 
-    border, 
-    hoverShadow = 0, 
+    size = "medium",
+    border,
+    hoverShadow = 0,
     round = 1,
     children }: ButtonProps) {
 
