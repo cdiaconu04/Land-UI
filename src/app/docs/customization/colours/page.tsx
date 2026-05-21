@@ -22,10 +22,10 @@ export default function Colours() {
 
                 <div className="flex flex-col gap-2 w-full">
                     <p className="text-base sm:text-lg text-gray-800">
-                        The Colour prop accepts one of two types: "filled" or "gradient".
+                        The Colour prop accepts one of two types: &quot;filled&quot; or &quot;gradient&quot;.
                     </p>
                     <p className="text-base sm:text-lg text-gray-800">
-                        For "filled", you must pass in a string sub-prop with the name of the colour you want.
+                        For &quot;filled&quot;, you must pass in a string sub-prop with the name of the colour you want.
                     </p>
                     <div className="flex h-full w-full justify-center items-center border border-gray-300 rounded-lg py-8 sm:py-10 px-4 sm:px-5">
                         <Filled/>
@@ -35,7 +35,7 @@ export default function Colours() {
 
                 <div className="flex flex-col gap-2 w-full">
                     <p className="text-base sm:text-lg text-gray-800">
-                        For "gradient", you must pass in at least two string sub-props with the names of the colours you want.
+                        For &quot;gradient&quot;, you must pass in at least two string sub-props with the names of the colours you want.
                     </p>
                     <div className="flex h-full w-full justify-center items-center border border-gray-300 rounded-lg py-8 sm:py-10 px-4 sm:px-5">
                         <Gradient1/>

@@ -23,7 +23,7 @@ export function ToastDemo() {
                 onHide={() => setShowToast(false)}
             >
                 <Typography type="p" colour="black" bold={2}>
-                    Here's a toast!
+                    Here&apos;s a toast!
                 </Typography>
             </Toast>
         </div>
@@ -74,7 +74,7 @@ export function ToastDemo() {
                     colour="black" 
                     bold={2}
                 >
-                    Here's a toast!
+                    Here&apos;s a toast!
                 </Typography>
             </Toast>
         </div>

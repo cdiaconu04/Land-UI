@@ -24,7 +24,7 @@ export default function CodeBlock({ code, lang = "tsx" }: CodeBlockProps) {
         (async () => {
             const highlighter = await highlighterPromise;
 
-            const safeLang = highlighter.getLoadedLanguages().includes(lang as any) ? lang : "tsx";
+            const safeLang = highlighter.getLoadedLanguages().includes(lang as never) ? lang : "tsx";
 
             const out = highlighter.codeToHtml(code, {
                 lang: safeLang,

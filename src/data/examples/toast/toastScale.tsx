@@ -26,7 +26,7 @@ export function ToastScaleDemo() {
                 scale={3}
             >
                 <Typography type="p" colour="black" bold={1}>
-                    Here's a toast!
+                    Here&apos;s a toast!
                 </Typography>
             </Toast>
         </div>
@@ -80,7 +80,7 @@ export function ToastScaleDemo() {
                     colour="black" 
                     bold={1}
                 >
-                    Here's a toast!
+                    Here&apos;s a toast!
                 </Typography>
             </Toast>
         </div>
